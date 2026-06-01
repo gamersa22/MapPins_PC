@@ -7814,7 +7814,7 @@ local function AddPinFilter(i)
 	local function AddCheckbox(panel)
 		local checkbox=panel.checkBoxPool:AcquireObject()
 		local icon=zo_iconFormat((CustomPins[i].def_texture or CustomPins[i].texture),24,24)
-		local name=CustomPins[pin].ach and GetCroppedAchievementInfo(pin) orLoc(string.gsub(CustomPins[i].name,"pinType_",""))
+		local name=CustomPins[pin].ach and GetCroppedAchievementInfo(pin) or Loc(string.gsub(CustomPins[i].name,"pinType_",""))
 		ZO_CheckButton_SetLabelText(checkbox,icon.." "..name)
 		panel:AnchorControl(checkbox)
 		local tooltipText=""
