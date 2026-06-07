@@ -6685,7 +6685,8 @@ local FishingZones={
 	[931]=3500,--Firesong
 	[960]=3636,--Necrom
 	[959]=3636,--Apocrypha
-	[983]=3948,--Gold Road
+	[982]=3948,--Gold Road U49 
+	[983]=3948,--Gold Road U50
 	[1034]=4404,--West/East Solstice
 	bleakrockvillage_base=493,
 	murkmire_base=2295,rootwhisper_base=2295,brightthroatvillage_base=2295,lilmothcity_base=2295,
