@@ -204,7 +204,8 @@ local Localization={
 		Seasons_of_the_Worm_Cult="Seasons of the Worm Cult",
 		},
 	ua={--provided by Astaro'I, Eric_m 1.89
-		Lake="Озеро",Foul="Стічні води",River="Річка",Salt="Морська вода",Oily="Масляниста",Mystic="Містична",Running="Проточна",--Water		--Portals
+		Lake="Озеро",Foul="Стічні води",River="Річка",Salt="Морська вода",Oily="Масляниста",Mystic="Містична",Running="Проточна",--Water
+		--Portals
 		Portals="Портали",Celestial_Rifts="Небесні розколини",Dark_Fissures="Темні тріщини",Oblivion_Portals="Портали Облівіона",Shadow_Fissures="Тіньові тріщини",Lava_Lashers="Лавові жерла",Soul_Reaper="Жнець Душ",
 		--Filters
 		Delve_bosses="Боси западин",Delve_bosses_done="Боси западин (виконано)",
@@ -501,12 +502,18 @@ thescraps_base={{.279,.606,2644,1,{160769,160733,160897,160878,160922,161122,161
 midnightbarrow_base={{.631,.113,2642,1,{160769,160733,160897,160878,160922,161122,161047}}},
 houseofembersoutside_base={{.457,.277,2557}},moonlitcove01_base={{.431,.42,2558}},moonlitcove02_base={{.431,.42,2558}},moonlitcove05_base={{.431,.42,2558}},
 rimmennecropolis_base={{.09,.475,2441,1},{.91,.745,2441,2},{.8,.402,2441,3},{.106,.678,2441,4},{.491,.253,2441,5},{.5,.658,2444}},
-orcrest_base={{.54,.641,2443,1},{.275,.787,2443,2},{.601,.425,2443,3},{.429,.437,2443,4},{.39,.573,2443,5},{.781,.292,2445}},orcrest2_base={{.543,.644,2443,1},{.273,.787,2443,2},{.597,.424,2443,3},{.422,.438,2443,4},{.393,.568,2443,5},{.784,.289,2445}},orcrestsewer_base={{.492,.49,2443,5,{149468,149511}}},tombofserpents_base={{.506,.46,2399,1,{149552,149179,149325,149487,149094,149361}}},abodeofignominy_base={{.175,.753,2396,1,{149552,149179,149325,149487,149094,149361}}},predatorrise_base={{.566,.426,2397,1,{149552,149179,149325,149487,149094,149361}}},DesertWind_base={{.557,.18,2398,1,{149552,149179,149325,149487,149094,149361}}},desertwind2a_base={{.557,.18,2398,1,{149552,149179,149325,149487,149094,149361}}},thetangle_base={{.454,.624,2401,1,{149552,149179,149325,149487,149094,149361}}},thescab_base={{.475,.191,2400,1,{149552,149179,149325,149487,149094,149361}}},
+orcrest_base={{.54,.641,2443,1},{.275,.787,2443,2},{.601,.425,2443,3},{.429,.437,2443,4},{.39,.573,2443,5},{.781,.292,2445}},
+orcrest2_base={{.543,.644,2443,1},{.273,.787,2443,2},{.597,.424,2443,3},{.422,.438,2443,4},{.393,.568,2443,5},{.784,.289,2445}},
+orcrestsewer_base={{.492,.49,2443,5,{149468,149511}}},
+tombofserpents_base={{.506,.46,2399,1,{149552,149179,149325,149487,149094,149361}}},
+abodeofignominy_base={{.175,.753,2396,1,{149552,149179,149325,149487,149094,149361}}},
+predatorrise_base={{.566,.426,2397,1,{149552,149179,149325,149487,149094,149361}}},
+desertwind_base={{.557,.18,2398,1,{149552,149179,149325,149487,149094,149361}}},desertwind2a_base={{.557,.18,2398,1,{149552,149179,149325,149487,149094,149361}}},thetangle_base={{.454,.624,2401,1,{149552,149179,149325,149487,149094,149361}}},thescab_base={{.475,.191,2400,1,{149552,149179,149325,149487,149094,149361}}},
 ui_map_tsofeercavern01={{.778,.354,2286,1,{142439,142574,142297,142372,142643,142700}}},teethofsithis02b_base={{.53,.681,2287,1,{142742,142664,142397,142352,142559,142574}}},
 kingshavenext_base={{.153,.423,2007,1}},etonnir_01_base={{.132,.772,2007,2}},archonsgrove_base={{.125,.581,2007,3}},torhamekhard_01_base={{.661,.16,2007,4}},torhamekhard_02_base={{.658,.158,2007,4}},wastencoraldale_base={{.61,.342,2007,5}},traitorsvault01_base={{.713,.767,2007,6}},
 sunhold_base={{.418,.157,2095,1},{.65,.421,2182,1},{.805,.763,2182,2},{.439,.803,2182,3},{.596,.376,2182,5},{.453,.265,2182,4}},
 sum_karnwasten_base={{.905,.732,2096,1},{.215,.458,2181,1},{.18,.678,2181,2},{.642,.816,2181,3},{.657,.512,2181,4},{.525,.604,2181,5}},
-["aba-loria"]={{.752,.632,432,1}},
+["aba-loria_base"]={{.752,.632,432,1}},
 aldunz_base={{.719,.554,416,1}},
 argentmine2_base={{.718,.247,1299,1}},
 atanazruins_base={{.559,.461,245,1}},
@@ -711,24 +718,24 @@ hallsofregulation_2_base={{.728,.402,2016,1}},
 local BossesAchievements={[4272]=true,[4271]=true,[4265]=true,[4264]=true,[4262]=true,[4261]=true,[4260]=true,[4259]=true,[4258]=true,[4257]=true,[4003]=true,[4002]=true,[4001]=true,[4000]=true,[3959]=true,[3958]=true,[3957]=true,[3956]=true,[3955]=true,[3954]=true,[3660]=true,[3659]=true,[3658]=true,[3657]=true,[3625]=true,[3624]=true,[3623]=true,[3622]=true,[3621]=true,[3620]=true,[3490]=true,[3489]=true,[3284]=true,[3283]=true,[3282]=true,[3281]=true,[3280]=true,[3279]=true,[3278]=true,[3277]=true,[3276]=true,[3275]=true,[2996]=true,[2997]=true,[2971]=true,[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]=true,[2442]=true,[2444]=true,[2445]=true,[744]=true,[734]=true,[741]=true,[742]=true,[733]=true,[732]=true,[377]=true,[738]=true,[739]=true,[740]=true,[1238]=true,[1239]=true,[1052]=true,[2095]=true,[2096]=true,[2181]=true,[2182]=true,[2007]=true,[300]=true,[470]=true,[1235]=true,[1236]=true,[1855]=true,[1846]=true,[1057]=true,[1058]=true,[1059]=true,[1061]=true,[1062]=true,[1063]=true,[1064]=true,[1425]=true,[1857]=true,[1691]=true,[1523]=true,[1856]=true,[1854]=true,[368]=true,[370]=true,[374]=true,[376]=true,[390]=true,[396]=true,}
 local SkyShards={
 u48_overland_base={--Seasons of the Worm Cult (Western and Eastern Solstice) by art1ink
-{.514,.430,4405,1,569},
+{.514,.429,4405,1,569},
 {.476,.711,4405,2,570},
-{.276,.458,4405,3,571},
-{.309,.597,4405,4,572},
-{.423,.366,4405,5,564},
-{.278,.502,4405,6,565},
-{.351,.693,4405,7,566},
-{.569,.616,4405,8,567},
-{.475,.561,4405,9,568},
-{.754,.359,4461,1,579},--10
-{.653,.419,4461,2,580},--11
-{.809,.503,4461,3,587},--12
-{.831,.638,4461,4,578},--13
-{.756,.685,4461,5,573},--14
-{.733,.572,4461,6,574},--15
-{.659,.366,4461,7,575},--16
-{.619,.506,4461,8,576},--17
-{.724,.686,4461,9,577}},--18
+{.272,.454,4405,3,571},
+{.309,.595,4405,4,572},
+{.423,.361,4405,5,564},
+{.275,.5,4405,6,565},
+{.35,.695,4405,7,566},
+{.573,.616,4405,8,567},
+{.476,.56,4405,9,568},
+{.659,.366,4461,1,579},--10
+{.619,.505,4461,2,580},--11
+{.724,.686,4461,3,587},--12
+{.733,.572,4461,4,578},--13
+{.755,.359,4461,5,573},--14
+{.654,.42,4461,6,574},--15
+{.809,.504,4461,7,575},--16
+{.831,.638,4461,8,576},--17
+{.757,.685,4461,9,577}},--18
 u48_base_calindvalegardenspd={{.367,.51,4461,6,574}},--15
 u46_base_lotwc={{.369,.792,4461,7,575}},--16
 u48_ssl_delve_base_1={{.205,.478,4461,8,576}},--17
@@ -927,7 +934,7 @@ southernelsweyr_base={-- Southern Elsweyr
 houseofembersinside_base={{.396,.384,2562,6,453}},
 moonlitcove01_base={{.759,.228,2562,5,452}},
 moonlitcove02_base={{.759,.228,2562,5,452}},
-moonlitcove05={{.759,.228,2562,5,452}},
+moonlitcove05_base={{.759,.228,2562,5,452}},
 senchal_base={{.246,.687,2562,2,449}},
 elsweyr_base={-- Northern Elsweyr
 {.442,.17,2461,1,430},
@@ -996,7 +1003,7 @@ sum_karnwasten_base={{.599,.595,1845,11,416}},
 sunhold_base={{.373,.346,1845,12,417}},
 kingshavenint1_base={{.197,.383,1845,13,418}},
 etonnir_01_base={{.148,.596,1845,14,419}},
-etonnir_02={{.148,.596,1845,14,419}},
+etonnir_02_base={{.148,.596,1845,14,419}},
 archonsgrove_base={{.542,.704,1845,15,420}},
 torhamekhard_01_base={{.468,.712,1845,16,421}},
 torhamekhard_02_base={{.468,.712,1845,16,421}},
@@ -1104,7 +1111,7 @@ coldharbour_base={-- Coldharbour
 {.670,.574,686,14,273},
 {.660,.375,686,15,274},
 {.711,.635,686,16,275}},
-["aba-loria"]={{.269,.430,686,10,269}},
+["aba-loria_base"]={{.269,.430,686,10,269}},
 vaultofhamanforgefire_base={{.526,.148,686,11,270}},
 depravedgrotto_base={{.282,.267,686,12,271}},
 malsorrastomb_base={{.366,.410,686,13,272}},
@@ -1393,7 +1400,7 @@ rootsofsilvenar_base={{.571,.403,684,13,153}},
 shaelruins_base={{.312,.898,684,14,154}},
 tomboftheapostates_base={{.541,.168,684,15,155}},
 crimsoncove02_base={{.824,.464,684,16,156}},
-crimsoncove01_base={{.824,.464,684,16,156}},
+crimsoncove_base={{.824,.464,684,16,156}},
 reapersmarch_base={-- Reaper's March
 {.378,.199,685,1,157},
 {.429,.334,685,2,158},
@@ -1535,7 +1542,7 @@ norvulkruins_base={{.352,.532,515,13,207}},
 pariahcatacombs_base={{.752,.319,515,14,208}},
 portdunwatch_base={{.706,.446,515,15,209}},
 bonesnapruinssecret_base={{.25,.73,515,16,210,}},
-bonesnapruins={{.25,.64,515,16,210}},
+bonesnapruins_base={{.25,.64,515,16,210}},
 therift_base={-- The Rift
 {.429,.272,689,1,71},
 {.647,.291,689,2,72},
@@ -1704,7 +1711,7 @@ u38_disquiet_study_base={{.491,.364,8,6}},--Modern Heretics
 u38_necromoutlawsrefuge_base={{.476,.535,23,9}},--Sanctioned Murder
 u38_necromoutlawsrefuge02_base={{.476,.535,23,9}},--Sanctioned Murder
 u38_ciphersmidden_city_base={{.447,.46,8,9}},--Fragmentae Abyssum Hermaeus Morus
-u38_teldreloth_ext={{.418,.687,20,1}},--Ancestors and the Dunmer (Abridged)
+u38_teldreloth_ext_base={{.418,.687,20,1}},--Ancestors and the Dunmer (Abridged)
 tlv_aldisra_base={
 {.747,.609,20,3},--The Great Houses and Their Uses
 {.162,.657,20,6},--Mottos of the Dunmeri Great Houses
@@ -1751,7 +1758,7 @@ u34_gonfalonbaycity_base={
 {.265,.443,1,5},--Guide to the Daggerfall Covenant
 },
 --The Deadlands Provided by art1ink
-u32_fargravezon_base={
+u32_fargravezone_base={
 {.527,.239,14,5},-- Myths of Sheogorath, Volume 1
 {.345,.616,2,8}},--To Dream Beyond Dreams
 u32_theshambles_base={{.366,.32,14,5}},-- Myths of Sheogorath, Volume 1
@@ -1945,7 +1952,7 @@ glenumbra_base={{.27,.74,1,1},{.22,.68,1,2},{.360,.715,1,3},{.373,.632,1,3},{.40
 aldcroft_base={{.387,.648,9,2},{.381,.878,9,2}},
 crosswych_base={{.554,.822,12,1},{.568,.621,12,1},{.397,.654,12,1},{.683,.648,12,1}},
 daggerfall_base={{.749,.699,1,1},{.517,.636,1,1},{.311,.566,1,1},{.216,.089,1,2},{.431,.143,1,2},{.511,.290,1,2},{.606,.325,1,2},{.892,.254,1,3}},
-desolationsend={{.856,.376,9,8}},
+desolationsend_base={{.856,.376,9,8}},
 spindleclutch_base={{.677,.475,11,8}},
 strosmkai_base={{.403,.509,12,11}},
 grahtwood_base={{.743,.566,26,7},{.430,.749,26,1},{.406,.758,26,1},{.383,.780,26,1},{.417,.766,26,1},{.384,.676,26,2},{.485,.617,26,2},{.491,.560,26,2},{.415,.656,26,2},{.537,.682,26,3},{.533,.640,26,3},{.501,.703,26,3},{.646,.743,26,4},{.564,.714,26,4},{.588,.745,26,4},{.650,.712,26,4},{.549,.791,26,5},{.512,.752,26,5},{.456,.780,26,5},{.491,.810,26,5},{.664,.665,26,6},{.648,.589,26,6},{.615,.639,26,6},{.660,.645,26,6},{.852,.568,26,7},{.772,.521,26,7},{.778,.504,26,8},{.767,.602,26,8},{.840,.632,26,8},{.728,.602,26,8},{.739,.671,26,9},{.720,.728,26,9},{.694,.748,26,9},{.835,.765,26,10},{.829,.715,26,10},{.562,.171,8,3},{.596,.207,8,3},{.565,.261,8,4},{.519,.271,8,4},{.536,.233,8,4},{.460,.530,10,4},{.426,.580,10,4},{.418,.517,10,4},{.323,.608,10,5},{.318,.626,10,5},{.246,.598,10,5},{.295,.560,10,5},{.349,.549,10,6},{.303,.525,10,6},{.300,.433,10,6},{.301,.448,10,6},{.407,.466,12,4},{.377,.512,12,4},{.368,.433,12,4},{.390,.425,12,4},{.447,.428,12,5},{.456,.488,12,5},{.478,.462,12,5},{.445,.366,12,5},{.354,.370,12,6},{.373,.344,12,6},{.431,.327,12,6},{.619,.550,15,1},{.510,.548,15,2},{.579,.532,15,2},{.550,.566,15,2},{.777,.485,15,3},{.701,.438,15,3},{.757,.424,15,3},{.698,.490,15,3},{.680,.412,15,4},{.723,.372,15,4},{.647,.387,15,4},{.543,.381,15,5},{.585,.411,15,5},{.577,.354,15,5},{.507,.379,15,6},{.428,.294,15,6},{.499,.299,15,6},{.483,.358,15,6},{.642,.334,15,7},{.654,.309,15,7},{.608,.321,15,7},{.474,.187,15,8},{.459,.268,15,8},{.494,.234,15,8},{.429,.230,15,8},{.380,.393,16,1},{.322,.404,16,1},{.287,.334,16,1},{.268,.311,16,2},{.280,.226,16,2},{.288,.257,16,2},{.238,.130,16,3},{.335,.156,16,3},{.278,.161,16,3},{.284,.159,16,3},{.340,.267,16,4},{.395,.269,16,4},{.349,.230,16,4},{.327,.234,16,4},{.195,.157,16,5},{.194,.205,16,5},{.224,.225,16,5},{.256,.203,16,5},{.526,.484,11,5}},
@@ -2011,7 +2018,7 @@ fallowstonevault_base={{.101,.448,24,2}},
 forelhost_base={{.281,.613,14,5}},
 fortgreenwall_base={{.454,.672,12,13}},
 snaplegcave_base={{.74,.59,12,16}},
-trolhettacave={{.502,.261,18,10}},
+trolhettacave_base={{.502,.261,18,10}},
 blessedcrucible2_base={{.240,.443,11,17}},
 blessedcrucible4_base={{.240,.443,11,17}},
 blessedcrucible5_base={{.240,.443,11,17}},
@@ -2213,2207 +2220,250 @@ clockwork_base={{.181,.597,43746},{.803,.424,43747}},
 }
 local UnknownPOI={
 [1502]={--Seasons of the Worm Cult
-[1]={"Sunport",7},
-[2]={"Warm-Stone Village",2},
-[4]={"Li-Xal Pass",5},
-[5]={"Tarnur Mine",5},
-[6]={"Vosgah Shrine",5},
-[8]={"Broken Light Temple",31},
-[9]={"Shor's Stand",15},
-[10]={"Corelanya Manor",15},
-[11]={"Everlasting  Fair",15},
-[12]={"Shell-Tide Village",15},
-[13]={"Deetra Grotto",13},
-[14]={"Carapace Cavern",3},
-[15]={"Tainted Leel",3},
-[16]={"Vale of Revelry",3},
-[17]={"Shrine of Vakkan",18},
-[18]={"Ruins of Tuniria",18},
-[19]={"Tidewash Strand",18},
-[20]={"Soulcaller's Haunt",18},
-[21]={"Lair of Wo-Xeeth",18},
-[22]={"Zyv-Elehk Ritual Site",18},
-[23]={"Caterwaul Cove",43},
-[24]={"Ashbound Hall",15},
-[25]={"Aldwilne Citadel",15},
-[27]={"Xor-Hist",15},
-[28]={"Calindvale Gardens",13},
-[29]={"Lair of the Black Worm",3},
-[30]={"Sea and Sword Lodge",3},
-[31]={"Xul-Katama",3},
-[33]={"Gristmung Hold",17},
-[38]={"Xul-Haj",17},
-[39]={"The Gates of Mor Naril",2},
-[43]={"Trial: Ossein Cage",27},
-[44]={"Sunport Docks Wayshrine",1},
-[45]={"Western Bay Wayshrine",1},
-[46]={"Shor's Stand Wayshrine",1},
-[47]={"Vale of Revelry Wayshrine",1},
-[48]={"Corelanya Manor Wayshrine",1},
-[49]={"Shell-Tide Village Wayshrine",1},
-[50]={"Sunport Wayshrine",1},
-[51]={"Tide-Born Foundry",8,{215492,5}},
-[52]={"Swencoast Cottage",2},
-[53]={"Tidal Fishing Camp",2},
-[54]={"Xi-Tak Ruins",2},
-[55]={"Sanguine Islet",2},
-[58]={"North Siege Camp",26},
-[59]={"Sunport Siege Camp",26},
-[60]={"Central Siege Camp",26},
-[61]={"Warm-Stone Siege Camp",26},
-[62]={"South Siege Camp",26},
-[63]={"Dungeon: Naj-Caldeesh",20},
-[64]={"Dungeon: Black Gem Foundry",20},
-[65]={"Gristmung Hold Camp Wayshrine",1},
-[66]={"Mor Naril Camp Wayshrine",1},
-[68]={"Xor-Hist Wayshrine",1},
-[69]={"Caterwaul Cove Wayshrine",1},
-[70]={"Grand Juncture Pass Wayshrine",1},
-[71]={"Stone Cove Wayshrine",1},
-[72]={"Ghishzor",18},
-[73]={"Sunport Rampart Camp",26},
-[74]={"Salt-Air Station",8,{215112,3}},
-[75]={"Fellowship Forge",8,{215872,7}},
-[76]={"Coldharbour's Shattered Jaws",2},
-[77]={"Leviathan's End",2},
-[78]={"Bismuth Grotto",2},
-[79]={"Xaht Jeel Pier",2},
-[81]={"Rampart Camp Wayshrine",1},
-[82]={"Sunport",45},
-[83]={"Writhing Fortress",45},
-},
-[1463]={--The Scholarium
-[1]={"The Scholarium",1},
-},
-[267]={--Eyevea
-[1]={"Eyevea Wayshrine",1},
+[51]={215492,5},
+[74]={215112,3},
+[75]={215872,7},
 },
 [1443]={--Gold Road
-[1]={"Skingrad",7},
-[3]={"Leftwheal Grainery",8,{205786,5}},
-[4]={"Singer's Outpost",8,{205406,3}},
-[5]={"Deserter's Lagoon",8,{206166,7}},
-[6]={"Haldain Lumber Camp",3},
-[7]={"Fyrelight Cave",3},
-[8]={"Nonungalo",3},
-[9]={"Varen's Watch",3},
-[10]={"Legion's Rest",3},
-[11]={"Fort Colovia",3},
-[12]={"Vashabar",32},
-[13]={"Silorn",13},
-[14]={"Leftwheal Trading Post",13},
-[15]={"Rustwall Estate",15},
-[16]={"Gray's Hollow",2},
-[17]={"The Outcast Inn",32},
-[19]={"Feldagard Keep",31},
-[20]={"Ontus",32},
-[21]={"Weatherleah Estate",15},
-[22]={"Valente Vineyards",15},
---[23]={"Trial: Lucent Citadel",2},
-[24]={"Sutch",32},
-[25]={"Fall's Glade",18},
-[26]={"Lake Olo",18},
-[27]={"Fortune's Bluff",18},
-[28]={"Centurion's Rise",18},
-[29]={"Broken Path Cave",18},
-[30]={"Frontier's Cradle",18},
-[31]={"Hoperoot",21},
-[32]={"Hastrel Hollow",11},
-[33]={"Niryastare",11},
-[34]={"Elenglynn",11},
-[40]={"Rock Bottom Caverns",2},
-[41]={"Sanguine's Shrine",2},
-[42]={"Broken Promises Cave",5},
-[43]={"Wendir",11},
-[48]={"Fort Hastrel",2},
-[50]={"Eaglerock Ruins",2},
-[51]={"Meridia's Shrine",2},
-[53]={"Skingrad City Wayshrine",1},
-[54]={"Skingrad Vineyards Wayshrine",1},
-[55]={"Vashabar Wayshrine",1},
-[56]={"Ontus Wayshrine",1},
-[57]={"Sutch Wayshrine",1},
-[58]={"North Hook Wayshrine",1},
-[59]={"Trader's Luck Wayshrine",1},
-[60]={"Ostumir Mirrormoor Mosaic",26},
-[61]={"Fall's Path Wayshrine",1},
-[62]={"Sutch Mirrormoor Mosaic",26},
-[63]={"Colovia Mirrrormoor Mosaic",26},
-[64]={"Silorn Mirrormoor Mosaic",26},
-[65]={"Ostumir",32},
-[73]={"Feldagard Keep Wayshrine",1},
---[66]={"Merryvine Estate",},
---[67]={"Rosewine Retreat",},
-[68]={"Wildburn's Edge Wayshrine",1},
-[69]={"Ostumir Wayshrine",1},
-[70]={"Centurion's Watch Wayshrine",1},
-[71]={"Valente Vineyards Wayshrine",1},
-[73]={"Feldagard Keep Wayshrine",1},
-[74]={"Three Points Wayshrine",1},
+[3]={205786,5},
+[4]={205406,3},
+[5]={206166,7},
 },
 [1413]={--Apocrypha
-[1]={"Portal to Necrom",17},
-[2]={"Portal to Necrom",17},
-[3]={"Rectory Corporea",6},
-[4]={"The Feral Gallery",10},
-[5]={"Cenotaph of the Remnants",17},
-[6]={"Cipher's Midden",32},
-[7]={"The Sidereal Cloisters",22},
-[8]={"The Ravening Morass",15},
-[9]={"Quires Wind",3},
-[10]={"The Disquiet Study",3},
-[11]={"The Underweave",13},
-[12]={"Apogee of the Tormenting Eye",3},
-[13]={"Fathoms Drift",3},
-[14]={"Libram Cathedral",18},
-[15]={"Deepreave Quag",18},
-[16]={"Runemaster's Acropolis",18},
-[17]={"Chthon Plaza",18},
-[18]={"Versicolor Carrels",8,{195335,7}},
-[19]={"Artisan's Hermitage",8,{194575,5}},
-[20]={"The Tranquil Catalog",31},
-[21]={"Fractured Monolith",2},
-[22]={"Chthonic Landing",2},
-[23]={"Writhing Wastes Edifice",44},
-[24]={"Fallen Hues Edifice",44},
-[26]={"Still Shallows Wayshrine",1},
-[27]={"Soundless Bight Wayshrine",1},
-[28]={"Cipher's Midden Wayshrine",1},
-[29]={"Speiran Tarn Wayshrine",1},
-[30]={"Writhing Wastes Wayshrine",1},
-[31]={"Tranquil Catalog Wayshrine",1},
-[32]={"Apogee Nadir Wayshrine",1},
-[33]={"Forlorn Palisades Wayshrine",1},
-[34]={"Feral Gallery Wayshrine",1},
-[37]={"Syzygial Rostrum",2},
-[38]={"Study of the Lost Cipher",2},
-[39]={"Altar of the One Who Knows",2},
+[18]={195335,7},
+[19]={194575,5},
 },
 [1414]={--Telvanni Peninsula
-[1]={"Anchre Egg Mine",3},
-[2]={"Camonnaruhn",3},
-[3]={"Ald Isra",45},
-[4]={"Kemel-Ze",14},
-[5]={"Sailenmora",9},
-[6]={"Tel Dreloth",45},
-[8]={"Necrom",7},
-[9]={"Tomb of the Nameless Master",2},
-[10]={"Tel Baro",45},
-[11]={"Tel Rendys",45},
-[12]={"Clamorclap Bowl",18},
-[13]={"Nightmare Den",18},
-[14]={"Alavelis",32},
-[15]={"Tel Hlurag Ven",8,{194955,3}},
-[16]={"Gorne",13},
-[18]={"Fungal Downs Edifice",44},
-[19]={"Trial: Sanity's Edge",27},
-[20]={"Glasscrag Edifice",44},
-[21]={"Necrom Outskirts Wayshrine",1},
-[22]={"Necrom Wayshrine",1},
-[23]={"Fungal Lowlands Wayshrine",1},
-[24]={"Ald Isra Wayshrine",1},
-[25]={"Padomaic Crest Wayshrine",1},
-[26]={"Great Arm Wayshrine",1},
-[33]={"Bal Foyen Passage",17},
-[30]={"Alavelis Wayshrine",1},
-[31]={"House Dres Encampment",2},
-[32]={"Deshaan Gate",17},
+[15]={194955,3},
 },
 [1383]={--Galen and Y'ffelon 
-[1]={"Vastyr",32},
-[2]={"Y'ffre's Path",31},
-[3]={"Llanshara",21},
-[4]={"Embervine",3},
-[5]={"Fauns' Thicket",3},
-[6]={"Valley of the Watcher",18},
-[7]={"Grove of the Chimera",18},
-[8]={"Old Port Mornard",8,{191625,3}},
-[9]={"Fort Avrippe",8,{191245,3}},
-[10]={"Oaken Forge",8,{192005,3}},
-[11]={"Vastyr Outskirts Volcanic Vent",26},
-[12]={"Farpoint Volcanic Vent",26},
-[13]={"Llanshara Volcanic Vent",26},
-[14]={"Telling Stone Volcanic Vent",26},
-[15]={"Eastern Shores Volcanic Vent",26},
-[16]={"Windwrack Fort",2},
-[17]={"Tuinh",32},
-[18]={"Suncleft Grotto",5},
-[19]={"Castle Tonnere",2},
-[20]={"Glimmertarn",2},
-[21]={"Clohaigh",2},
-[22]={"Westport",12},
-[23]={"Ivyhame",2},
-[25]={"The Telling Stone",2},
-[26]={"Vastyr Outskirts Wayshrine",1},
-[27]={"Glimmertarn Wayshrine",1},
-[28]={"Embervine Wayshrine",1},
-[29]={"Llanshara Wayshrine",1},
-[30]={"Y'free's Path Wayshrine",1},
-[31]={"Vastyr Wayshrine",1},
-[32]={"Eastern Shores Wayshrine",1},
+[8]={191625,3},
+[9]={191245,3},
+[10]={192005,3},
 },
 [1318]={ --High Isle
-[1]={"Gonfalon Bay",32},
-[2]={"Castle Navire",31},
-[3]={"Steadfast Manor",31},
-[4]={"Stonelore Grove",21},
-[5]={"Garick's Rest",31},
-[6]={"All Flags Islet",31},
-[7]={"Tor Draioch",31},
-[8]={"Amenos Station",31},
-[9]={"Brokerock Mine",31},
-[10]={"Skulltooth Coast",12},
-[11]={"Spire of the Crimson Coin",13},
-[12]={"Ghost Haven Bay",13},
-[13]={"Breakwater Cave",3},
-[14]={"The Firepot",3},
-[15]={"Death's Valor Keep",3},
-[16]={"Shipwreck Shoals",3},
-[17]={"Whalefall",3},
-[18]={"Coral Cliffs",3},
-[19]={"Y'ffre's Cauldron",18},
-[20]={"Serpent Bog",18},
-[21]={"Faun Falls",18},
-[22]={"Dark Stone Hollow",18},
-[23]={"Amenos Basin",18},
-[24]={"Mornard Falls",18},
-[26]={"Coral Road  Wayshrine",1},
-[27]={"Tor Draioch Wayshrine",1},
-[28]={"Steadfast Manor Wayshrine",1},
-[29]={"Castle Navire Wayshrine",1},
-[30]={"Garick's Rest Wayshrine",1},
-[31]={"Stonelore Grove Wayshrine",1},
-[32]={"Dufort Shipyards Wayshrine",1},
-[33]={"Amenos Station Wayshrine",1},
-[34]={"Brokerock Wayshrine",1},
-[36]={"Stonelore Forge and Craft",8,{185164,5}},
-[37]={"Steadfast Hammer and Saw",8,{184784,3}},
-[38]={"Hidden Foundry",8,{185544,7}},
-[39]={"All Flags Wayshrine",1},
---[40] = {"Trial: Dreadsail Reef",2}
-[41]={"Volcanic Vent",26},
-[42]={"Volcanic Vent",26},
-[43]={"Volcanic Vent",26},
-[44]={"Volcanic Vent",26},
-[45]={"Volcanic Vent",26},
-[46]={"Volcanic Vent",26},
-[47]={"Volcanic Vent",26},
-[48]={"Trappers Peak Wayshrine",1},
-[49]={"Spriggan's Crown",2},
-[50]={"Port Navire",12},
-[52]={"Druid's Gate",28},
-[53]={"Gonfalon Head Lighthouse",23},
-[54]={"Westbay Wayshrine",1},
-[56]={"Abhain Chapel",9},
-[61]={"Augury Monoliths",2},
-[63]={"Jheury's Cove",12},
-[66]={"Dufort Shipyards",12},
-[68]={"Gonfalon Square Wayshrine",1},
-[72]={"Serpents Hollow Wayshrine",1},
-[73]={"Flooded Coast Wayshrine",1},
-[78]={"Green Serpent Getaway",2},
-[79]={"Banished Refuge",2},
-[80]={"Albatross Leap",2},
-[81]={"Colossus View Lighthouse",23},
-[82]={"Gonfalon Bay",32},
-[83]={"Gonfalon Bay",32},
-[84]={"Stonelore Falls",2},
+[36]={185164,5},
+[37]={184784,3},
+[38]={185544,7},
 },
 [1286]={ --The Deadlands
-[1]={"Raging Coast Wayshrine",1},
-[2]={"The Blood Pit Wayshrine",1},
-[3]={"Ardent Hope Wayshrine",1},
-[4]={"Wretched Spire Wayshrine",1},
-[5]={"False Martyrs' Folly Wayshrine",1},
-[6]={"Annihilarch's Summit Wayshrine",1},
-[7]={"The Blood Pit",29},
-[8]={"Burning Gyre Keep",31},
-[9]={"Ardent Hope",17},
-[11]={"The Brandfire Reformatory",3},
-[12]={"Destruction's Solace",9},
-[13]={"The Abomination Cradle",18},
-[14]={"Annihilarch's Summit",5},
-[15]={"False Martyrs' Folly",3},
-[16]={"Wretched Spire",32},
-[17]={"Portal to Fargrave",26},
-[18]={"Portal to Fargrave",26},
-[19]={"Stormwright's Cleft",8,{178819,3}},
-[20]={"The Razorworks",8,{179193,7}},
-[22]={"The Tempest Engine",2},
-[23]={"Traitor's Ascent",2},
-[24]={"Charnel Pulpit",2},
-[25]={"Chantry of the Moon Reiver",2},
-[26]={"Ravaged Crossing",2},
-[27]={"Zynoahz's Gaol",10},
-[28]={"Jynd's Foundry",10},
-[29]={"Wounded Crossing Wayshrine",1},
-[30]={"The Scourshales Wayshrine",1},
-[31]={"Den of the Unmaker",18},
-},
-[1282]={ --Fargrave
-[2]={"Fargrave Outskirts Wayshrine",1},
-[5]={"Fargrave Wayshrine",1},
+[19]={178819,3},
+[20]={179193,7},
 },
 [1283]={ --The Shambles
-[1]={"Forgotten Feretory",8,{179567,5}},
-[2]={"Skein Row",2},
-[3]={"The Bathhouse",28},
-[4]={"The Shambles Wayshrine",1},
+[1]={179567,5},
 },
 [1261]={ --Blackwood
-[1]={"Borderwatch",31},
-[2]={"White Stallion Inn",2},
-[3]={"Undertow Cavern",3},
-[4]={"Leyawiin",7},
-[6]={"Plateau of the Traveler",2},
-[7]={"Tidewater Cave",5},
-[8]={"Deepscorn Hollow",5},
-[9]={"Shardius's Excavation",18},
-[10]={"Fort Blueblood",2},
-[12]={"Veyond",11},
-[14]={"Fort Redmane",31},
-[15]={"Doomvault Vulpinaz",10},
-[16]={"Toad-Tongue War Camp",18},
-[17]={"Arpenia",3},
-[18]={"Shrine to Nocturnal",2},
-[19]={"Zenithar's Abbey",13},
-[20]={"Sul-Xan Ritual Site",18},
-[21]={"Welke",11},
-[22]={"Bloodrun Cave",3},
-[23]={"Bloodrun Wayshrine",1},
-[24]={"Farmer's Nook",32},
-[25]={"Old Deathwart's Pond",18},
-[26]={"Salvitto Estate",2},
-[28]={"Hutan-Tzel",32},
-[29]={"Doomvault Porcixid",3},
-[31]={"Gideon",7},
-[32]={"The Silent Halls",13},
-[33]={"Glenbridge",28},
-[34]={"Vunalk",3},
-[35]={"Xeemhok's Lagoon",18},
-[39]={"Ojel-Bak",2},
-[40]={"Stonewastes",32},
-[41]={"The Shattered Xanmeer",18},
-[42]={"Xi-Tsei",3},
-[43]={"Leyawiin Wayshrine",1},
-[44]={"Gideon Wayshrine",1},
-[45]={"Borderwatch Wayshrine",1},
-[46]={"Fort Redmane Wayshrine",1},
-[47]={"Blueblood Wayshrine",1},
-[48]={"Stonewastes Wayshrine",1},
-[50]={"Pentric Run",8,{173216,5}},
-[51]={"Sariellen's Sword",8,{172842,7}},
-[52]={"Withered Root",8,{172468,3}},
-[68]={"Ayleid Well",11},
-[69]={"Ayleid Well",11},
-[70]={"Ayleid Well",11},
-[71]={"Ayleid Well",11},
-[72]={"Ayleid Well",11},
-[73]={"Doomvault Vulpinaz Wayshrine",1},
-[74]={"Blackwood Crossroads Wayshrine",1},
-[75]={"Hutan-Tzel Wayshrine",1},
-[76]={"Vunalk Wayshrine",1},
+[50]={173216,5},
+[51]={172842,7},
+[52]={172468,3},
 },
 [1208]={
-[1]={"Nchuand-Zel",14},
-[2]={"Library of Arkthzand",15},
-[3]={"Bthar-Zel",14},
-[4]={"Sentinel Point",18},
-[5]={"Nighthollow Keep",9},
-[6]={"Gloomreach",3},
-[7]={"Nalzthdbar Great Lift",42},
-[8]={"Arkthzand Great Lift",42},
-[9]={"Arkthzand Wayshrine",1},
-[10]={"Nighthollow Wayshrine",1},
-[11]={"Philosopher's Cradle",8,{168760,9}},
-[12]={"Ghostlight Grotto",2},
-[13]={"Mistgloom Thicket",2},
+[11]={168760,9},
 },
 [1207]={--The Reach
-[1]={"Markarth",7},
-[2]={"Karthwasten",32},
-[3]={"Briar Rock Ruins",3},
-[4]={"Druadach Redoubt",8,{168386,6}},
-[6]={"Arkthzand Great Lift",42},
-[7]={"Four Skull Lookout",18},
-[8]={"Ragnvald Ritual Site",26},
-[9]={"Witchborne Ritual Site",26},
-[10]={"Deep Folk Crossing",2},
-[11]={"Rebel's Retreat",2},
-[12]={"Nalzthdbar Great Lift",42},
-[13]={"Harrowed Haunt Ritual Site",26},
-[14]={"Reachwind Ritual Site",26},
-[15]={"Understone Keep",15},
-[16]={"Bthardamz",2},
-[17]={"Red Eagle Redoubt",8,{168012,3}},
-[18]={"Reachwind Depths",14},
---[19]={"Arena: Vateshran Hollows",1},
-[20]={"Wildspear Clan Camp",4},
-[21]={"Valthume",6},
-[22]={"Lost Valley Redoubt",28},
-[23]={"Gloomreach",3},
-[24]={"Cinder-Heart Clan Camp",4},
-[25]={"North Markarth Wayshrine",1},
-[26]={"Karthwasten Wayshrine",1},
-[27]={"Briar Rock Wayshrine",1},
-[28]={"Rebel's Retreat Wayshrine",1},
-[29]={"Lost Valley Wayshrine",1},
-[30]={"Shadefeather Clan Camp",4},
-[31]={"Black-Moon Clan Camp",4},
-[32]={"Hroldan Ring",2},
-[33]={"Druadach Mountains Wayshrine",1},
-[34]={"Markarth Wayshrine",1},
+[4]={168386,6},
+[17]={168012,3},
 },
 [1161]={--Greymoor caverns
-[1]={"Dusktown",32},
-[2]={"Greymoor Keep",15},
-[3]={"The Lightless Hollow",5},
-[4]={"Dusktown Wayshrine",1},
-[5]={"Greymoor Keep Wayshrine",1},
-[6]={"Lightless Hollow Wayshrine",1},
-[7]={"Dark Moon Grotto Wayshrine",1},
-[8]={"Dark Moon Grotto",5},
-[9]={"Lightless Hollow Great Lift",42},
-[10]={"Dark Moon Grotto Great Lift",42},
-[12]={"Greymoor Cavern Great Lift",42},
-[13]={"Midnight Barrow",3},
-[14]={"The Scraps",3},
-[15]={"Vampire Feeding Grounds",18},
-[16]={"Colossus Charging Station",18},
-[17]={"Nchuthnkarst",13},
-[18]={"Gloomforest Ritual Site",26},
-[19]={"Dwarf's Bane Ritual Site",26},
-[20]={"Miner's Lament Ritual Site",26},
-[21]={"Nightstone Ritual Site",26},
-[22]={"Parasite's Cave",8,{163070,3}},
-[23]={"Dwarven Run Wayshrine",1},
-[24]={"Grotto Falls Wayshrine",1},
-[25]={"Deep Overlook Wayshrine",1},
-[26]={"Western Greymoor Wayshrine",1},
-[27]={"Darkrise Overlook",2},
-[28]={"Gloomstalker Village",2},
+[22]={163070,3},
 },
 [1160]={--Western Skryim
-[1]={"Solitude",7},
-[2]={"Morthal",32},
-[3]={"Karthwatch",32},
-[4]={"Dragon Bridge",32},
-[5]={"Kilkreath Temple",10},
-[6]={"Mor Khazgur",24},
-[7]={"The Silver Cormorant",43},
-[8]={"Frozen Coast",3},
-[9]={"Shadowgreen",3},
-[10]={"Chillwind Depths",3},
-[11]={"Dragonhome",3},
-[12]={"Labyrinthian",13},
-[13]={"Karthald Great Lift",42},
-[15]={"Hjaalmarch Great Lift",42},
-[16]={"Eastern Great Lift",42},
-[17]={"Kilkreath Temple Wayshrine",1},
-[18]={"Morthal Wayshrine",1},
-[19]={"Mor Khazgur Wayshrine",1},
-[20]={"Dragon Bridge Wayshrine",1},
-[21]={"Southern Watch Wayshrine",1},
-[22]={"Frozen Coast Wayshrine",1},
-[23]={"Solitude Wayshrine",1},
-[24]={"Hordrek's Hunting Grounds",18},
-[26]={"Circle of Champions",18},
-[27]={"Ysmgar's Beach",18},
-[28]={"Shademother's Haven",18},
-[29]={"Old Karth Ritual Site",26},
-[30]={"Black Morass Ritual Site",26},
-[31]={"Giant's Coast Ritual Site",26},
-[32]={"Chilblain Peak Ritual Site",26},
-[33]={"Hailstone Valley Ritual Site",26},
-[34]={"Northern Watch Ritual Site",26},
-[35]={"Coastal Giant Camp",4},
-[36]={"Karthald Giant Camp",4},
-[37]={"Kilkreath Giant Camp",4},
-[38]={"Highland Giant Camp",4},
---[39]={"Trial: Kyne's Aegis",2},
-[40]={"Solitude Docks Wayshrine",1},
-[42]={"Deepwood Vale Wayshrine",1},
-[43]={"Deepwood Giant Camp",4},
-[48]={"Hunter's House",8,{161234,5}},
-[49]={"Dragon's Belly",8,{161608,7}},
-[50]={"Lendoran Ruin",2},
-[51]={"Storm-Hawk's Altar",2},--?
-[52]={"Sword's Point Watchtower",2},
-[53]={"Wolf's Eye Lighthouse",2},--?
-[54]={"Mor Khazgur Giant Camp",4},
-[58]={"Giant's Coast Wayshrine",1},
-[59]={"Northern Watch Wayshrine",1},
+[48]={161234,5},
+[49]={161608,7},
 },
 [726]={--Murkmire
-[1]={"Lilmoth",7},
-[2]={"Bright-Throat Village",32},
-[3]={"Dead-Water Village",32},
-[4]={"Alten Meerhleel",2},
-[5]={"Lilmoth Wayshrine",1},
-[6]={"Bright-Throat Wayshrine",1},
-[7]={"Dead-Water Wayshrine",1},
-[8]={"Arena: Blackrose Prison",6},
-[9]={"Echoing Hollow",18},
-[10]={"Bok-Xul",18},
-[11]={"Tsofeer Cavern",3},
-[12]={"Teeth of Sithis",3},
-[13]={"The Dominus Fatum",2},
-[14]={"Ruined Guardhouse",2},
-[15]={"Root-Whisper Wayshrine",1},
-[16]={"Root-Whisper Village",2},
-[17]={"Ruined Village",8,{143544,4}},
-[18]={"Deep Swamp Forge",8,{143174,2}},
-[19]={"Sweet Breeze Overlook",8,{142804,7}},
-[20]={"Xinchei-Konu Monument",2},
-[22]={"Path of the Lily",2},
-[23]={"Blackrose Prison Wayshrine",1},
+[17]={143544,4},
+[18]={143174,2},
+[19]={142804,7},
 },
 [1027]={--Artaeum
-[1]={"Artaeum Craftworks",8,{136080,6}},
-[2]={"Ceporah Tower",31},
-[3]={"Artaeum Wayshrine",1},
-[4]={"Traitor's Vault",3},
-[5]={"Colosseum of the Old Ways",2},
+[1]={136080,6},
 },
 [1011]={--Summerset
-[1]={"King's Haven Pass Wayshrine",1},
-[2]={"Shimmerene Wayshrine",1},
-[3]={"Sil-Var-Woad Wayshrine",1},
-[4]={"Russafeld Heights Wayshrine",1},
-[5]={"Cey-Tarn Keep Wayshrine",1},
-[6]={"Ebon Stadmont Wayshrine",1},
-[7]={"Alinor",7},
-[8]={"Shimmerene",32},
-[9]={"Lillandril",32},
-[10]={"Direnni Acropolis",17},
-[11]={"Russafeld",16},
-[12]={"Sil-Var-Woad",21},
-[13]={"Rellenthil",28},
-[14]={"Cey-Tarn Keep",17},
-[15]={"Ebon Stadmont",21},
-[16]={"Sea Keep",17},
-[17]={"Illumination Academy",15},
-[18]={"Corgrad Wastes",4},
-[19]={"King's Haven Pass",3},
-[20]={"King's Haven Pass",3},
-[21]={"Eton Nir Grotto",3},
-[22]={"Archon's Grove",3},
-[23]={"Tor-Hame-Khard",3},
-[24]={"Wasten Coraldale",3},
-[25]={"Sunhold",13},
-[26]={"Karnwasten",13},
-[27]={"Graveld's Hideaway",18},
-[28]={"Keelsplitter's Nest",18},
-[29]={"Gryphon Run",18},
-[30]={"The Queen's Hatchery",18},
-[31]={"Welenkin Cove",18},
-[32]={"Indrik Frolic",18},
-[33]={"Shimmerene Dockworks",8,{135730,3}},
-[34]={"Augury Basin",8,{136430,9}},
-[35]={"Cathedral of Webs",2},
-[36]={"Alinor Docks",2},
-[37]={"Ald Mora Ruins",2},
-[38]={"Gryphon Aerie",2},
-[39]={"Keep of the Eleven Forces",2},
-[40]={"Garden of the Sacred Numbers",2},
-[41]={"Alinor Wayshrine",1},
-[42]={"Lillandril Wayshrine",1},
-[43]={"Eastern Pass Wayshrine",1},
-[44]={"Direnni Abyssal Geyser",26},
-[45]={"The Crystal Tower Wayshrine",1},
-[46]={"Sil-Var-Woad Abyssal Geyser",26},
-[47]={"Eldbur Ruins Wayshrine",1},
-[49]={"Rellenthil Abyssal Geyser",26},
-[50]={"Eldbur Ruins",2},
-[51]={"Corgrad Abyssal Geyser",26},
-[52]={"Welenkin Abyssal Geyser",26},
-[53]={"Dusk Keep",2},
-[54]={"Cloudrest",27},
-[55]={"Sunhold Wayshrine",1},
-[56]={"Alaxon'ald",2},
-[57]={"Veyond Wyte Wayshrine",1},
-[58]={"Sunhold Abyssal Geyser",26},
-[62]={"Dungeon: Coral Aerie",20},
+[33]={135730,3},
+[34]={136430,9},
 },
 [3]={--Glenumbra
-[1]={"Red Rook Camp",4},
-[2]={"Hag Fen",21},
-[3]={"Burial Mounds",9},
-[4]={"Daggerfall",7},
-[5]={"Deleyn's Mill",16},
-[6]={"Aldcroft",32},
-[7]={"Shrieking Scar",4},
-[8]={"Glenumbra Moors",33},
-[9]={"Westtry",32},
-[10]={"Lion Guard Redoubt",4},
-[11]={"Vale of the Guardians",21},
-[12]={"Eagle's Brook",32},
-[13]={"Camlorn",7},
-[14]={"Beldama Wyrd Tree",21},
-[15]={"Tomb of Lost Kings",9},
-[16]={"Crosswych",32},
-[17]={"Cath Bedraud",6},
-[18]={"Dresan Keep",28},
-[19]={"Baelborne Rock",28},
-[20]={"Ilessan Tower",3},
-[21]={"Silumm",3},
-[22]={"Mines of Khuras",3},
-[23]={"Enduum",3},
-[24]={"Ebon Crypt",3},
-[25]={"Cryptwatch Fort",3},
-[26]={"Wyrd Tree Wayshrine",1},
-[27]={"Aldcroft Wayshrine",1},
-[28]={"Deleyn's Mill Wayshrine",1},
-[29]={"Eagle's Brook Wayshrine",1},
-[30]={"North Hag Fen Wayshrine",1},
-[31]={"Lion Guard Redoubt Wayshrine",1},
-[32]={"Crosswych Wayshrine",1},
-[33]={"Farwatch Wayshrine",1},
-[34]={"Baelborne Rock Wayshrine",1},
-[35]={"Daggerfall Wayshrine",1},
-[36]={"Burial Tombs Wayshrine",1},
-[37]={"The Lover",25,13981},
-[38]={"The Lady",25,13976},
-[39]={"Dwynnarth Ruins",11},
-[40]={"Cambray Pass",28},
-[41]={"Bad Man's Hallows",13},
-[42]={"Dungeon: Spindleclutch I",20},
-[43]={"Daenia Dolmen",26},
-[44]={"Cambray Hills Dolmen",26},
-[45]={"King's Guard Dolmen",26},
-[46]={"The Harborage",5},
-[47]={"Seaview Point",18},
-[48]={"Western Overlook",18},
-[49]={"The Wolf's Camp",18},
-[50]={"North Shore Point",18},
-[51]={"Trapjaw's Cove",18},
-[52]={"Balefire Island",18},
-[53]={"Valewatch Tower",2},
-[54]={"Merovec's Folly",2},
-[55]={"Tangle Rock",2},
-[56]={"Mesanthano's Tower",8,{43815,2}},
-[57]={"Mire Falls",2},
-[58]={"Miltrin's Fishing Cabin",2},
-[59]={"Gaudet Farm",2},
-[60]={"Chill House",8,{43803,2}},
-[61]={"Par Molag",8,{43871,2}},
-[62]={"Dourstone Isle",2},
-[65]={"Hag Fen Wayshrine",1},
-[66]={"Dungeon: Spindleclutch II",20},
-[72]={"Shrine of Hircine",46},
-[73]={"Shrine of Molag Bal",47},
+[37]=13981, -- The Lover
+[38]=13976, -- The Lady
+[56]={43815,2},
+[60]={43803,2},
+[61]={43871,2},
 },
 [101]={--Eastmarch
-[1]={"Thulvald's Logging Camp",4},
-[2]={"The Thief",25,13975},
-[3]={"The Warrior",25,13940},
-[4]={"The Ritual",25,13980},
-[5]={"Lower Yorgrim",32},
-[6]={"Kynesgrove",21},
-[7]={"Windhelm",7},
-[8]={"Fort Morvunskar",31},
-[9]={"Cradlecrush",31},
-[10]={"Mzulft",14},
-[11]={"Wittestadr",32},
-[12]={"Bonestrewn Crest",9},
-[13]={"Fort Amol",31},
-[14]={"Windhelm Wayshrine",1},
-[15]={"Fort Morvunskar Wayshrine",1},
-[16]={"Kynesgrove Wayshrine",1},
-[17]={"Voljar Meadery Wayshrine",1},
-[18]={"Cradlecrush Wayshrine",1},
-[19]={"Fort Amol Wayshrine",1},
-[20]={"Wittestadr Wayshrine",1},
-[21]={"Mistwatch Wayshrine",1},
-[22]={"Jorunn's Stand Wayshrine",1},
-[23]={"Logging Camp Wayshrine",1},
-[24]={"Skuldafn Wayshrine",1},
-[25]={"Mistwatch",31},
-[26]={"The Chill Hollow",3},
-[27]={"Icehammer's Vault",3},
-[28]={"Old Sord's Cave",3},
-[29]={"The Frigid Grotto",3},
-[30]={"Stormcrag Crypt",3},
-[31]={"The Bastard's Tomb",3},
-[32]={"Voljar's Meadery",32},
-[33]={"Lost Knife Cave",24},
-[34]={"Cragwallow",32},
-[35]={"Jorunn's Stand",4},
-[36]={"Skuldafn",28},
-[37]={"Hall of the Dead",13},
-[38]={"Giant's Run Dolmen",26},
-[39]={"Frostwater Tundra Dolmen",26},
-[40]={"Icewind Peaks Dolmen",26},
-[41]={"Dungeon: Direfrost Keep",20},
-[42]={"Rageclaw's Den",18},
-[43]={"Dragon Mound",18},
-[44]={"Ratmaster's Prowl",18},
-[45]={"Dragon's Hallow",18},
-[46]={"Ammabani's Pride",18},
-[47]={"Swiftblade's Camp",18},
-[48]={"Darkwater Crossing",32},
-[49]={"Giant's Heart",2},
-[50]={"Ragnthar",2},
-[51]={"Cragwallow Cave",2},
-[52]={"Hammerhome",8,{44019,5}},
-[53]={"Bitterblade's Camp",2},
-[54]={"Tinkerer Tobin's Workshop",8,{44013,5}},
-[55]={"Crimson Kada's Crafting Cavern",8,{43831,5}},
-[56]={"Hermit's Hideout",2},
-[57]={"Thane Jeggi's Drinking Hole",2},
+[2]=13975, -- The Thief
+[3]=13940, -- The Warrior
+[4]=13980, -- The Ritual
+[52]={44019,5},
+[54]={44013,5},
+[55]={43831,5},
 },
 [103]={--The Rift
-[1]={"Shor's Stone",32},
-[2]={"Vernim Woods",21},
-[3]={"Boulderfall Pass",31},
-[4]={"Pinepeak Cavern",5},
-[5]={"Nimalten",32},
-[6]={"Fallowstone Hall",31},
-[7]={"Northwind Mine",24},
-[8]={"Honrich Tower",28},
-[9]={"Taarengrav",28},
-[10]={"Skald's Retreat",15},
-[11]={"Treva's Farm",16},
-[12]={"Trolhetta",33},
-[13]={"Forelhost",9},
-[14]={"Riften Wayshrine",1},
-[15]={"Skald's Retreat Wayshrine",1},
-[16]={"Trolhetta Wayshrine",1},
-[17]={"Trolhetta Summit Wayshrine",1},
-[18]={"Lost Prospect",33},
-[19]={"Geirmund's Hall",32},
-[20]={"The Steed",25,13977},
-[21]={"Riften",7},
-[22]={"Fullhelm Fort",31},
-[23]={"Honrich Tower Wayshrine",1},
-[24]={"Fallowstone Hall Wayshrine",1},
-[25]={"Northwind Mine Wayshrine",1},
-[26]={"Geirmund's Hall Wayshrine",1},
-[27]={"Taarengrav Wayshrine",1},
-[28]={"Nimalten Wayshrine",1},
-[29]={"Ragged Hills Wayshrine",1},
-[30]={"Fullhelm Fort Wayshrine",1},
-[31]={"Lion's Den",13},
-[32]={"Broken Helm Hollow",3},
-[33]={"Fort Greenwall",3},
-[34]={"Faldar's Tooth",3},
-[35]={"Avanchnzel",3},
-[36]={"Snapleg Cave",3},
-[37]={"Shroud Hearth Barrow",3},
-[38]={"Ivarstead",32},
-[39]={"Ragged Hills Dolmen",26},
-[40]={"Stony Basin Dolmen",26},
-[41]={"Smokefrost Peaks Dolmen",26},
-[42]={"Dungeon: Blessed Crucible",20},
-[43]={"The Apprentice",25,13979},
-[44]={"Hunter Camp",18},
-[45]={"Troll Cave",18},
-[46]={"Frozen Ruins",18},
-[47]={"Angarvunde Mound",18},
-[48]={"Giant Camp",18},
-[49]={"Wisplight Glen",18},
-[50]={"Linele Skullcarver's Camp",2},
-[51]={"Three Tribes Camp",2},
-[52]={"Autumnshade Clearing",2},
-[53]={"Smokefrost Vigil",8,{44001,6}},
-[54]={"Mammoth Ridge",2},
-[55]={"Honeystrand Hill",2},
-[56]={"Grethel's Vigil",2},
-[57]={"Eldbjorg's Hideaway",8,{43859,6}},
-[58]={"Jenedusil's Claw",2},
-[59]={"Trollslayer's Gully",8,{44007,6}},
-[60]={"Frostmoon Farmstead",16},
+[20]=13977, -- The Steed
+[43]=13979, -- The Apprentice
+[53]={44001,6},
+[57]={43859,6},
+[59]={44007,6},
 },
 [104]={--Alik'r Desert
-[1]={"Sentinel Docks",12},
-[2]={"Ancestor's Landing",28},
-[3]={"Rain Catcher Fields",4},
-[4]={"Morwha's Bounty",4},
-[5]={"Tu'whacca's Throne",28},
-[6]={"Kulati Mines",24},
-[7]={"Leki's Blade",32},
-[8]={"Sep's Spine",4},
-[9]={"Bergama",7},
-[10]={"Tava's Blessing",7},
-[11]={"HoonDing's Watch",28},
-[12]={"Satakalaam",7},
-[13]={"Kozanset",7},
-[14]={"Sentinel",7},
-[15]={"Salas En",11},
-[16]={"Motalion Necropolis",6},
-[17]={"Morwha's Bounty Wayshrine",1},
-[18]={"Sentinel Wayshrine",1},
-[19]={"Bergama Wayshrine",1},
-[20]={"Leki's Blade Wayshrine",1},
-[21]={"Satakalaam Wayshrine",1},
-[22]={"Santaki",3},
-[23]={"Divad's Chagrin Mine",3},
-[24]={"Aldunz",3},
-[25]={"Coldrock Diggings",3},
-[26]={"Sandblown Mine",3},
-[27]={"Yldzuun",3},
-[28]={"Lost City of the Na-Totambu",13},
-[29]={"Divad's Chagrin Mine Wayshrine",1},
-[30]={"Kulati Mines Wayshrine",1},
-[31]={"Aswala Stables Wayshrine",1},
-[32]={"Sep's Spine Wayshrine",1},
-[33]={"Ogre's Bluff",21},
-[34]={"Shrikes' Aerie Wayshrine",1},
-[35]={"HoonDing's Watch Wayshrine",1},
-[36]={"Myrkwasa Dolmen",26},
-[37]={"Hollow Waste Dolmen",26},
-[38]={"Tigonus Dolmen",26},
-[39]={"The Warrior",25,13940},
-[40]={"The Ritual",25,13980},
-[41]={"The Thief",25,13975},
-[42]={"Dungeon: Volenfell",20},
-[43]={"Goat's Head Oasis Wayshrine",1},
-[44]={"Lost Caravan",18},
-[45]={"Lesser Circle",18},
-[46]={"Giant Camp",18},
-[47]={"Forsaken Hearts Cave",18},
-[48]={"Hag Camp",18},
-[49]={"King's Rest",18},
-[50]={"Saltwalker Militia Camp",4},
-[51]={"Aswala's Remembrance",2},
-[52]={"Tears of the Dishonored",4},
-[53]={"Ragnthar",2},
-[54]={"Rkulftzel",8,{44013,5}},
-[55]={"Alezer Kotu",8,{44019,5}},
-[56]={"Easterly Aerie",2},
-[57]={"Hatiha's Camp",2},
-[58]={"Na-Totambu's Landing",2},
-[59]={"Artisan's Oasis",8,{43831,5}},
-[60]={"Duneripper Downs",2},
-[61]={"Wayfarer's Wharf",2},
+[39]=13940, -- The Warrior
+[40]=13980, -- The Ritual
+[41]=13975, -- The Thief
+[54]={44013,5},
+[55]={44019,5},
+[59]={43831,5},
 },
 [41]={--Stonefalls
-[1]={"Fort Arand",31},
-[2]={"Vivec's Antlers",33},
-[3]={"Starved Plain",33},
-[4]={"Davon's Watch",7},
-[5]={"Hrogar's Hold",16},
-[6]={"Othrenis",9},
-[7]={"Sathram Plantation",16},
-[8]={"Brothers of Strife",28},
-[9]={"Heimlyn Keep",31},
-[10]={"Kragenmoor",7},
-[11]={"Lukiul Uxith",32},
-[12]={"Senie",32},
-[13]={"Sulfur Pools",16},
-[14]={"Iliath Temple",15},
-[15]={"Ebonheart",7},
-[16]={"Tormented Spire",5},
-[17]={"Ash Mountain",10},
-[18]={"Crow's Wood",13},
-[19]={"Fort Virak",31},
-[20]={"Davon's Watch Wayshrine",1},
-[21]={"Othrenis Wayshrine",1},
-[22]={"Fort Arand Wayshrine",1},
-[23]={"Ebonheart Wayshrine",1},
-[24]={"Vivec's Antlers Wayshrine",1},
-[25]={"Brothers of Strife Wayshrine",1},
-[26]={"Hrogar's Hold Wayshrine",1},
-[27]={"Fort Virak Wayshrine",1},
-[28]={"Iliath Temple Wayshrine",1},
-[29]={"Sathram Plantation Wayshrine",1},
-[30]={"Kragenmoor Wayshrine",1},
-[31]={"Ashen Road Wayshrine",1},
-[32]={"The Lady",25,13976},
-[33]={"The Lover",25,13981},
-[34]={"Dungeon: Fungal Grotto I",20},
-[35]={"Inner Sea Armature",3},
-[36]={"Mephala's Nest",3},
-[37]={"Softloam Cavern",3},
-[38]={"Emberflint Mine",3},
-[39]={"Sulfur Pools Wayshrine",1},
-[40]={"Senie Wayshrine",1},
-[41]={"Hightide Hollow",3},
-[42]={"Sheogorath's Tongue",3},
-[43]={"Daen Seeth Dolmen",26},
-[44]={"Zabamat Dolmen",26},
-[45]={"Varanis Dolmen",26},
-[46]={"The Harborage",5},
-[47]={"Strifeswarm Hive",18},
-[48]={"The Matron's Clutch",18},
-[49]={"Shivering Shrine",18},
-[50]={"Cave of Memories",18},
-[51]={"Shipwreck Strand",18},
-[52]={"Still-Water's Camp",2},
-[53]={"Strifeswarm Kwama Mine",2},
-[54]={"Armature's Upheaval",8,{43803,2}},
-[55]={"Stonefang Isle",2},
-[56]={"Steamfont Cavern",8,{43815,2}},
-[57]={"Dagger's Point Invasion Camp",2},
-[58]={"Davenas Farm",2},
-[59]={"Magmaflow Overlook",8,{43871,2}},
-[60]={"Greymist Falls",2},
-[61]={"Steamlake Encampment",2},
-[62]={"The Brahma's Grove",18},
-[66]={"Dungeon: Fungal Grotto II",20},
-[71]={"Shrine of Hircine",46},
-[72]={"Shrine of Molag Bal",47},
+[32]=13976, -- The Lady
+[33]=13981, -- The Lover
+[54]={43803,2},
+[56]={43815,2},
+[59]={43871,2},
 },
 [684]={--Wrothgar
-[1]={"Paragon's Remembrance",28},
-[2]={"Old Orsinium",13},
-[3]={"Watcher's Hold",3},
-[4]={"Honor's Rest",6},
-[6]={"Poacher's Encampment",18},
-[7]={"Sorrow",5},
-[8]={"Thukhozod's Sanctum",3},
-[9]={"Fharun Stronghold",15},
-[11]={"Frostbreak Fortress",31},
-[12]={"Unfinished Dolmen",18},
-[13]={"Graystone Quarry",24},
-[14]={"King-Chief's Throne",18},
-[15]={"The Accursed Nursery",18},
-[16]={"The Mad Ogre's Altar",18},
-[17]={"Nyzchaleft Falls",18},
-[19]={"Argent Mine",3},
-[21]={"Nikolvara's Kennel",3},
-[23]={"Zthenganaz",3},
-[24]={"Coldperch Cavern",3},
-[25]={"Bonerock Cavern",5},
-[26]={"Morkul Stronghold",15},
-[27]={"Shatul Range",16},
-[28]={"Exile's Barrow",28},
-[29]={"Rkindaleft",13},
-[30]={"Frozen Fleet",4},
-[33]={"Orsinium",7},
-[34]={"Siege Road Wayshrine",1},
-[35]={"Frostbreak Ridge Wayshrine",1},
-[36]={"Trader's Road Wayshrine",1},
-[37]={"Orsinium Wayshrine",1},
-[38]={"Shatul Wayshrine",1},
-[39]={"Great Bay Wayshrine",1},
-[40]={"Two Rivers Wayshrine",1},
-[41]={"Icy Shore Wayshrine",1},
-[42]={"Morkul Plain Wayshrine",1},
-[43]={"Aqueduct Rock",2},
-[44]={"Grudge-Rock Falls",2},
-[45]={"Shipwreck Cove",2},
-[46]={"Forlorn Watchtower",2},
-[47]={"Jehanna Docks",2},
-[48]={"Torug's Arch",2},
-[49]={"Friendship Gate",17},
-[50]={"Merchant's Gate",17},
-[51]={"Malacath Statue",8,{69949,3}},
-[52]={"Boreal Forge",8,{69606,6}},
-[53]={"Morkuldin Forge",8,{70642,9}},
-[54]={"Merchant's Gate Wayshrine",1},
-[55]={"Arena: Maelstrom",30},
+[51]={69949,3},
+[52]={69606,6},
+[53]={70642,9},
 },
 [888]={--Craglorn
-[1]={"Belkarth",32},
-[2]={"Bangkorai Gate",2},
-[3]={"Proving Grounds Dolmen",2},
-[4]={"Crossroads Encampment",2},
-[5]={"Rahni'Za,School of Warriors",23},
-[6]={"The Seeker's Archive",15},
-[7]={"Shada's Tear",28},
-[8]={"Elinhir",23},
-[9]={"Spellscar",5},
-[10]={"Dragonstar",32},
-[11]={"Dragonstar Arena",20},
-[12]={"Atelier of the Twice-Born Star",8,{58153,9}},
-[13]={"Molavar",3},
-[14]={"Rkundzelft",19},
-[15]={"Serpent's Nest",3},
-[16]={"Ruins of Kardala",19},
-[17]={"Ilthag's Undertower",3},
-[18]={"Loth'Na Caverns",3},
-[19]={"Rkhardahrk",19},
-[20]={"Haddock's Market",3},
-[21]={"Chiselshriek Mine",19},
-[22]={"Buried Sands",3},
-[23]={"Mtharnaz",19},
-[24]={"The Howling Sepulchers",3},
-[25]={"Balamath",3},
-[26]={"Fearfangs Cavern",3},
-[27]={"Exarch's Stronghold",3},
-[28]={"Zalgaz's Den",19},
-[29]={"Tombs of the Na-Totambu",3},
-[30]={"Hircine's Haunt",19},
-[31]={"Trial: Hel Ra Citadel",27},
-[32]={"Trial: Aetherian Archive",27},
-[33]={"Trial: Sanctum Ophidia",27},
-[34]={"Skyreach Pinnacle",28},
-[35]={"Skyreach Catacombs",6},
-[36]={"Skyreach Hold",22},
-[37]={"Taborra's Camp",2},
-[38]={"Inazzur's Hold",2},
-[39]={"Thunder Falls Camp",2},
-[40]={"Scorpion Ravine",2},
-[41]={"Lake of Teeth",2},
-[42]={"Ogondar's Winery",2},
-[43]={"Lanista's Waystation",8,{54787,8}},
-[44]={"Sunken Lair",2},
-[45]={"Skyreach Overlook",2},
-[46]={"Conflagrant Anomaly",18},
-[47]={"Fulminant Anomaly",18},
-[48]={"Adamant Anomaly",18},
-[49]={"Cyclonic Anomaly",18},
-[50]={"Boreal Anomaly",18},
-[51]={"Anka-Ra's Vigil",18},
-[52]={"Anka-Ra's Plight",18},
-[53]={"Anka-Ra's Avowal",18},
-[54]={"Anka-Ra's Crucible",18},
-[55]={"Anka-Ra's Mettle",18},
-[56]={"Fortified Nirncrux Mine",18},
-[57]={"Overrun Nirncrux Mine",18},
-[58]={"Neglected Nirncrux Mine",18},
-[59]={"Secluded Nirncrux Mine",18},
-[60]={"Pillaged Nirncrux Mine",18},
-[61]={"Seeker's Archive Wayshrine",1},
-[62]={"Sandy Path Wayshrine",1},
-[63]={"Shada's Tear Wayshrine",1},
-[64]={"Belkarth Wayshrine",1},
-[65]={"Elinhir Wayshrine",1},
-[66]={"Spellscar Wayshrine",1},
-[67]={"Mountain Overlook Wayshrine",1},
-[68]={"Inazzur's Hold Wayshrine",1},
-[69]={"Dragonstar Wayshrine",1},
-[70]={"Skyreach Wayshrine",1},
-[71]={"Valley of Scars Wayshrine",1},
+[12]={58153,9},
+[43]={54787,8},
 },
 [108]={--Greenshade
-[1]={"Rulanyil's Fall",13},
-[2]={"Bramblebreach",21},
-[3]={"Woodhearth",7},
-[4]={"Rootwater Grove",21},
-[5]={"Verrant Morass",21},
-[6]={"Shademist Moors",21},
-[7]={"Moonhenge",11},
-[8]={"Shadows Crawl",28},
-[9]={"Driladan Pass",17},
-[10]={"Shrouded Vale",5},
-[11]={"Serpent's Grotto",5},
-[12]={"Spinner's Cottage",32},
-[13]={"Seaside Sanctuary",28},
-[14]={"Greenheart",23},
-[15]={"Dread Vullain",32},
-[16]={"Hectahame",11},
-[17]={"Greenheart Wayshrine",1},
-[18]={"Marbruk Wayshrine",1},
-[19]={"Labyrinth Wayshrine",1},
-[20]={"Falinesti Wayshrine",1},
-[21]={"Seaside Sanctuary Wayshrine",1},
-[22]={"Verrant Morass Wayshrine",1},
-[23]={"Woodhearth Wayshrine",1},
-[24]={"Moonhenge Wayshrine",1},
-[25]={"Serpent's Grotto Wayshrine",1},
-[26]={"The Atronach",25,13982},
-[27]={"The Serpent",25,13974},
-[28]={"The Shadow",25,13984},
-[29]={"Green's Marrow Dolmen",26},
-[30]={"Drowned Coast Dolmen",26},
-[31]={"Wilderking Court Dolmen",26},
-[32]={"Marbruk",7},
-[33]={"Gurzag's Mine",3},
-[34]={"Carac Dena",3},
-[35]={"Naril Nagaia",3},
-[36]={"The Underroot",3},
-[37]={"Harridan's Lair",3},
-[38]={"Barrow Trench",3},
-[39]={"Dungeon: City of Ash I",20},
-[40]={"Reconnaissance Camp",18},
-[41]={"Pelda Tarn",18},
-[42]={"Gathongor's Mire",18},
-[43]={"Rootwater Spring",18},
-[44]={"Thodundor's View",18},
-[45]={"Maormer Camp",18},
-[46]={"Falinesti Spring Site",21},
-[47]={"Seaside Overlook",2},
-[48]={"Twin Falls Rest",2},
-[49]={"Echo Pond",2},
-[50]={"Lanalda Pond",8,{43819,4}},
-[51]={"Hollow Den",2},
-[52]={"Arananga",8,{43847,4}},
-[53]={"Tower Rocks Vale",2},
-[54]={"Camp Gushnukbur",2},
-[55]={"Rootwatch Tower",8,{43995,4}},
-[56]={"Fisherman's Rest",2},
-[57]={"Labyrinth",11},
-[58]={"Dungeon: City of Ash II",20},
-},
-[537]={--Khenrati's Roost
-[1]={"Eagle's Strand",4},
-[2]={"Temple of the Mourning Springs",28},
-[3]={"Shattered Shoals",12},
-[4]={"Mistral",7},
-[5]={"Khenarthi's Roost Wayshrine",1},
-[6]={"Mistral Wayshrine",1},
-[7]={"Hazak's Hollow",5},
-[8]={"Cat's Eye Quay",12},
-[9]={"Windcatcher Plantation",16},
-[10]={"Speckled Shell Plantation",16},
-[11]={"Laughing Moons Plantation",16},
-[12]={"Bolga's Hunting Camp",2},
-[13]={"Temple of the Crescent Moons",2},
-[14]={"Temple of Two-Moons Dance",2},
-[15]={"Temple of the Dark Moon",2},
-[16]={"Rid-Thar's Solace",2},
+[26]=13982, -- The Atronach
+[27]=13974, -- The Serpent
+[28]=13984, -- The Shadow
+[50]={43819,4},
+[52]={43847,4},
+[55]={43995,4},
 },
 [117]={--Shadowfen
-[1]={"Alten Corimont",12},
-[2]={"Stormhold",7},
-[3]={"Stillrise Village",32},
-[4]={"Zuuk",11},
-[5]={"Hissmir",28},
-[6]={"Xal Ithix",16},
-[7]={"Deep Graves",6},
-[8]={"Ten-Maur-Wolk",10},
-[9]={"Murkwater",12},
-[11]={"Bogmother",28},
-[12]={"Forsaken Hamlet",32},
-[13]={"Hatching Pools",21},
-[14]={"Sunscale Strand",28},
-[15]={"Mud Tree Village",24},
-[16]={"Percolating Mire",15},
-[17]={"Atronach Stone",25,13982},
-[18]={"The Shadow",25,13984},
-[19]={"Serpent Stone",25,13974},
-[20]={"Stillrise Wayshrine",1},
-[21]={"Stormhold Wayshrine",1},
-[22]={"Hatching Pools Wayshrine",1},
-[23]={"Bogmother Wayshrine",1},
-[24]={"Alten Corimont Wayshrine",1},
-[25]={"White Rose Prison",31},
-[26]={"Percolating Mire Wayshrine",1},
-[27]={"Hissmir Wayshrine",1},
-[28]={"Loriasel Wayshrine",1},
-[30]={"Venomous Fens Wayshrine",1},
-[31]={"Forsaken Hamlet Wayshrine",1},
-[32]={"Loriasel",11},
-[33]={"Shrine of the Black Maw",3},
-[34]={"Broken Tusk",3},
-[35]={"Atanaz Ruins",3},
-[36]={"Onkobra Kwama Mine",3},
-[37]={"Chid-Moska Ruins",3},
-[38]={"Gandranen Ruins",3},
-[39]={"Dungeon: Arx Corinium",20},
-[40]={"Sanguine's Demesne",13},
-[41]={"Reticulated Spine Dolmen",26},
-[42]={"Leafwater Dolmen",26},
-[43]={"Venomous Fens Dolmen",26},
-[44]={"Haynekhtnamet's Lair",18},
-[45]={"Captain Bones' Ship",18},
-[46]={"Bitterroot Cave",18},
-[47]={"Nen Ria",18},
-[48]={"Xal Thak",18},
-[49]={"Slaver Camp",18},
-[50]={"Xal Haj-Ei Shrine",8,{43847,4}},
-[51]={"Camp Silken Snare",2},
-[52]={"The Vile Pavilion",2},
-[53]={"Camp Merciful Reduction",2},
-[54]={"Tsonashap Mine",2},
-[55]={"The Graceful Dominator",2},
-[56]={"Camp Crystal Abattoir",2},
-[57]={"Hatchling's Crown",8,{43995,4}},
-[58]={"Telvanni Acquisition Camp",2},
-[59]={"Weeping Wamasu Falls",8,{43819,4}},
-[60]={"Hei-Halai",2},
-[61]={"Dungeon: Cradle of Shadows",20},
-[62]={"Dungeon: Ruins of Mazzatun",20},
+[17]=13982, -- The Atronach
+[18]=13984, -- The Shadow
+[19]=13974, -- The Serpent
+[50]={43847,4},
+[57]={43995,4},
+[59]={43819,4},
 },
 [584]={--Imperial City
-[3]={"Sewer Entrance",29},
-[4]={"Sewer Entrance",29},
-[5]={"Sewer Entrance",29},
-[6]={"Sewer Entrance",29},
-[8]={"Sewer Entrance",29},
-[9]={"Sewer Entrance",29},
-[22]={"Arboretum Armory",8,{60618,7}},
-[23]={"Nobles Armory",8,{60280,5}},
-[24]={"Memorial Armory",8,{60973,9}},
-[25]={"Arboretum",32},
-[26]={"Arena District",32},
-[27]={"Elven Gardens District",32},
-[28]={"Memorial District",32},
-[29]={"Nobles District",32},
-[30]={"Temple District",32},
-[31]={"Dungeon: Imperial City Prison",20},
-[32]={"Legionary Trophy Vault",39},
-[33]={"Planar Armor Trophy Vault",35},
-[34]={"Bone Shard Trophy Vault",38},
-[35]={"Ethereal Trophy Vault",40},
-[36]={"Clawed Trophy Vault",36},
-[37]={"Monstrous Tooth Trophy Vault",37},
-},
-[643]={--Imperial Sewers
-[4]={"Aldmeri Dominion Base",29},
-[8]={"Ebonheart Pact Base",29},
-[13]={"Daggerfall Covenant Base",29},
-[19]={"Ladder to Memorial District",29},
-[20]={"Ladder to Arena District",29},
-[21]={"Ladder to Temple District",29},
-[22]={"Ladder to Arboretum",29},
-[23]={"Ladder to Nobles District",29},
-[24]={"Ladder to Elven Gardens",29},
-[25]={"Ebral the Betrayer",33},
-[26]={"Emperor Leovic",33},
-[27]={"Gati the Storm Sister",33},
-[28]={"Hzu-Hakan",33},
-[29]={"Lady of the Depths",33},
-[30]={"Otholug gro-Goldfolly",33},
-[31]={"Secundinus the Despoiler",33},
-[32]={"Taebod the Gatekeeper",33},
-[33]={"Wadracki",33},
-[34]={"Drain-Dweller's Outpost",2},
-[35]={"Unfinished Memoirs",2},
-[36]={"Alik'ri Alcove",2},
-[44]={"General Nazenaechar",33},
-[45]={"General Kryozote",33},
-[46]={"General Zamachar",33},
-[47]={"Bloodmist Slaughterhouse",2},
-[48]={"Headsman's Bone Pile",2},
-[49]={"Inquisitor's Retreat",2},
-[50]={"Dungeon: White-Gold Tower",20},
-[51]={"Dungeon: White-Gold Tower",20},
-[52]={"Dungeon: White-Gold Tower",20},
+[22]={60618,7},
+[23]={60280,5},
+[24]={60973,9},
 },
 [816]={--Hew's Bane
-[1]={"Shark's Teeth Grotto",3},
-[2]={"Bahraha's Gloom",3},
-[4]={"Thrall Cove",18},
-[5]={"Ko Estaran",18},
-[6]={"Tava's Beak",2},
-[7]={"Hubalajad's Reflection",2},
-[8]={"Prince Hew's Shuttered Tomb",2},
-[9]={"Abah's Landing",7},
-[11]={"No Shira Citadel",28},
-[14]={"Abah's Landing Wayshrine",1},
-[15]={"Zeht's Displeasure Wayshrine",1},
-[16]={"No Shira Citadel Wayshrine",1},
-[17]={"Placations of Zeht",2},
-[19]={"The Lost Pavilion",8,{72502,9}},
-[21]={"Forebear's Junction",8,{71795,5}},
-[24]={"No Shira Workshop",8,{72145,7}},
-},
-[281]={--Bal Foyen
-[1]={"Dhalmora",32},
-[2]={"Dhalmora Wayshrine",1},
-[3]={"Fort Zeren Wayshrine",1},
-[4]={"Foyen Docks Wayshrine",1},
-[5]={"Bal Foyen Dockyards",12},
-[6]={"Fort Zeren",22},
-[7]={"Hidden Dagger Landing Site",2},
-[8]={"Plantation Point Overlook",2},
+[19]={72502,9},
+[21]={71795,5},
+[24]={72145,7},
 },
 [823]={--Goald Coast
-[1]={"Anvil Wayshrine",1},
-[2]={"Kvatch Wayshrine",1},
-[3]={"Strid River Wayshrine",1},
-[4]={"Gold Coast Wayshrine",1},
-[5]={"Kvatch",7},
-[6]={"Anvil",7},
-[7]={"Hrota Cave",3},
-[8]={"Garlas Agea",3},
-[9]={"Knightsgrave",28},
-[10]={"Tribune's Folly",18},
-[11]={"At-Himah Family Estate",2},
-[12]={"Beldaburo",2},
-[13]={"Enclave of the Hourglass",22},
-[14]={"Jarol Estate",2},
-[15]={"Anvil Lighthouse",2},
-[16]={"Varen's Wall Gatehouse",2},
-[17]={"Garlas Malatar",2},
-[18]={"Marja's Mill",8,{75397,5}},
-[19]={"Strid River Artisans Camp",8,{75747,7}},
-[20]={"Colovian Revolt Forge Yard",8,{76120,9}},
-[21]={"Kvatch Arena",18},
-[22]={"Dark Brotherhood Sanctuary",41},
+[18]={75397,5},
+[19]={75747,7},
+[20]={76120,9},
 },
 [19]={--Stormhaven
-[1]={"Aphren's Hold",9},
-[2]={"Shinji's Scarp",32},
-[3]={"Dro-Dara Plantation",16},
-[4]={"Soulshriven Tower",28},
-[5]={"Farangel's Landing",12},
-[6]={"Pariah Abbey",15},
-[7]={"Wind Keep",32},
-[8]={"Dreughside",7},
-[9]={"Cumberland's Watch",31},
-[10]={"at-Tura Estate",15},
-[11]={"Koeglin Lighthouse",23},
-[12]={"Steelheart Moorings",12},
-[13]={"Firebrand Keep",22},
-[14]={"Moonlit Maw",5},
-[15]={"Nurin Farm",16},
-[16]={"Vanne Farm",16},
-[17]={"Alcaire Castle",22},
-[18]={"Koeglin Village",32},
-[19]={"Windridge Cave",5},
-[20]={"Dungeon: Wayrest Sewers I",20},
-[21]={"Bonesnap Ruins",13},
-[22]={"Koeglin Village Wayshrine",1},
-[23]={"Alcaire Castle Wayshrine",1},
-[24]={"Firebrand Keep Wayshrine",1},
-[25]={"Wind Keep Wayshrine",1},
-[26]={"Dro-Dara Plantation Wayshrine",1},
-[27]={"Soulshriven Wayshrine",1},
-[28]={"Pariah Abbey Wayshrine",1},
-[29]={"Portdun Watch",3},
-[30]={"Koeglin Mine",3},
-[31]={"Pariah Catacombs",3},
-[32]={"Farangel's Delve",3},
-[33]={"Bearclaw Mine",3},
-[34]={"Norvulk Ruins",3},
-[35]={"Weeping Giant Wayshrine",1},
-[36]={"The Tower",25,13985},
-[37]={"The Mage",25,13943},
-[38]={"The Lord",25,13978},
-[39]={"Gavaudon Dolmen",26},
-[40]={"Alcaire Dolmen",26},
-[41]={"Menevia Dolmen",26},
-[42]={"Wayrest Wayshrine",1},
-[43]={"Bonesnap Ruins Wayshrine",1},
-[44]={"Spider Nest",18},
-[45]={"Mudcrab Beach",18},
-[46]={"Dreugh Waters",18},
-[47]={"Abandoned Farm",18},
-[48]={"Scrag's Larder",18},
-[49]={"Ancient Altar",18},
-[50]={"Supernal Dreamers Camp",2},
-[51]={"Nightmare Crag",2},
-[52]={"Cave of Dreams",2},
-[53]={"Shrine to Azura",2},
-[54]={"Cumberland Falls",2},
-[55]={"Stonechewer Goblin Camp",2},
-[56]={"Hammerdeath Workshop",8,{43977,3}},
-[57]={"Fisherman's Island",8,{43827,3}},
-[58]={"Travelers' Rest",2},
-[59]={"Windridge Warehouse",8,{43807,3}},
-[60]={"Weeping Giant",28},
-[61]={"Friendship Gate",17},
-[62]={"Dungeon: Wayrest Sewers II",20},
-[63]={"Hammerdeath Arena",33},
+[36]=13985, -- The Tower
+[37]=13943, -- The Mage
+[38]=13978, -- The Lord
+[56]={43977,3},
+[57]={43827,3},
+[59]={43807,3},
 },
 [20]={--Rivenspire
-[1]={"Hinault Farm",16},
-[2]={"Moira's Hope",32},
-[3]={"Silverhoof Vale",21},
-[4]={"Northpoint",7},
-[5]={"Crestshade",33},
-[6]={"Camp Tamrith",4},
-[7]={"Fell's Run",32},
-[8]={"Traitor's Tor",33},
-[9]={"Sanguine Barrows",9},
-[10]={"Shornhelm",7},
-[11]={"Edrald Estate",15},
-[12]={"Breagha-Fin",5},
-[13]={"Ravenwatch Castle",6},
-[14]={"The Doomcrag",11},
-[15]={"Lorkrata Hills",28},
-[16]={"Obsidian Scar",13},
-[17]={"Dungeon: Crypt of Hearts I",20},
-[18]={"Oldgate Wayshrine",1},
-[19]={"Crestshade Wayshrine",1},
-[20]={"Camp Tamrith Wayshrine",1},
-[21]={"Hoarfrost Downs",32},
-[22]={"Boralis Wayshrine",1},
-[23]={"Staging Grounds Wayshrine",1},
-[24]={"Northpoint Wayshrine",1},
-[25]={"Fell's Run Wayshrine",1},
-[26]={"Hoarfrost Downs Wayshrine",1},
-[27]={"Shornhelm Wayshrine",1},
-[28]={"The Atronach",25,13982},
-[29]={"The Shadow",25,13984},
-[30]={"The Serpent",25,13974},
-[31]={"Crestshade Mine",3},
-[32]={"Flyleaf Catacombs",3},
-[33]={"Tribulation Crypt",3},
-[34]={"Orc's Finger Ruins",3},
-[35]={"Erokii Ruins",3},
-[36]={"Hildune's Secret Refuge",3},
-[37]={"Sanguine Barrows Wayshrine",1},
-[38]={"Eyebright Feld Dolmen",26},
-[39]={"Westmark Moor Dolmen",26},
-[40]={"Boralis Dolmen",26},
-[41]={"Shrouded Pass Wayshrine",1},
-[42]={"Aesar's Web",18},
-[43]={"Valeguard Tower",18},
-[44]={"Old Kalgon's Keep",18},
-[45]={"Magdelena's Haunt",18},
-[46]={"East-Rock Landing",18},
-[47]={"Siren's Cove",18},
-[48]={"Shadowfate Cavern",2},
-[49]={"Old Fell's Fort",2},
-[50]={"Lagra's Pearl",2},
-[51]={"Northsalt Village",2},
-[52]={"Veawend Ede",8,{43847,4}},
-[53]={"Westwind Lighthouse",8,{43819,4}},
-[54]={"Dorell Farmhouse",2},
-[55]={"Southgard Tower",2},
-[56]={"Old Shornhelm Ruins",2},
-[57]={"Trader's Rest",8,{43995,4}},
-[58]={"Dungeon: Crypt of Hearts II",20},
-[61]={"Dungeon: Shipwright's Regret",20},
+[28]=13982, -- The Atronach
+[29]=13984, -- The Shadow
+[30]=13974, -- The Serpent
+[52]={43847,4},
+[53]={43819,4},
+[57]={43995,4},
 },
 [181]={--Cyrodiil
-[1]={"Sardavar Leed",11},
-[2]={"Gray Viper Outpost",4},
-[3]={"Homestead Ruins",28},
-[4]={"Culotte",11},
-[5]={"Juras' Fall",11},
-[7]={"Howling Cave",5},
-[8]={"Ceyatatar",11},
-[9]={"Haynote Cave",3},
-[10]={"Lunar Fang Docks",12},
-[11]={"Pothole Caverns",3},
-[12]={"Newt Cave",3},
-[13]={"Abbey of the Eight",32},
-[14]={"Nornalhorst",11},
-[15]={"Nisin Cave",3},
-[16]={"Narsinfel",11},
-[17]={"Wooden Hand Outlook",2},
-[18]={"Fanacasecul",11},
-[19]={"Hackdirt",32},
-[20]={"Wenyandawik",11},
-[21]={"Bloodmayne Cave",3},
-[22]={"Chorrol",32},
-[23]={"Red Ruby Cave",3},
-[24]={"Capstone Cave",3},
-[25]={"Ninendava",11},
-[26]={"Moranda",11},
-[27]={"Piukanda",11},
-[28]={"Sercen",11},
-[29]={"Anga",11},
-[30]={"Hrotanda Vale",11},
-[31]={"Echo Cave",3},
-[32]={"Lindai",11},
-[33]={"Empire Tower",2},
-[34]={"Lake Mist Ruins",11},
-[35]={"Waterside Mine",24},
-[36]={"Lipsand Tarn",3},
-[37]={"Cracked Wood Cave",3},
-[38]={"Kingscrest Cavern",3},
-[39]={"Muck Valley Cavern",3},
-[40]={"Quickwater Cave",3},
-[41]={"Vahtacen",3},
-[42]={"Breakneck Cave",3},
-[43]={"Serpent Hollow Cave",3},
-[44]={"Nornal",11},
-[45]={"Cheydinhal",7},
-[46]={"Harlun's Watch",15},
-[47]={"Belda",11},
-[48]={"Burned Estate",15},
-[51]={"Temple of the Ancestor Moths",32},
-[52]={"North High Rock Gate Wayshrine",1},
-[53]={"South High Rock Gate Wayshrine",1},
-[54]={"Eastern Elsweyr Gate Wayshrine",1},
-[55]={"Western Elsweyr Gate Wayshrine",1},
-[56]={"North Morrowind Gate Wayshrine",1},
-[57]={"South Morrowind Gate Wayshrine",1},
-[58]={"Greenmead Dolmen",26},
-[59]={"Great Forest Dolmen",26},
-[60]={"Nibenay Valley Dolmen",26},
-[61]={"Applewatch Wood Dolmen",26},
-[62]={"Winter's Reach Dolmen",26},
-[63]={"Northwestern Shore Dolmen",26},
-[64]={"Eastern Shore Dolmen",26},
-[65]={"Niben Basin Dolmen",26},
-[66]={"Cheydinhal Foothills Dolmen",26},
-[67]={"The Apprentice",25,13979},
-[68]={"The Atronach",25,13982},
-[69]={"The Lady",25,13976},
-[70]={"The Warrior",25,13940},
-[71]={"The Mage",25,13943},
-[72]={"The Thief",25,13975},
-[73]={"The Lover",25,13981},
-[74]={"The Serpent",25,13974},
-[75]={"The Ritual",25,13980},
-[76]={"The Tower",25,13985},
-[77]={"The Steed",25,13977},
-[78]={"The Shadow",25,13984},
-[79]={"Cloud Ruler Temple",26},
-[80]={"Riverwatch",23},
-[81]={"Zimar's Winery",15},
-[82]={"Thalara's Winery",15},
-[83]={"Wilminn's Winery",15},
-[84]={"Sedor",11},
-[85]={"Coldcorn Ruin",28},
-[86]={"Fanacas",11},
-[87]={"Hedoran Estate",15},
-[88]={"Weynon Priory",32},
-[89]={"Crooked Finger Redoubt",31},
-[90]={"Underpall Cave",3},
-[91]={"Highlander Camp",4},
-[92]={"Ice-Heart Home",15},
-[93]={"Weye",32},
-[94]={"Shurgak Clan Estate",15},
-[95]={"Toadstool Hollow",3},
-[96]={"Abandoned Orchard",2},
-[97]={"Nagastani",11},
-[98]={"Barren Cave",5},
-[99]={"Moffka's Lament",2},
-[100]={"White Fall Mountain",2},
-[104]={"Dungeon: Imperial City Prison",20},
-[105]={"Dungeon: White-Gold Tower",20},
-[106]={"Bruma",26},
-},
-[534]={--Stros M'Kai
-[1]={"Saintsport",32},
-[2]={"Bthzark",14},
-[3]={"Port Hunding",7},
-[4]={"Port Hunding Wayshrine",1},
-[5]={"The Grave",29},
-[6]={"Sandy Grotto Wayshrine",1},
-[7]={"Saintsport Wayshrine",1},
-[8]={"Rash Merchant's Plummet",2},
-[9]={"Dogeater Goblin Camp",2},
-[10]={"Pillar of the Singing Sun",2},
-},
-[535]={--Betnikh
-[1]={"Grimfield",6},
-[2]={"Carved Hills",21},
-[3]={"Stonetooth Wayshrine",1},
-[4]={"Grimfield Wayshrine",1},
-[5]={"Carved Hills Wayshrine",1},
-[6]={"Moriseli",11},
-[7]={"Carzog's Demise",11},
-[8]={"Gilbard's Nook",2},
-[9]={"Eyearata",2},
-},
-[280]={--Bleakrock Isle
-[1]={"Orkey's Hollow",5},
-[2]={"Skyshroud Barrow",28},
-[3]={"Bleakrock Wayshrine",1},
-[4]={"Hozzin's Folly",24},
-[5]={"Bleakrock Village",32},
-[6]={"Frostedge Camp",4},
-[7]={"Hunter's Camp",4},
-[8]={"Halmaera's House",15},
-[9]={"Companions Point",2},
-[10]={"Paddlefloe Fishing Camp",2},
-[11]={"Deathclaw's Lair",2},
+[67]=13979, -- The Apprentice
+[68]=13982, -- The Atronach
+[69]=13976, -- The Lady
+[70]=13940, -- The Warrior
+[71]=13943, -- The Mage
+[72]=13975, -- The Thief
+[73]=13981, -- The Lover
+[74]=13974, -- The Serpent
+[75]=13980, -- The Ritual
+[76]=13985, -- The Tower
+[77]=13977, -- The Steed
+[78]=13984, -- The Shadow
+[107]={159174,3}, -- Dauntless Combatant
+[108]={158431,3}, -- Critical Riposte
+[109]={158800,3}, -- Unchained Aggressor
 },
 [57]={--Deshaan
-[1]={"Malak's Maw",4},
-[2]={"Silent Mire",32},
-[3]={"Muth Gnaar",32},
-[4]={"Deepcrag Den",24},
-[5]={"Quarantine Serk",4},
-[6]={"Narsis",32},
-[7]={"Tal'Deic Fortress",22},
-[8]={"Mzithumz",14},
-[9]={"Vale of the Ghost Snake",4},
-[10]={"Obsidian Gorge",28},
-[11]={"Eidolon's Hollow",10},
-[12]={"Mournhold",7},
-[13]={"Tribunal Temple",31},
-[14]={"The Tower",25,13985},
-[15]={"The Mage",25,13943},
-[16]={"The Lord",25,13978},
-[17]={"Shrine of Saint Veloth",28},
-[18]={"Shad Astula",15},
-[19]={"Selfora",32},
-[20]={"Forgotten Crypts",13},
-[21]={"Dungeon: Darkshade Caverns I",20},
-[22]={"West Narsis Wayshrine",1},
-[23]={"Muth Gnaar Hills Wayshrine",1},
-[24]={"Quarantine Serk Wayshrine",1},
-[25]={"Ghost Snake Vale Wayshrine",1},
-[26]={"Mournhold Wayshrine",1},
-[27]={"Tal'Deic Grounds Wayshrine",1},
-[28]={"Obsidian Gorge Wayshrine",1},
-[29]={"Mzithumz Wayshrine",1},
-[30]={"Selfora Wayshrine",1},
-[31]={"Silent Mire Wayshrine",1},
-[32]={"Eidolon's Hollow Wayshrine",1},
-[33]={"Lady Llarel's Shelter",3},
-[34]={"Lower Bthanual",3},
-[35]={"Triple Circle Mine",3},
-[36]={"Taleon's Crag",3},
-[37]={"Knife Ear Grotto",3},
-[38]={"The Corpse Garden",3},
-[39]={"Bthanual",14},
-[40]={"Redolent Loam Dolmen",26},
-[41]={"Lagomere Dolmen",26},
-[42]={"Siltreen Dolmen",26},
-[43]={"Shad Astula Wayshrine",1},
-[44]={"Short-Tusk's Hillock",18},
-[45]={"Grove of the Abomination",18},
-[46]={"Dire Bramblepatch",18},
-[47]={"Mabrigash Burial Circle",18},
-[48]={"Druitularg's Ritual Altar",18},
-[49]={"Caravan Crest",18},
-[50]={"House Dres Farmstead",2},
-[51]={"Avayan's Farm",8,{43807,3}},
-[52]={"Lake Hlaalu Retreat",8,{43977,3}},
-[53]={"Berezan's Mine",8,{43827,3}},
-[54]={"Old Ida's Cottage",2},
-[55]={"Shrine to Saint Rilms",2},
-[56]={"Coiled Path Landing",2},
-[57]={"Smuggler's Slip",2},
-[58]={"Redoran Pier",2},
-[59]={"Hlanii's Hovel",2},
-[60]={"Dungeon: Darkshade Caverns I",20},
+[14]=13985, -- The Tower
+[15]=13943, -- The Mage
+[16]=13978, -- The Lord
+[51]={43807,3},
+[52]={43977,3},
+[53]={43827,3},
 },
 [58]={--Malabal Tor
-[1]={"Ouze",28},
-[2]={"Dra'bul Wayshrine",1},
-[3]={"Ilayas Ruins Wayshrine",1},
-[4]={"Velyn Harbor Wayshrine",1},
-[5]={"Vulkwasten Wayshrine",1},
-[6]={"Abamath Wayshrine",1},
-[7]={"Wilding Run Wayshrine",1},
-[8]={"Baandari Post Wayshrine",1},
-[9]={"Bloodtoil Valley Wayshrine",1},
-[10]={"Valeguard Wayshrine",1},
-[11]={"The Thief",25,13975},
-[12]={"The Ritual",25,13980},
-[13]={"The Warrior",25,13940},
-[14]={"Jathsogur",28},
-[15]={"Bloodtoil Valley",32},
-[16]={"Wilding Run",21},
-[17]={"Vulkwasten",32},
-[18]={"Fuller's Break",12},
-[19]={"Jode's Pocket",4},
-[20]={"Silvenar",7},
-[21]={"Ilayas Ruins",11},
-[22]={"Abamath",11},
-[23]={"Dra'bul",4},
-[24]={"Treehenge",21},
-[25]={"Valeguard",21},
-[26]={"Velyn Harbor",32},
-[27]={"Baandari Trading Post",7},
-[28]={"Deepwoods",21},
-[29]={"Dead Man's Drop",3},
-[30]={"Black Vine Ruins",3},
-[31]={"Roots of Silvenar",3},
-[32]={"Shael Ruins",3},
-[34]={"Hoarvor Pit",3},
-[35]={"Tomb of the Apostates",3},
-[36]={"Belarata",11},
-[37]={"Crimson Cove",13},
-[38]={"Broken Coast Dolmen",26},
-[39]={"Xylo River Basin Dolmen",26},
-[40]={"Silvenar Vale Dolmen",26},
-[41]={"Dungeon: Tempest Island",20},
-[42]={"Bone Grappler's Nest",18},
-[43]={"Bitterpoint Strand",18},
-[44]={"Dugan's Knoll",18},
-[45]={"River Edge",18},
-[46]={"Jagged Grotto",18},
-[47]={"Windshriek Strand",18},
-[48]={"Horseshoe Island",2},
-[49]={"Supplication House",2},
-[50]={"Ogrim's Yawn",2},
-[51]={"Tanglehaven",32},
-[52]={"Falinesti Summer Site",21},
-[53]={"Sleepy Senche Overlook",8,{44013,5}},
-[54]={"Stranglewatch",2},
-[55]={"Ragnthar",2},
-[56]={"Chancel of Divine Entreaty",8,{44019,5}},
-[57]={"Starwalk Cavern",2},
-[58]={"Matthild's Last Venture",8,{43831,5}},
-[59]={"Four Quarry Islet",2},
+[11]=13975, -- The Thief
+[12]=13980, -- The Ritual
+[13]=13940, -- The Warrior
+[53]={44013,5},
+[56]={44019,5},
+[58]={43831,5},
 },
 [347]={--Coldharbour
-[1]={"The Everfull Flagon",32},
-[2]={"The Lost Fleet",23},
-[3]={"Cliffs of Failure",33},
-[4]={"The Moonless Walk",21},
-[5]={"Library of Dusk Wayshrine",1},
-[6]={"Great Shackle Wayshrine",1},
-[7]={"The Chasm Wayshrine",1},
-[8]={"Hollow City Wayshrine",1},
-[9]={"Endless Stair Wayshrine",1},
-[10]={"Everfull Flagon Wayshrine",1},
-[11]={"Moonless Walk Wayshrine",1},
-[12]={"Haj Uxith Wayshrine",1},
-[13]={"Manor of Revelry Wayshrine",1},
-[14]={"Reaver Citadel Wayshrine",1},
-[15]={"The Orchard Wayshrine",1},
-[16]={"Aba-Loria",3},
-[17]={"The Grotto of Depravity",3},
-[18]={"The Cave of Trophies",3},
-[19]={"Vault of Haman Forgefire",3},
-[20]={"Mal Sorra's Tomb",3},
-[21]={"The Wailing Maw",3},
-[22]={"Tower of Lies",24},
-[23]={"Haj Uxith",32},
-[24]={"Court of Contempt",10},
-[25]={"The Chasm",33},
-[26]={"The Orchard",6},
-[27]={"Shrouded Plains Wayshrine",1},
-[28]={"The Black Forge",10},
-[29]={"Court of Contempt Wayshrine",1},
-[30]={"The Vile Laboratory",14},
-[31]={"Library of Dusk",11},
-[32]={"Spurned Peak",31},
-[33]={"The Lightless Oubliette",10},
-[34]={"The Manor of Revelry",10},
-[35]={"The Reaver Citadel",31},
-[36]={"The Hollow City",7},
-[37]={"The Great Shackle",10},
-[38]={"The Endless Stair",10},
-[39]={"Dungeon: Vaults of Madness",20},
-[40]={"Village of the Lost",13},
-[41]={"Aba-Darre",18},
-[42]={"Duriatundur's Killing Field",18},
-[43]={"Zemarek's Hollow",18},
-[44]={"Daedroth Larder",18},
-[45]={"Risen Court",18},
-[46]={"Cynhamoth's Grove",18},
-[47]={"Deathspinner's Lair",8,{43971,8}},
-[48]={"Cadwell's Hovel",2},
-[49]={"Shrine of Kyne",2},
-[50]={"Endless Overlook",2},
-[51]={"Forsaken Village",2},
-[52]={"Survivor's Camp",2},
-[54]={"Mages Guildhall",2},
-[55]={"Fighters Guildhall",2},
-[56]={"Font of Schemes",8,{43965,8}},
+[47]={43971,8},
+[56]={43965,8},
 },
 [92]={--Bangkorai
-[1]={"Jackdaw Cove",4},
-[2]={"Northglen",16},
-[3]={"Halcyon Lake",11},
-[4]={"Pelin Graveyard",9},
-[5]={"Fallen Grotto",21},
-[6]={"Nilata Ruins",11},
-[7]={"Hall of Heroes",9},
-[8]={"Kerbol's Hollow",32},
-[9]={"Hallin's Stand",7},
-[10]={"Onsi's Breath",24},
-[11]={"Qharroa Ruins",28},
-[12]={"Bangkorai Garrison",31},
-[13]={"Martyr's Crossing",4},
-[14]={"Evermore",7},
-[15]={"Viridian Woods",21},
-[16]={"Razak's Wheel",13},
-[17]={"The Steed",25,13977},
-[18]={"The Apprentice",25,13979},
-[19]={"Evermore Wayshrine",1},
-[20]={"Troll's Toothpick Wayshrine",1},
-[21]={"Viridian Woods Wayshrine",1},
-[22]={"Bangkorai Pass Wayshrine",1},
-[23]={"Nilata Ruins Wayshrine",1},
-[24]={"Hallin's Stand Wayshrine",1},
-[25]={"Old Tower Wayshrine",1},
-[26]={"Onsi's Breath Wayshrine",1},
-[27]={"Sunken Road Wayshrine",1},
-[28]={"Old Tower",31},
-[29]={"Murcien's Hamlet",32},
-[30]={"Torog's Spite",3},
-[31]={"Troll's Toothpick",3},
-[32]={"Viridian Watch",3},
-[33]={"Crypt of the Exiles",3},
-[34]={"Klathzgar",3},
-[35]={"Rubble Butte",3},
-[36]={"Dungeon: Blackheart Haven",20},
-[37]={"Mournoth Dolmen",26},
-[38]={"Ephesus Dolmen",26},
-[39]={"Fallen Wastes Dolmen",26},
-[40]={"Eastern Evermore Wayshrine",1},
-[41]={"Halcyon Lake Wayshrine",1},
-[42]={"Blighted Isle",18},
-[43]={"Lakewatch Tower",18},
-[44]={"Arlimahera's Sanctum",18},
-[45]={"Summoner's Camp",18},
-[46]={"Nilata Falls",18},
-[47]={"Telesubi Ruins",18},
-[48]={"Damar Farmstead",16},
-[49]={"Silaseli Ruins",8,{43859,6}},
-[50]={"Sunken Road",5},
-[51]={"Yanurah's Respite",2},
-[52]={"Ash'abahs' Oasis",2},
-[53]={"Gjarma's Rock",2},
-[54]={"Strastnoc's Landing",2},
-[55]={"Viridian Hideaway",8,{44001,6}},
-[56]={"Basking Grounds",2},
-[57]={"Wethers' Cleft",8,{44007,6}},
-[58]={"Sacred Springs",2},
-[59]={"Howlers' Nook",2},
-[60]={"Merchant's Gate",17},
+[17]=13977, -- The Steed
+[18]=13979, -- The Apprentice
+[49]={43859,6},
+[55]={44001,6},
+[57]={44007,6},
 },
 [381]={--Auridon
-[1]={"Ezduiin",11},
-[2]={"Tanzelwil",11},
-[3]={"South Beacon",23},
-[4]={"Glister Vale",31},
-[5]={"Del's Claim",3},
-[6]={"Ondil",3},
-[7]={"Entila's Folly",3},
-[8]={"Wansalen",3},
-[9]={"Silsailen",32},
-[10]={"Mehrunes' Spite",3},
-[11]={"Bewan",3},
-[12]={"The Lady",25,13976},
-[13]={"Firsthold",7},
-[14]={"Phaer",32},
-[15]={"Shattered Grove",32},
-[16]={"North Beacon",23},
-[17]={"Vulkhel Guard",7},
-[18]={"Torinaan",11},
-[19]={"Mathiisen",32},
-[20]={"Vulkhel Guard Wayshrine",1},
-[21]={"Greenwater Cove",32},
-[22]={"The Lover",25,13981},
-[23]={"Phaer Wayshrine",1},
-[24]={"Tanzelwil Wayshrine",1},
-[25]={"Firsthold Wayshrine",1},
-[26]={"Mathiisen Wayshrine",1},
-[27]={"Skywatch Wayshrine",1},
-[28]={"Quendeluun Wayshrine",1},
-[29]={"College Wayshrine",1},
-[30]={"Greenwater Wayshrine",1},
-[31]={"Quendeluun",11},
-[32]={"College of Aldmeri Propriety",32},
-[33]={"Windy Glade Wayshrine",1},
-[34]={"Dawnbreak",32},
-[35]={"Castle Rilis",28},
-[36]={"Skywatch",7},
-[37]={"Iluvamir Dolmen",26},
-[38]={"Calambar Dolmen",26},
-[39]={"Vafe Dolmen",26},
-[40]={"Toothmaul Gully",13},
-[41]={"Dungeon: The Banished Cells I",20},
-[42]={"The Harborage",5},
-[43]={"Soulfire Plateau",18},
-[44]={"Seaside Scarp Camp",18},
-[45]={"Wreck of the Raptor",18},
-[46]={"Heretic's Summons",18},
-[47]={"Nestmother's Den",18},
-[48]={"Heritance Proving Ground",18},
-[49]={"Maormer Invasion Camp",2},
-[50]={"Hightide Keep",8,{43815,2}},
-[51]={"Buraniim Isle",2},
-[52]={"Errinorne Isle",2},
-[53]={"Nine-Prow Landing",2},
-[54]={"Isle of Contemplation",2},
-[55]={"Beacon Falls",8,{43871,2}},
-[56]={"Eastshore Islets Camp",8,{43803,2}},
-[57]={"Monkey's Rest",2},
-[58]={"Smuggler's Cove",2},
-[61]={"Dungeon: The Banished Cells II",20},
-[66]={"Shrine of Molag Bal",47},
-[67]={"Shrine of Hircine",46},
+[12]=13976, -- The Lady
+[22]=13981, -- The Lover
+[50]={43815,2},
+[55]={43871,2},
+[56]={43803,2},
 },
 [382]={--Reaper's March
-[1]={"Thormar",11},
-[2]={"Fort Grimwatch",31},
-[3]={"Moonmont",9},
-[4]={"Vinedusk Village",32},
-[5]={"Senalana",11},
-[6]={"Falinesti Autumn Site",28},
-[7]={"S'ren-ja",32},
-[8]={"Do'Krin Monastery",15},
-[9]={"Dune",7},
-[10]={"Hadran's Caravan",4},
-[11]={"Greenhill",32},
-[12]={"Pa'alat",32},
-[13]={"Arenthia",7},
-[14]={"Thizzrini Arena",4},
-[15]={"Kuna's Delve",3},
-[16]={"Thibaut's Cairn",3},
-[17]={"Weeping Wind Cave",3},
-[18]={"Claw's Strike",3},
-[19]={"Fardir's Folly",3},
-[20]={"Jode's Light",3},
-[21]={"Two Moons Path",28},
-[22]={"Willowgrove",32},
-[23]={"The Vile Manse",13},
-[24]={"Northern Woods Dolmen",26},
-[25]={"Jodewood Dolmen",26},
-[26]={"Dawnmead Dolmen",26},
-[27]={"The Steed",25,13977},
-[28]={"The Apprentice",25,13979},
-[29]={"Dungeon: Selene's Web",20},
-[30]={"Vinedusk Wayshrine",1},
-[31]={"Fort Grimwatch Wayshrine",1},
-[32]={"Fort Sphinxmoth Wayshrine",1},
-[33]={"Rawl'kha",7},
-[34]={"Arenthia Wayshrine",1},
-[35]={"Dune Wayshrine",1},
-[36]={"Willowgrove Wayshrine",1},
-[37]={"Moonmont Wayshrine",1},
-[38]={"Rawl'kha Wayshrine",1},
-[39]={"S'ren-ja Wayshrine",1},
-[40]={"Fort Sphinxmoth",28},
-[41]={"Deathsong Cleft",18},
-[42]={"Big Ozur's Valley",18},
-[43]={"Waterdancer Falls",18},
-[44]={"Reaper's Henge",18},
-[45]={"Old S'ren-ja Docks",18},
-[46]={"Ushmal's Rest",18},
-[47]={"Willowgrove Cavern",2},
-[48]={"Old Town Cavern",8,{43859,6}},
-[49]={"Researcher's Camp",2},
-[50]={"Crescent River Camp",2},
-[51]={"Broken Arch",8,{44007,6}},
-[52]={"Greenspeaker's Grove",8,{44001,6}},
-[53]={"Dawnmead Brigand Camp",2},
-[54]={"Little Ozur's Camp",2},
-[55]={"Fishing Dock",2},
-[56]={"Dawnmead Ruin Camp",2},
-[57]={"Trial: Maw of Lorkhaj",27},
+[27]=13977, -- The Steed
+[28]=13979, -- The Apprentice
+[48]={43859,6},
+[51]={44007,6},
+[52]={44001,6},
 },
-[383]={--Grahtwood
-[1]={"Reliquary of Stars",11},
-[2]={"Root Sunder Ruins",13},
-[3]={"Haven",12},
-[4]={"Reman's Bluff",17},
-[5]={"Bone Orchard",6},
-[6]={"Gil-Var-Delle",21},
-[7]={"Cave of Broken Sails",5},
-[8]={"Dungeon: Elden Hollow I",20},
-[9]={"The Gray Mire",16},
-[10]={"Brackenleaf",21},
-[11]={"Ossuary of Telacar",28},
-[12]={"The Tower",25,13985},
-[13]={"The Mage",25,13943},
-[14]={"The Lord",25,13978},
-[15]={"Elden Root Wayshrine",1},
-[16]={"Gil-Var-Delle Wayshrine",1},
-[17]={"Elden Root Temple Wayshrine",1},
-[18]={"Haven Wayshrine",1},
-[19]={"Redfur Trading Post Wayshrine",1},
-[20]={"Southpoint Wayshrine",1},
-[21]={"Cormount Wayshrine",1},
-[22]={"Ossuary Wayshrine",1},
-[23]={"Laeloria",11},
-[24]={"Elden Root",7},
-[25]={"Southpoint",22},
-[26]={"Long Coast Dolmen",26},
-[27]={"Green Hall Dolmen",26},
-[28]={"Tarlain Heights Dolmen",26},
-[29]={"Falinesti Winter Site",28},
-[30]={"Karthdar",32},
-[31]={"Cormount",32},
-[32]={"Redfur Trading Post",32},
-[33]={"Goldfolly",28},
-[34]={"Ne Salas",3},
-[35]={"The Scuttle Pit",3},
-[36]={"Vinedeath Cave",3},
-[37]={"Burroot Kwama Mine",3},
-[38]={"Wormroot Depths",3},
-[39]={"Mobar Mine",3},
-[40]={"Gray Mire Wayshrine",1},
-[41]={"Falinesti Winter Wayshrine",1},
-[42]={"Hircine's Henge",18},
-[43]={"Nindaeril's Perch",18},
-[44]={"Lady Solace's Fen",18},
-[45]={"Poacher Camp",18},
-[46]={"Thugrub's Cave",18},
-[47]={"Valanir's Rest",18},
-[48]={"Tarlain Bandit Camp",2},
-[49]={"Vineshade Lodge",8,{43807,3}},
-[50]={"Boar's Run Overlook",2},
-[51]={"Battle of Cormount Memorial",2},
-[52]={"Temple of the Eight",8,{43827,3}},
-[53]={"Sweetbreeze Cottage",2},
-[54]={"Sacred Leap Grotto",2},
-[55]={"Fisherman's Isle",8,{43977,3}},
-[56]={"Forked Root Camp",2},
-[57]={"Faltonia's Mine",2},
-[58]={"Dungeon: Elden Hollow II",20},
+[383]={-- Grahtwood
+[12]=13985,	-- The Tower
+[13]=13943,	-- The Mage
+[14]=13978, -- The Lord
+[49]={43807,3},
+[52]={43827,3},
+[55]={43977,3},
 },
-[849]={--Vvardenfell
-[1]={"Gnisis",32},
-[2]={"Khartag Point",3},
-[3]={"Ashalmawia",3},
-[4]={"Zainsipilu",3},
-[5]={"Matus-Akin Egg Mine",3},
-[6]={"Pulk",3},
-[7]={"Nchuleft",3},
-[8]={"Vos",32},
-[9]={"West Gash Wayshrine",1},
-[10]={"Tel Aruhn",32},
-[11]={"Sadrith Mora",7},
-[12]={"Halls of Fabrication",27},
-[13]={"Urshilaku Camp Wayshrine",1},
-[14]={"Suran",32},
-[15]={"Balmora",7},
-[16]={"Nilthog's Hollow",18},
-[17]={"Sulipund Grange",18},
-[18]={"Shipwreck Cove",18},
-[19]={"Missir-Dadalit Egg Mine",18},
-[20]={"Dubdil Alar Tower",18},
-[21]={"Salothan's Council",18},
-[22]={"Gnisis Wayshrine",1},
-[23]={"Ald'ruhn Wayshrine",1},
-[24]={"Balmora Wayshrine",1},
-[25]={"Seyda Neen Wayshrine",1},
-[26]={"Suran Wayshrine",1},
-[27]={"Molag Mar Wayshrine",1},
-[28]={"Tel Branora Wayshrine",1},
-[29]={"Vivec City Wayshrine",1},
-[30]={"Nchuleftingth Wayshrine",1},
-[31]={"Tel Mora Wayshrine",1},
-[32]={"Sadrith Mora Wayshrine",1},
-[33]={"Seyda Neen",32},
-[34]={"Nchuleftingth",13},
-[35]={"Forgotten Wastes",13},
-[44]={"Marandus",8,{121551,3}},
-[45]={"Randas Ancestral Tomb",8,{121921,8}},
-[46]={"Zergonipal",8,{122251,6}},
-[47]={"Vassir-Didanat Mine",24},
-[48]={"Ald'ruhn",4},
-[64]={"Veloth Ancestral Tomb",6},
-[65]={"Urshilaku Camp",4},
-[66]={"Zainab Camp",4},
-[67]={"Erabenimsun Camp",4},
-[72]={"Valley of the Wind Wayshrine",1},
-[74]={"Molag Mar",32},
-[75]={"Vivec City",7},
-[76]={"Yasammidan",2},
-[77]={"Ashalmimilkala",2},
-[78]={"Shrine of Azura",2},
-[79]={"Holamayan Monastery",2},
-[80]={"Ald Sotha",2},
-[81]={"Hanud Tower",2},
-[82]={"Ahemmusa Camp",4},
-[83]={"Aleft",2},
-[84]={"Falensarano Ruins",2},
-[85]={"Vivec Temple Wayshrine",1},
-[86]={"Valenvaryon",2},
-[87]={"Ald Carac",17},
-[88]={"Ularra",17},
-[89]={"Foyada Quarry",17},
-[90]={"Dreloth Ancestral Tomb",6},
+[849]={-- Vvardenfell
+[44]={121551,3},
+[45]={121921,8},
+[46]={122251,6},
 },
-[980]={--Clockwork City
-[1]={"Halls of Regulation",3},
-[2]={"The Shadow Cleft",3},
-[4]={"Clockwork Crossroads Wayshrine",1},
-[5]={"Mire Mechanica Wayshrine",1},
-[6]={"Everwound Wellspring",16},
-[7]={"Mnemonic Planisphere",14},
-[9]={"Elegiac Replication",2},
-[10]={"Insalubrious Effluvium",2},
-[11]={"Vale of Tiers",2},
-[12]={"Ventral Terminus",2},
-[14]={"Sanctuary of Verification",18},
-[15]={"Exarchs' Egress",18},
-[16]={"Mire Mechanica",2},
-[17]={"The Brass Fortress",7},
-[18]={"Sanctuary Wayshrine",1},
-[19]={"The Refurbishing Yard",8,{130460,2}},	--Innate Axiom
-[20]={"Pavilion of Artifice",8,{131168,6}},	--Mechanical Acuity
-[21]={"Barilzar's Eighth Laboratory",2},
+[980]={-- Clockwork City
+[19]={130460,2}, -- Innate Axiom
+[20]={131168,6}, -- Mechanical Acuity
 },
-[981]={--Brass Fortress
-[2]={"Brass Fortress Wayshrine",1},
-[3]={"Restricted Brassworks",8,{130803,4}},	--Fortified Brass
+[981]={-- Brass Fortress
+[3]={130803,4},	-- Fortified Brass
 },
-[1086]={--Northern Elsweyr
-[1]={"The Bone Pit",18},
-[2]={"Scar's Edge",18},
-[3]={"Red Hands Run",18},
-[4]={"Hill of Shattered Swords",18},
-[5]={"Talon Gulch",18},
-[6]={"Nightmare Plateau",18},
-[7]={"Abode of Ignominy",3},
-[8]={"Predator Mesa",3},
-[10]={"Tomb of the Serpents",3},
-[11]={"Darkpool Mine",3},
-[12]={"The Tangle",3},
-[13]={"Rimmen Necropolis",13},
-[14]={"Orcrest",13},
-[15]={"Riverhold",32},
-[16]={"Rimmen",7},
-[17]={"Hakoshae",32},
-[18]={"The Prowl",33},
-[19]={"Anequina Aqueduct",31},
-[20]={"Weeping Scar",5},
-[21]={"Cicatrice",5},
-[22]={"Ashen Scar",6},
-[23]={"The Stitches",32},
-[24]={"Two Moons at Tenmar Temple",15},
-[25]={"Merryvale Farms",16},
-[26]={"Starlight Adeptorium",8,{148331,5}},
-[27]={"Valenwood Border Artisan Camp",8,{147961,8}},
-[28]={"Rimmen Masterworks",8,{148701,3}},
-[32]={"Star Haven Adeptorium",2},
-[33]={"Shadow Dance Ruins",2},
-[34]={"Moon Gate of Anequina",2},
-[35]={"Sleepy Senche Mine",2},
-[36]={"Defense Force Outpost",2},
-[37]={"Sandswirl Manor",2},
-[38]={"Riverhold Wayshrine",1},
-[39]={"Rimmen Wayshrine",1},
-[40]={"The Stitches Wayshrine",1},
-[41]={"Tenmar Temple Wayshrine",1},
-[43]={"Scar's End Wayshrine",1},
-[44]={"Hakoshae Wayshrine",1},
-[45]={"Desert Wind Caverns",3},
-[46]={"Valenwood Gate",2},
-[52]={"Star Haven Wayshrine",1},
+[1086]={-- Northern Elsweyr
+[26]={148331,5},
+[27]={147961,8},
+[28]={148701,3},
 },
-[1133]={--Southern Elsweyr
-[1]={"Senchal Wayshrine",1},
-[2]={"South Guard Ruins Wayshrine",1},
-[3]={"Western Plains Wayshrine",1},
-[4]={"Black Heights Wayshrine",1},
-[5]={"Pridehome Wayshrine",1},
-[6]={"Senchal",7},
-[7]={"South Guard Ruins",28},
-[8]={"Black Heights",32},
-[9]={"Moonlit Cove",3},
-[10]={"Forsaken Citadel",3},
-[11]={"Fur-Forge Cove",8,{156165,9}},
-[12]={"Cat's-Claw Station",8,{155417,3}},
-[14]={"Shrine of the Reforged",18},
-[15]={"Ri'Atahrashi's Training Ground",18},
-[16]={"Zazaradi's Quarry and Mine",2},
-[17]={"Pridehome",2},
-[18]={"Doomstone Keep",2},
-[19]={"The Forgotten Mane",2},
-[21]={"Purring Rock",2},
-[22]={"Khenarthi's Arch",2},
-}
-}
-local UnknownPOItexture={
-[1]="/esoui/art/icons/poi/poi_wayshrine_incomplete.dds",
-[2]="/esoui/art/icons/poi/poi_areaofinterest_incomplete.dds",
-[3]="/esoui/art/icons/poi/poi_delve_incomplete.dds",
-[4]="/esoui/art/icons/poi/poi_camp_incomplete.dds",
-[5]="/esoui/art/icons/poi/poi_cave_incomplete.dds",
-[6]="/esoui/art/icons/poi/poi_cemetery_incomplete.dds",
-[7]="/esoui/art/icons/poi/poi_city_incomplete.dds",
-[8]="/esoui/art/icons/poi/poi_crafting_incomplete.dds",
-[9]="/esoui/art/icons/poi/poi_crypt_incomplete.dds",
-[10]="/esoui/art/icons/poi/poi_daedricruin_incomplete.dds",
-[11]="/esoui/art/icons/poi/poi_ayleidruin_incomplete.dds",
-[12]="/esoui/art/icons/poi/poi_dock_incomplete.dds",
-[13]="/esoui/art/icons/poi/poi_dungeon_incomplete.dds",
-[14]="/esoui/art/icons/poi/poi_dwemerruin_incomplete.dds",
-[15]="/esoui/art/icons/poi/poi_estate_incomplete.dds",
-[16]="/esoui/art/icons/poi/poi_farm_incomplete.dds",
-[17]="/esoui/art/icons/poi/poi_gate_incomplete.dds",
-[18]="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",
-[19]="/esoui/art/icons/poi/poi_groupdelve_incomplete.dds",
-[20]="/esoui/art/icons/poi/poi_groupinstance_incomplete.dds",
-[21]="/esoui/art/icons/poi/poi_grove_incomplete.dds",
-[22]="/esoui/art/icons/poi/poi_keep_incomplete.dds",
-[23]="/esoui/art/icons/poi/poi_lighthouse_incomplete.dds",
-[24]="/esoui/art/icons/poi/poi_mine_incomplete.dds",
-[25]="/esoui/art/icons/poi/poi_mundus_incomplete.dds",
-[26]="/esoui/art/icons/poi/poi_portal_incomplete.dds",
-[27]="/esoui/art/icons/poi/poi_raiddungeon_incomplete.dds",
-[28]="/esoui/art/icons/poi/poi_ruin_incomplete.dds",
-[29]="/esoui/art/icons/poi/poi_sewer_incomplete.dds",
-[30]="/esoui/art/icons/poi/poi_solotrial_incomplete.dds",
-[31]="/esoui/art/icons/poi/poi_tower_incomplete.dds",
-[32]="/esoui/art/icons/poi/poi_town_incomplete.dds",
-[33]="/esoui/art/icons/poi/poi_battlefield_incomplete.dds",
-[35]="/esoui/art/icons/poi/poi_ic_planararmorscraps_incomplete.dds",
-[36]="/esoui/art/icons/poi/poi_ic_tinyclaw_incomplete.dds",
-[37]="/esoui/art/icons/poi/poi_ic_monstrousteeth_incomplete.dds",
-[38]="/esoui/art/icons/poi/poi_ic_boneshard_incomplete.dds",
-[39]="/esoui/art/icons/poi/poi_ic_marklegion_incomplete.dds",
-[40]="/esoui/art/icons/poi/poi_ic_darkether_incomplete.dds",
-[41]="/esoui/art/icons/poi/poi_darkbrotherhood_incomplete.dds",
-[42]="/esoui/art/icons/poi/poi_u26_dwemergear_incomplete.dds",
-[43]="/esoui/art/icons/poi/poi_u26_nord_boat_incomplete.dds",
-[44]="/esoui/art/icons/poi/poi_group_portal_incomplete.dds",
-[45]="/esoui/art/icons/poi/poi_mushromtower_incomplete.dds",
-[46]="/esoui/art/icons/poi/poi_shrine_werewolf_incomplete.dds",
-[47]="/esoui/art/icons/poi/poi_shrine_vampire_incomplete.dds",
+[1133]={-- Southern Elsweyr
+[11]={156165,9},
+[12]={155417,3},
+},
 }
 --function ShowPoiIcons()for i,icon in pairs(UnknownPOItexture) do d("["..i.."]|t26:26:"..icon.."|t")end end
 local MundusDescription={
@@ -4433,7 +2483,7 @@ local MundusDescription={
 }
 local ChestData={
 --anvilcity={[1]={{.906,.060}},[2]={{.399,.413},{.463,.197},{.834,.371},{.464,.330},{.208,.237},{.580,.559},{.468,.365},{.531,.194},{.324,.162},{.363,.503},{.327,.489}}},
-["aba-loria"]={
+["aba-loria_base"]={
 [1]={{.339,.543},{.149,.472},{.602,.205},{.248,.588},{.438,.297},{.880,.542},{.445,.302},{.782,.630},{.674,.720},{.785,.637},{.160,.471},{.495,.447},{.096,.305},{.125,.398},{.780,.586},{.237,.755},{.256,.579},{.234,.835},{.674,.558},{.419,.865},{.682,.557},{.601,.213},{.348,.226},{.775,.642},{.162,.461},{.346,.545},{.592,.387},{.118,.396},{.232,.760},{.888,.544},{.397,.160},{.346,.550},{.102,.314},{.400,.153},{.749,.568},{.888,.537},{.478,.446},{.104,.300},{.775,.576},{.438,.313},{.757,.573}}},
 abahslanding_base={
 [1]={{.097,.726},{.153,.954},{.115,.891},{.538,.935},{.118,.868},{.166,.682},{.242,.849}},
@@ -4511,7 +2561,9 @@ balsunn_caves_map={
 balsunn_deidric_map={
 [1]={{.504,.767},{.407,.746},{.728,.530},{.503,.154},{.520,.608},{.603,.739},{.525,.418},{.465,.138}}},
 balsunn_futuretown01_map={
-[1]={{.447,.480},{.417,.440},{.720,.613}}},
+[1]={{.450,.648},{.447,.480},{.417,.440},{.720,.613}}},
+balsunn_pasttown01_map={
+[1]={{.417,.466}}},
 balsunn_presenttown01={
 [1]={{.375,.779}}},
 bangkorai_base={
@@ -4519,16 +2571,16 @@ bangkorai_base={
 [2]={{.583,.078},{.367,.271},{.661,.581},{.446,.484},{.345,.816},{.676,.136},{.273,.844},{.325,.658},{.595,.725},{.355,.472},{.480,.906},{.390,.541},{.508,.417},{.489,.228},{.570,.741},{.571,.665},{.356,.434},{.617,.529},{.348,.745},{.439,.502},{.319,.538},{.266,.879},{.393,.828},{.349,.452},{.323,.455},{.342,.592},{.385,.509},{.631,.433},{.272,.598},{.633,.710},{.438,.644},{.392,.776},{.286,.843},{.661,.182},{.653,.025},{.467,.170},{.629,.355},{.585,.168},{.395,.200},{.560,.499},{.554,.221},{.531,.164},{.704,.206},{.696,.295},{.418,.237},{.616,.301},{.506,.302},{.525,.322},{.559,.184},{.525,.300},{.353,.881},{.363,.697},{.495,.149},{.451,.301},{.649,.571},{.308,.787}}},
 barkbitecave_base={
 [2]={{.676,.811},{.677,.819}}},
-barkbitemine={
+barkbitemine_base={
 [1]={{.165,.622}}},
 barrowtrench_base={
 [1]={{.302,.549},{.383,.491},{.092,.631},{.247,.568},{.214,.447},{.319,.514},{.456,.232},{.239,.574},{.325,.521},{.214,.044},{.671,.477},{.419,.528},{.465,.315},{.291,.554},{.411,.537}}},
 bdvillamap1ext1={
 [1]={{.797,.378},{.743,.579}}},
 bdvilla_map2ext2={
-[1]={{.473,.351},{.573,.427}}},
+[1]={{.550,.800},{.473,.351},{.573,.427}}},
 bdvilla_map3int1={
-[1]={{.412,.713},{.898,.464},{.241,.605},{.656,.495},{.851,.48}}},
+[1]={{.679,.529},{.412,.713},{.898,.464},{.241,.605},{.656,.495},{.851,.48}}},
 bdvilla_mapsecret3={
 [1]={{.288,.159}}},
 bearclawmine_base={
@@ -4553,7 +2605,7 @@ blackhearthavenarea1_base={
 blackhearthavenarea2_base={
 [1]={{.399,.700},{.817,.273},{.738,.263},{.782,.239},{.560,.320},{.779,.231},{.520,.372},{.411,.695},{.727,.257},{.737,.296},{.405,.691},{.558,.327},{.740,.289},{.826,.271},{.830,.280},{.730,.264}}},
 blackhearthavenarea3_base={
-[1]={{.523,.642},{.500,.906},{.514,.385},{.583,.571},{.568,.575},{.516,.061},{.530,.403},{.535,.535}}},
+[1]={{.479,.703},{.523,.642},{.500,.906},{.514,.385},{.583,.571},{.568,.575},{.516,.061},{.530,.403},{.535,.535}}},
 blackhearthavenarea4_base={
 [1]={{.848,.702},{.828,.677},{.854,.696},{.819,.707},{.840,.666},{.822,.691},{.835,.683}}},
 blackreach_base={
@@ -4564,7 +2616,7 @@ bleakrock_base={
 [1]={{.433,.749},{.476,.785},{.476,.125},{.445,.207},{.845,.330},{.683,.614},{.647,.645},{.280,.321},{.251,.521},{.776,.500},{.795,.477},{.429,.748},{.245,.675},{.248,.554},{.661,.338},{.781,.638},{.703,.503},{.554,.085},{.305,.424},{.397,.811},{.475,.782},{.412,.832},{.719,.689},{.205,.689},{.648,.273},{.499,.195},{.313,.427},{.551,.207},{.563,.356},{.791,.279},{.861,.326},{.743,.450},{.047,.081},{.818,.387},{.234,.497},{.580,.614},{.601,.187},{.295,.468},{.092,.374},{.249,.631},{.698,.283},{.321,.653},{.157,.704},{.266,.154},{.330,.231},{.664,.701},{.741,.397},{.267,.261},{.282,.356},{.401,.600},{.562,.604}},
 [2]={{.386,.196},{.438,.206},{.354,.241},{.314,.424},{.688,.678},{.068,.299},{.261,.418},{.339,.456},{.324,.315},{.439,.439},{.740,.504},{.769,.593},{.641,.283},{.667,.253},{.284,.165},{.484,.721},{.441,.403},{.344,.616},{.352,.588},{.413,.626}}},
 blackwood_base={
-[1]={{.6,.211},{.205,.318},{.595,.672},{.688,.702},{.401,.202},{.399,.373},{.296,.473},{.373,.602},{.387,.632},{.397,.077},{.534,.276},{.454,.362},{.475,.721},{.151,.441},{.675,.401},{.637,.889},{.456,.183},{.534,.223},{.576,.278},{.625,.265},{.645,.540},{.747,.498},{.800,.886},{.352,.190},{.444,.149},{.138,.594},{.149,.410},{.176,.576},{.183,.461},{.201,.434},{.217,.326},{.238,.326},{.242,.354},{.259,.380},{.270,.494},{.276,.342},{.286,.590},{.287,.542},{.309,.357},{.324,.274},{.335,.423},{.338,.505},{.341,.555},{.344,.232},{.371,.273},{.377,.590},{.378,.124},{.378,.537},{.381,.220},{.406,.593},{.429,.502},{.436,.451},{.444,.613},{.456,.666},{.479,.463},{.481,.545},{.481,.686},{.487,.572},{.522,.428},{.530,.141},{.543,.786},{.551,.825},{.581,.341},{.589,.407},{.597,.788},{.605,.713},{.616,.345},{.620,.158},{.620,.486},{.630,.394},{.645,.448},{.664,.344},{.667,.519},{.670,.827},{.671,.282},{.673,.772},{.680,.571},{.693,.880},{.707,.799},{.725,.823},{.741,.869},{.745,.842},{.750,.734},{.754,.763},{.761,.409},{.784,.841},{.794,.723},{.814,.787},{.835,.838}},
+[1]={{.158,.552},{.298,.636},{.535,.484},{.6,.211},{.205,.318},{.595,.672},{.688,.702},{.401,.202},{.399,.373},{.296,.473},{.373,.602},{.387,.632},{.397,.077},{.534,.276},{.454,.362},{.475,.721},{.151,.441},{.675,.401},{.637,.889},{.456,.183},{.534,.223},{.576,.278},{.625,.265},{.645,.540},{.747,.498},{.800,.886},{.352,.190},{.444,.149},{.138,.594},{.149,.410},{.176,.576},{.183,.461},{.201,.434},{.217,.326},{.238,.326},{.242,.354},{.259,.380},{.270,.494},{.276,.342},{.286,.590},{.287,.542},{.309,.357},{.324,.274},{.335,.423},{.338,.505},{.341,.555},{.344,.232},{.371,.273},{.377,.590},{.378,.124},{.378,.537},{.381,.220},{.406,.593},{.429,.502},{.436,.451},{.444,.613},{.456,.666},{.479,.463},{.481,.545},{.481,.686},{.487,.572},{.522,.428},{.530,.141},{.543,.786},{.551,.825},{.581,.341},{.589,.407},{.597,.788},{.605,.713},{.616,.345},{.620,.158},{.620,.486},{.630,.394},{.645,.448},{.664,.344},{.667,.519},{.670,.827},{.671,.282},{.673,.772},{.680,.571},{.693,.880},{.707,.799},{.725,.823},{.741,.869},{.745,.842},{.750,.734},{.754,.763},{.761,.409},{.784,.841},{.794,.723},{.814,.787},{.835,.838}},
 [2]={{.195,.337},{.517,.275},{.678,.706},{.674,.420},{.356,.266},{.269,.500},{.542,.463},{.442,.321},{.220,.357},{.621,.707}}},
 bleakrockvillage_base={
 [1]={{.438,.998},{.278,.688},{.937,.546},{.881,.525},{.345,.512},{.087,.689},{.091,.680},{.934,.556},{.268,.696},{.335,.513},{.883,.536},{.276,.694}},
@@ -4581,11 +2633,11 @@ blessedcrucible6_base={
 [1]={{.452,.592}}},
 bloodmaynecave_base={
 [1]={{.265,.540},{.457,.425},{.510,.675},{.342,.490},{.398,.602},{.504,.680},{.173,.365},{.405,.451},{.108,.371},{.481,.390},{.400,.593},{.571,.435},{.468,.411},{.452,.426},{.114,.454},{.023,.429},{.168,.558},{.110,.553},{.109,.449},{.457,.416},{.119,.434},{.093,.557},{.099,.543},{.164,.544},{.514,.669},{.218,.405},{.411,.456},{.474,.386},{.332,.494},{.103,.550},{.238,.430},{.124,.441},{.157,.560},{.411,.442},{.096,.372},{.112,.441}}},
-bloodrootext1={
+ui_map_bloodrootext1_base={
 [1]={{.437,.231}}},
-bloodrootint1={
+ui_map_bloodrootint1_base={
 [1]={{.138,.533},{.114,.584},{.141,.599},{.536,.419},{.778,.479},{.537,.418}}},
-bloodrootint2={
+ui_map_bloodrootint2_base={
 [1]={{.573,.647},{.512,.585},{.493,.553},{.511,.583},{.571,.647}}},
 boneorchard_base={
 [1]={{.706,.193},{.716,.196}}},
@@ -4652,7 +2704,7 @@ clockwork_base={
 [1]={{.645,.687},{.413,.464},{.718,.732},{.661,.774},{.803,.458},{.581,.532},{.692,.439},{.564,.516},{.894,.632},{.498,.053},{.037,.617},{.243,.562},{.342,.640},{.336,.414},{.719,.455},{.640,.686},{.476,.701},{.746,.553},{.204,.562},{.839,.674},{.159,.507},{.598,.488},{.568,.509},{.796,.666},{.687,.489},{.703,.620},{.699,.442},{.165,.556},{.212,.626},{.233,.529},{.816,.611},{.192,.639},{.381,.649},{.202,.498},{.571,.747},{.766,.606},{.188,.647},{.368,.710},{.662,.509},{.477,.682},{.482,.570},{.834,.647},{.496,.395},{.264,.579},{.833,.655},{.493,.387}},
 [2]={{.263,.403},{.265,.553},{.825,.481},{.422,.567},{.427,.532},{.574,.601},{.330,.612},{.546,.665},{.815,.542},{.183,.575},{.403,.649},{.620,.528},{.227,.507},{.754,.465},{.591,.673},{.233,.447},{.709,.501},{.876,.607},{.562,.581},{.353,.526},{.338,.419},{.293,.569},{.463,.634},{.377,.615},{.652,.592},{.686,.440},{.404,.501},{.453,.545},{.599,.628},{.639,.676}}},
 coldharbour_base={
-[1]={{.634,.667},{.480,.436},{.621,.384},{.551,.727},{.691,.842},{.710,.759},{.644,.648},{.629,.601},{.223,.583},{.315,.707},{.226,.630},{.614,.590},{.396,.838},{.430,.465},{.455,.406},{.436,.405},{.596,.731},{.274,.812},{.417,.807},{.334,.652},{.707,.684},{.571,.464},{.639,.627},{.706,.645},{.603,.700},{.577,.652},{.565,.660},{.198,.623},{.623,.683},{.585,.566},{.493,.446},{.654,.548},{.571,.051},{.613,.755},{.223,.657},{.310,.571},{.469,.642},{.555,.699},{.634,.406},{.569,.577},{.395,.725},{.551,.409},{.625,.440},{.505,.433},{.391,.538},{.367,.573},{.406,.676},{.312,.633},{.260,.682},{.670,.799},{.441,.746},{.390,.826},{.375,.662},{.294,.843},{.293,.787},{.280,.725},{.316,.589},{.556,.673},{.604,.595},{.428,.501},{.439,.517},{.478,.419},{.475,.406},{.468,.409},{.427,.446},{.525,.496},{.642,.383},{.635,.466},{.313,.780},{.424,.774},{.540,.494},{.474,.510},{.471,.474},{.359,.726},{.295,.801},{.331,.550},{.514,.474},{.443,.557},{.627,.714},{.231,.696},{.261,.711},{.708,.536},{.452,.045},{.587,.390},{.245,.579},{.296,.859},{.676,.482},{.323,.521},{.674,.656},{.312,.858},{.571,.563},{.708,.696},{.348,.763},{.332,.702},{.526,.528},{.559,.574},{.263,.581},{.399,.767},{.622,.425},{.609,.603},{.428,.633},{.693,.683},{.705,.665},{.563,.425},{.654,.367},{.598,.666},{.581,.637},{.573,.682},{.675,.708},{.627,.463},{.452,.422},{.540,.459},{.547,.713},{.630,.541},{.756,.778},{.586,.042},{.519,.436},{.557,.439},{.305,.547},{.539,.441},{.409,.565},{.441,.544},{.558,.741},{.662,.572},{.461,.437},{.445,.481},{.473,.462},{.556,.480},{.576,.497},{.579,.551},{.462,.424},{.601,.530},{.587,.537},{.620,.562},{.540,.521},{.422,.438},{.488,.463},{.614,.447},{.600,.623},{.676,.572},{.516,.525},{.561,.653}},
+[1]={{.404,.536},{.634,.667},{.480,.436},{.621,.384},{.551,.727},{.691,.842},{.710,.759},{.644,.648},{.629,.601},{.223,.583},{.315,.707},{.226,.630},{.614,.590},{.396,.838},{.430,.465},{.455,.406},{.436,.405},{.596,.731},{.274,.812},{.417,.807},{.334,.652},{.707,.684},{.571,.464},{.639,.627},{.706,.645},{.603,.700},{.577,.652},{.565,.660},{.198,.623},{.623,.683},{.585,.566},{.493,.446},{.654,.548},{.571,.051},{.613,.755},{.223,.657},{.310,.571},{.469,.642},{.555,.699},{.634,.406},{.569,.577},{.395,.725},{.551,.409},{.625,.440},{.505,.433},{.391,.538},{.367,.573},{.406,.676},{.312,.633},{.260,.682},{.670,.799},{.441,.746},{.390,.826},{.375,.662},{.294,.843},{.293,.787},{.280,.725},{.316,.589},{.556,.673},{.604,.595},{.428,.501},{.439,.517},{.478,.419},{.475,.406},{.468,.409},{.427,.446},{.525,.496},{.642,.383},{.635,.466},{.313,.780},{.424,.774},{.540,.494},{.474,.510},{.471,.474},{.359,.726},{.295,.801},{.331,.550},{.514,.474},{.443,.557},{.627,.714},{.231,.696},{.261,.711},{.708,.536},{.452,.045},{.587,.390},{.245,.579},{.296,.859},{.676,.482},{.323,.521},{.674,.656},{.312,.858},{.571,.563},{.708,.696},{.348,.763},{.332,.702},{.526,.528},{.559,.574},{.263,.581},{.399,.767},{.622,.425},{.609,.603},{.428,.633},{.693,.683},{.705,.665},{.563,.425},{.654,.367},{.598,.666},{.581,.637},{.573,.682},{.675,.708},{.627,.463},{.452,.422},{.540,.459},{.547,.713},{.630,.541},{.756,.778},{.586,.042},{.519,.436},{.557,.439},{.305,.547},{.539,.441},{.409,.565},{.441,.544},{.558,.741},{.662,.572},{.461,.437},{.445,.481},{.473,.462},{.556,.480},{.576,.497},{.579,.551},{.462,.424},{.601,.530},{.587,.537},{.620,.562},{.540,.521},{.422,.438},{.488,.463},{.614,.447},{.600,.623},{.676,.572},{.516,.525},{.561,.653}},
 [2]={{.609,.774},{.574,.758},{.563,.493},{.068,.726},{.670,.572},{.560,.396},{.435,.418},{.425,.422},{.402,.748},{.454,.510},{.427,.511},{.592,.407},{.477,.528},{.580,.412},{.505,.756},{.581,.769},{.641,.672},{.277,.611},{.485,.507},{.762,.831},{.432,.654},{.330,.661},{.675,.783},{.286,.609},{.309,.530},{.393,.615},{.617,.435},{.637,.448},{.540,.494},{.738,.696},{.637,.643},{.610,.597},{.515,.393},{.635,.628},{.710,.760},{.307,.789},{.316,.826},{.313,.843},{.276,.718},{.432,.694},{.517,.588},{.293,.722},{.699,.797},{.526,.717},{.510,.557},{.312,.709},{.382,.707},{.260,.695},{.214,.612},{.525,.490},{.474,.597},{.564,.571},{.369,.710},{.518,.409},{.433,.469},{.392,.827}}},
 coldperchcavern_base={
 [1]={{.412,.166},{.479,.284},{.286,.685},{.228,.692},{.619,.682},{.542,.628},{.481,.275},{.146,.692},{.512,.749},{.231,.581},{.711,.641},{.562,.892},{.240,.409},{.708,.842},{.419,.168},{.784,.291},{.285,.673},{.719,.487},{.185,.537},{.576,.820},{.526,.676},{.290,.679},{.778,.297},{.273,.557},{.774,.460},{.140,.701},{.702,.647},{.584,.818},{.773,.470},{.716,.841}}},
@@ -4728,7 +2780,7 @@ divadschagrinmine_base={
 [1]={{.727,.795},{.327,.545},{.806,.404},{.698,.568},{.266,.314},{.507,.875},{.698,.056},{.424,.696},{.189,.498},{.858,.576},{.719,.793},{.750,.696},{.329,.557},{.405,.663},{.460,.633},{.356,.079},{.411,.372},{.301,.709},{.659,.325},{.808,.410},{.450,.300},{.765,.708},{.310,.706},{.747,.538},{.723,.457},{.274,.316},{.329,.067},{.755,.701},{.416,.366},{.746,.546},{.456,.305},{.752,.714},{.391,.659},{.318,.671},{.732,.450},{.753,.543}}},
 drinithtombfw01_base={
 [1]={{.365,.497},{.705,.877},{.694,.876},{.705,.865},{.422,.145},{.408,.147},{.372,.494},{.712,.884},{.410,.134},{.414,.117},{.416,.142},{.697,.866},{.372,.504}}},
-drinithtombfw01b={
+drinithtombfw01b_base={
 [1]={{.424,.147},{.409,.148},{.415,.145}}},
 dsr_doors_map={
 [1]={{.593,.345},{.606,.487},{.623,.479},{.531,.369},{.582,.337},{.621,.489}}},
@@ -4773,7 +2825,7 @@ erokii_base={
 etonnir_01_base={
 [1]={{.220,.276},{.675,.784},{.793,.410},{.334,.298},{.971,.752}}},
 ere_insidemap01={
-[1]={{.550,.486}}},
+[1]={{.312,.388},{.550,.486}}},
 ere_outsidemap02={
 [1]={{.734,.339},{.405,.532}}},
 evergloam_base={
@@ -4783,11 +2835,11 @@ evermore_base={
 [2]={{.730,.171},{.232,.621},{.223,.617}}},
 exarchsstronghold_base={
 [1]={{.359,.675},{.402,.236},{.538,.196},{.589,.581},{.529,.193},{.594,.574}}},
-falkreathsdemise={
+ui_map_falkreathsdemise_base={
 [1]={{.323,.718},{.263,.461},{.304,.601},{.289,.645},{.186,.604},{.365,.591},{.533,.475},{.250,.534},{.391,.554},{.279,.557},{.219,.567},{.382,.461}}},
-falkreathsdemise_i={
+ui_map_falkreathsdemise_i_base={
 [1]={{.270,.400},{.416,.882},{.416,.297},{.591,.089},{.415,.874},{.264,.395},{.411,.889}}},
-fanglairext={
+ui_map_fanglairext_base={
 [1]={{.414,.223},{.219,.492},{.692,.396},{.508,.163},{.594,.440},{.574,.295},{.209,.426},{.230,.559},{.519,.576},{.254,.255}}},
 farangelsdelve_base={
 [1]={{.435,.550},{.350,.388},{.134,.520},{.702,.182},{.785,.350},{.438,.688},{.422,.689},{.156,.513},{.251,.531},{.434,.568},{.776,.349},{.270,.538},{.618,.400},{.705,.201},{.422,.551},{.769,.322},{.629,.403},{.470,.324},{.449,.316},{.351,.381},{.370,.389},{.444,.694},{.143,.495},{.786,.330},{.716,.019},{.144,.515},{.616,.386},{.150,.509},{.423,.559},{.715,.200}}},
@@ -4943,7 +2995,7 @@ jodeslight_base={
 [1]={{.458,.436},{.574,.620},{.475,.623},{.483,.198},{.483,.250},{.178,.536},{.628,.851},{.205,.048},{.411,.520},{.841,.448},{.470,.437},{.405,.333},{.467,.634},{.165,.170},{.788,.319},{.612,.334},{.569,.571},{.857,.675},{.147,.706},{.571,.611},{.113,.481},{.171,.541},{.637,.845},{.195,.481},{.397,.515},{.793,.312},{.577,.572},{.567,.642},{.863,.680},{.198,.473},{.465,.431},{.467,.621},{.786,.309},{.575,.639}}},
 kardala_base={
 [1]={{.455,.518}}},
-karthdar={
+karthdar_base={
 [2]={{.337,.867},{.329,.862}}},
 kennelrun_base={
 [1]={{.463,.562},{.543,.362},{.462,.323},{.115,.383},{.246,.288},{.566,.453},{.507,.381},{.455,.566},{.256,.478},{.706,.484},{.850,.662},{.788,.535},{.803,.443},{.307,.564},{.875,.695},{.511,.492},{.780,.531},{.449,.312},{.403,.325},{.524,.430},{.772,.467},{.305,.465}}},
@@ -4984,13 +3036,13 @@ lipsandtarn_base={
 lostcity_base={
 [1]={{.421,.461},{.453,.640},{.601,.719},{.425,.467},{.485,.492},{.473,.565},{.705,.725},{.481,.486},{.463,.383},{.324,.641},{.560,.230},{.472,.416},{.440,.596},{.396,.605},{.618,.488},{.370,.656},{.435,.858},{.559,.163},{.361,.005},{.556,.627},{.405,.668},{.444,.544},{.491,.692},{.431,.623},{.349,.446},{.411,.898},{.420,.051},{.571,.699},{.477,.597},{.606,.724},{.405,.558},{.453,.650},{.350,.474},{.551,.257},{.426,.457},{.624,.484},{.357,.447},{.499,.694}}},
 lostshipyard_map001={
-[1]={{.397,.606},{.748,.665},{.804,.626},{.804,.607},{.789,.639},{.369,.498},{.776,.634},{.386,.390},{.524,.617},{.374,.538},{.301,.555},{.363,.575},{.414,.370},{.757,.646},{.523,.634},{.502,.573},{.799,.679},{.311,.592}}},
+[1]={{.620,.625},{.763,.584},{.270,.424},{.288,.452},{.397,.606},{.748,.665},{.804,.626},{.804,.607},{.789,.639},{.369,.498},{.776,.634},{.386,.390},{.524,.617},{.374,.538},{.301,.555},{.363,.575},{.414,.370},{.757,.646},{.523,.634},{.502,.573},{.799,.679},{.311,.592}}},
 lothna_base={
 [1]={{.307,.448},{.388,.364},{.739,.586},{.466,.214},{.486,.506},{.425,.777},{.310,.458},{.389,.354},{.458,.206},{.494,.500}}},
 lowerbthanuel_base={
 [1]={{.737,.826},{.423,.281},{.769,.607},{.493,.220},{.635,.258},{.644,.678},{.761,.821},{.779,.610},{.411,.450},{.412,.276},{.500,.662},{.781,.438},{.412,.267},{.625,.256},{.675,.442},{.645,.685},{.746,.821},{.415,.439},{.653,.685},{.631,.678},{.776,.603},{.785,.429},{.406,.282},{.510,.657},{.629,.248},{.421,.264},{.774,.614},{.667,.442},{.419,.272}}},
 marchodsacrifices_base={
-[1]={{.302,.366},{.737,.628}}},
+[1]={{.326,.337},{.402,.263},{.302,.366},{.737,.628}}},
 maarsoutsidemap003_base={
 [1]={{.426,.363},{.268,.815},{.667,.391},{.576,.527},{.498,.228},{.682,.338},{.268,.816},{.427,.363},{.325,.775},{.616,.505}}},
 maarsmap04_base={
@@ -5014,7 +3066,7 @@ mawlorkajsevenriddles_base={
 [1]={{.698,.524},{.707,.480},{.745,.515}}},
 mawlorkajsuthaysanctuary_base={
 [1]={{.464,.829},{.462,.819},{.471,.832},{.515,.830},{.479,.829},{.515,.821}}},
-mazzatunext={
+ui_map_mazzatunext_base={
 [1]={{.749,.729},{.369,.274},{.686,.253},{.397,.265},{.329,.707}}},
 mehrunesspite_base={
 [1]={{.541,.199},{.301,.712},{.436,.714},{.577,.878},{.591,.591},{.791,.172},{.299,.515},{.112,.522},{.488,.406},{.546,.204},{.460,.783},{.231,.647},{.290,.387},{.637,.402},{.180,.401},{.788,.236},{.534,.332},{.186,.509},{.288,.520},{.802,.189},{.103,.525},{.785,.243},{.578,.885},{.583,.591},{.405,.805},{.446,.724},{.787,.302},{.762,.587},{.805,.172},{.481,.407},{.295,.716},{.219,.649},{.401,.794},{.443,.714},{.778,.306},{.789,.258},{.538,.338},{.028,.383},{.453,.778},{.786,.313},{.104,.516},{.795,.253},{.439,.708}}},
@@ -5023,9 +3075,9 @@ mephalasnest_base={
 mhkmoonhunterkeep_base={
 [1]={{.674,.516},{.640,.619}}},
 mhkmoonhunterkeep2_base={
-[1]={{.344,.715},{.634,.368},{.520,.523},{.524,.520}}},
+[1]={{.391,.703},{.344,.715},{.634,.368},{.520,.523},{.524,.520}}},
 mhkmoonhunterkeep3_base={
-[1]={{.237,.877},{.099,.309},{.256,.512},{.254,.353},{.260,.406}}},
+[1]={{.100,.525},{.237,.877},{.099,.309},{.256,.512},{.254,.353},{.260,.406}}},
 minesofkhuras_base={
 [1]={{.254,.383},{.362,.284},{.375,.752},{.420,.340},{.368,.356},{.395,.452},{.245,.391},{.330,.133},{.671,.506},{.286,.100},{.242,.678},{.697,.817},{.360,.350},{.127,.392},{.399,.461},{.305,.369},{.376,.757},{.335,.143},{.384,.719},{.319,.393},{.282,.473},{.373,.579},{.714,.616},{.235,.413},{.296,.619},{.700,.809},{.389,.703},{.291,.469},{.412,.336},{.376,.572},{.367,.275},{.252,.677},{.419,.348}}},
 mistral_base={
@@ -5153,16 +3205,18 @@ rivenspire_base={
 [2]={{.574,.660},{.341,.678},{.268,.514},{.305,.679},{.394,.686},{.671,.609},{.649,.611},{.636,.592},{.619,.518},{.625,.513},{.586,.495},{.591,.431},{.593,.465},{.573,.481},{.073,.454},{.666,.325},{.678,.466},{.691,.500},{.764,.276},{.724,.221},{.331,.492},{.292,.495},{.278,.547},{.270,.590},{.296,.633},{.785,.327},{.811,.351},{.833,.283},{.602,.456},{.503,.607},{.534,.528},{.551,.591},{.248,.511},{.433,.688},{.687,.636},{.555,.555},{.647,.499},{.638,.645},{.715,.712},{.705,.731},{.148,.590},{.524,.214},{.396,.407},{.231,.612},{.219,.610},{.218,.700},{.607,.418},{.441,.319},{.273,.673},{.415,.695},{.666,.410},{.594,.667},{.259,.503},{.691,.198},{.211,.532},{.476,.657},{.358,.556}}},
 rkhardahrk={
 [1]={{.229,.592},{.232,.599},{.545,.251},{.512,.643},{.373,.459}}},
+rkindaleftint01_base={
+[1]={{.957,.468}}},
 rkundzelft_base={
 [1]={{.172,.063},{.721,.341},{.821,.591},{.164,.629},{.566,.714},{.266,.470},{.708,.351},{.810,.839},{.621,.246},{.365,.388},{.418,.251},{.167,.622},{.429,.256},{.718,.352},{.615,.499},{.357,.383},{.178,.623},{.569,.704},{.814,.584}}},
 rootsofsilvenar_base={
 [1]={{.603,.374},{.214,.664},{.593,.372},{.716,.413},{.540,.569},{.415,.401},{.541,.409},{.737,.601},{.727,.422},{.716,.344},{.221,.660},{.853,.633},{.695,.435},{.264,.509},{.702,.752},{.759,.436},{.310,.597},{.804,.451},{.656,.444},{.566,.750},{.546,.490},{.709,.384},{.536,.419},{.706,.345},{.214,.655},{.857,.641},{.687,.436},{.271,.493},{.740,.436},{.306,.592},{.801,.444},{.648,.439},{.552,.479},{.707,.373},{.669,.438}}},
-rootsoftreehenge={
+rootsoftreehenge_base={
 [1]={{.315,.192}}},
 rootsunder_base={
 [1]={{.469,.264},{.700,.549},{.587,.704},{.479,.423},{.705,.558},{.879,.450},{.359,.365},{.755,.164},{.362,.291},{.683,.042},{.473,.430},{.753,.304},{.460,.270},{.395,.428},{.290,.670},{.523,.730},{.580,.590},{.791,.541},{.459,.316},{.726,.404},{.517,.359},{.773,.215},{.584,.697},{.213,.630},{.747,.611},{.422,.437},{.249,.701},{.809,.363},{.708,.552},{.654,.153},{.815,.412},{.425,.363},{.751,.498},{.850,.380},{.780,.212},{.257,.697},{.530,.729},{.252,.686},{.816,.361},{.825,.421},{.418,.354},{.871,.456},{.732,.005},{.522,.352},{.429,.440},{.536,.733},{.433,.447},{.758,.310},{.284,.675},{.843,.038},{.474,.321},{.783,.538},{.294,.661}}},
 rpb_map_int001={
-[1]={{.707,.44},{.260,.455},{.812,.476},{.187,.405},{.765,.446},{.234,.357},{.513,.448}}},
+[1]={{.820,.598},{.712,.512},{.707,.44},{.260,.455},{.812,.476},{.187,.405},{.765,.446},{.234,.357},{.513,.448}}},
 rpb_map_int002={
 [1]={{.645,.771},{.180,.511}}},
 rpb_map_int003={
@@ -5183,13 +3237,13 @@ sanguinesdemesne_base={
 [1]={{.44,.496},{.191,.593},{.569,.665},{.575,.659},{.381,.606},{.445,.457},{.390,.692},{.202,.420},{.235,.461},{.457,.387},{.249,.665},{.384,.402},{.497,.287},{.294,.441},{.776,.512},{.296,.241},{.568,.651},{.640,.671},{.493,.410},{.126,.478},{.188,.225},{.605,.629},{.067,.529},{.084,.491},{.190,.557},{.805,.589},{.019,.598},{.443,.517},{.821,.700},{.462,.683},{.826,.543},{.862,.561},{.256,.530},{.566,.658},{.600,.616},{.091,.480},{.430,.496},{.817,.547},{.448,.465},{.492,.293},{.438,.458},{.235,.452},{.647,.676},{.439,.525},{.817,.539},{.768,.510},{.177,.223},{.458,.677},{.824,.551},{.857,.568}}},
 santaki_base={
 [1]={{.369,.182},{.724,.691},{.085,.416},{.203,.515},{.712,.478},{.900,.617},{.238,.375},{.457,.251},{.529,.502},{.203,.507},{.741,.441},{.655,.401},{.432,.233},{.727,.699},{.617,.663},{.265,.268},{.614,.793},{.597,.404},{.092,.424},{.051,.451},{.617,.285},{.820,.626},{.635,.462},{.511,.442},{.639,.473},{.702,.482},{.628,.291},{.520,.005},{.625,.282}}},
-scalecaller001={
+ui_map_scalecaller001_base={
 [1]={{.608,.482},{.439,.353},{.439,.350},{.605,.484}}},
-scalecaller002={
+ui_map_scalecaller002_base={
 [1]={{.523,.705},{.291,.531},{.109,.734},{.650,.256},{.300,.521},{.643,.254}}},
-scalecaller003={
+ui_map_scalecaller003_base={
 [1]={{.305,.382},{.699,.399},{.055,.396},{.486,.643},{.299,.378},{.539,.513},{.515,.337}}},
-scalecaller004={
+ui_map_scalecaller004_base={
 [1]={{.221,.502}}},
 se_orsinium={
 [1]={{.518,.734},{.478,.477},{.588,.624},{.546,.579},{.260,.441},{.455,.538},{.681,.599},{.309,.393},{.379,.415}}},
@@ -5272,9 +3326,9 @@ stonefalls_base={
 [1]={{.461,.737},{.274,.269},{.769,.032},{.778,.384},{.774,.361},{.934,.470},{.764,.547},{.430,.749},{.791,.537},{.623,.678},{.536,.645},{.414,.439},{.308,.682},{.436,.444},{.741,.401},{.469,.601},{.733,.547},{.294,.423},{.664,.566},{.626,.694},{.305,.671},{.342,.408},{.214,.282},{.291,.395},{.364,.419},{.257,.387},{.867,.425},{.835,.414},{.674,.511},{.125,.443},{.498,.583},{.199,.223},{.152,.490},{.191,.595},{.401,.553},{.331,.566},{.200,.281},{.271,.673},{.381,.743},{.166,.226},{.186,.579},{.797,.620},{.173,.600},{.544,.704},{.772,.351},{.709,.538},{.123,.452},{.855,.433},{.609,.618},{.408,.479},{.785,.586},{.684,.382},{.414,.727},{.228,.666},{.389,.442},{.376,.406},{.808,.608},{.184,.194},{.132,.560},{.220,.388},{.800,.448},{.313,.595},{.367,.573},{.121,.600},{.148,.174},{.216,.376},{.251,.372},{.347,.337},{.519,.625},{.178,.272},{.708,.623},{.753,.444},{.656,.375},{.760,.486},{.342,.570},{.431,.485},{.128,.597},{.142,.592},{.198,.592},{.484,.722},{.379,.375},{.475,.729},{.362,.409},{.442,.469},{.157,.206},{.473,.650},{.626,.581},{.461,.686},{.297,.675},{.114,.507},{.108,.501},{.347,.376},{.164,.369},{.177,.334},{.404,.517},{.500,.532},{.718,.519},{.360,.361},{.209,.359},{.818,.406},{.394,.425},{.577,.571},{.498,.614},{.147,.457},{.103,.475},{.316,.329},{.597,.467},{.297,.639},{.340,.655},{.342,.579},{.643,.549},{.293,.622},{.301,.660},{.301,.633},{.524,.682},{.466,.749},{.567,.668},{.349,.570},{.358,.615},{.338,.718},{.088,.455},{.458,.721},{.435,.552},{.473,.638},{.930,.412},{.735,.524},{.652,.653},{.839,.482},{.796,.483},{.828,.485},{.640,.593},{.638,.380},{.606,.408},{.804,.533},{.745,.626},{.604,.614},{.193,.635},{.526,.533},{.503,.505},{.374,.744},{.207,.657},{.242,.651},{.689,.366},{.939,.357}},
 [2]={{.502,.541},{.445,.471},{.399,.424},{.329,.346},{.151,.178},{.181,.350},{.285,.582},{.291,.667},{.336,.661},{.517,.603},{.583,.585},{.247,.377},{.553,.357},{.784,.587},{.300,.455},{.135,.588},{.296,.427},{.627,.698},{.662,.675},{.654,.693},{.599,.531},{.700,.364},{.691,.376},{.630,.392},{.722,.352},{.496,.690},{.152,.476},{.485,.690},{.478,.717},{.159,.162},{.177,.581},{.929,.418},{.203,.364},{.778,.553},{.255,.543},{.721,.575},{.249,.233},{.830,.484},{.751,.648},{.819,.411},{.149,.592},{.803,.439},{.350,.507},{.170,.476},{.317,.493},{.824,.476},{.221,.439},{.364,.393},{.247,.456},{.559,.694},{.634,.404},{.502,.437},{.200,.634},{.191,.645}}},
 stonegarden02_base={
-[1]={{.316,.225},{.439,.805},{.662,.844}}},
+[1]={{.45,.185},{.316,.225},{.439,.805},{.662,.844}}},
 stonegarden03_base={
-[1]={{.475,.751},{.472,.844},{.641,.349},{.551,.192},{.696,.504},{.527,.348},{.278,.171},{.395,.192}}},
+[1]={{.605,.704},{.475,.751},{.472,.844},{.641,.349},{.551,.192},{.696,.504},{.527,.348},{.278,.171},{.395,.192}}},
 stonetoothfortress_base={
 [1]={{.488,.216},{.343,.252},{.545,.074},{.822,.922},{.044,.451},{.112,.826},{.619,.002},{.619,.070},{.679,.714},{.028,.753},{.076,.403},{.089,.561}},
 [2]={{.824,.669},{.419,.255}}},
@@ -5301,7 +3355,9 @@ summerset_base={
 [1]={{.256,.489},{.558,.345},{.664,.572},{.702,.641},{.5940,.3580},{.6963,.7736},{.6714,.7940},{.2313,.6253},{.1910,.6366},{.2451,.5789},{.2481,.6164},{.6421,.3628},{.3659,.5265},{.5577,.2544},{.4846,.1889},{.4962,.1723},{.2240,.4214},{.2679,.4283},{.4837,.7502},{.7461,.6808},{.6342,.6185},{.6648,.6875},{.2874,.5632},{.3622,.5539},{.3056,.3127},{.1712,.3165},{.5971,.3145},{.6002,.5555},{.3356,.5120},{.4208,.4555},{.5233,.2650},{.5092,.2861},{.5449,.6842},{.5873,.6518},{.5343,.3815},{.2562,.2578},{.2555,.4530},{.7362,.6723},{.5074,.3134},{.2789,.5188},{.5353,.2191},{.6024,.2465},{.5757,.6817},{.6847,.7819},{.7281,.7313},{.3840,.4631},{.6031,.6198},{.4939,.2082},{.3511,.5131},{.5265,.2286},{.2281,.6065},{.5688,.6475},{.5616,.6828},{.2138,.4088},{.2886,.2222},{.2992,.1925},{.3370,.5066},{.3912,.5148},{.2329,.5723},{.2036,.3158},{.7286,.7313},{.7156,.7662},{.5186,.2450},{.3537,.5391},{.6126,.5020},{.5572,.4262},{.5643,.2262},{.6581,.2895},{.5357,.2194},{.2435,.3971},{.5673,.2888},{.3746,.3985},{.3395,.4891},{.1812,.4126},{.5343,.3811},{.2085,.2707},{.6671,.5306},{.6841,.7821},{.2573,.5582},{.2709,.5143},{.2684,.5320},{.5610,.6549},{.4978,.6620},{.6199,.2744}},
 [2]={{.496,.693},{.520,.659},{.271,.550},{.291,.496},{.300,.351},{.671,.795},{.349,.472},{.447,.454},{.278,.379},{.364,.372},{.514,.762},{.270,.257}}},
 tdc_map_inside_001={
-[1]={{.873,.170},{.639,.160},{.830,.134},{.245,.854},{.343,.817},{.349,.850},{.372,.798},{.391,.779},{.395,.821},{.400,.768},{.407,.568},{.428,.618},{.463,.757},{.479,.305},{.491,.480},{.553,.140},{.557,.188},{.564,.287},{.606,.253},{.763,.140},{.801,.131},{.804,.176}}},
+[1]={{.731,.142},{.481,.644},{.695,.123},{.540,.204},{.873,.170},{.639,.160},{.830,.134},{.245,.854},{.343,.817},{.349,.850},{.372,.798},{.391,.779},{.395,.821},{.400,.768},{.407,.568},{.428,.618},{.463,.757},{.479,.305},{.491,.480},{.553,.140},{.557,.188},{.564,.287},{.606,.253},{.763,.140},{.801,.131},{.804,.176}}},
+tdc_map_secrethall_003={
+[1]={{.430,.194}}},
 teethofsithis02a_base={
 [1]={{.689,.367},{.804,.594},{.342,.571},{.174,.401},{.529,.223},{.302,.601},{.628,.229}}},
 teethofsithis02b_base={
@@ -5387,7 +3443,7 @@ u30_oblivion_portal_base={
 u30_oblivion_portal_boss_base={
 [1]={{.427,.405},{.812,.475},{.313,.629}}},
 u32deadlandszone_base={
-[1]={{.419,.547},{.683,.452},{.486,.581},{.616,.522},{.565,.544},{.599,.496},{.597,.419},{.600,.351},{.883,.256},{.791,.248},{.772,.298},{.677,.290},{.648,.241},{.556,.332},{.535,.368},{.481,.395},{.377,.565},{.366,.498},{.503,.679},{.573,.661},{.598,.461},{.715,.423},{.825,.402},{.725,.519},{.433,.482},{.472,.690},{.356,.728},{.307,.736},{.245,.695},{.339,.833},{.169,.646},{.118,.579},{.155,.609},{.401,.688},{.321,.835},{.372,.585}},
+[1]={{.275,.832},{.419,.547},{.683,.452},{.486,.581},{.616,.522},{.565,.544},{.599,.496},{.597,.419},{.600,.351},{.883,.256},{.791,.248},{.772,.298},{.677,.290},{.648,.241},{.556,.332},{.535,.368},{.481,.395},{.377,.565},{.366,.498},{.503,.679},{.573,.661},{.598,.461},{.715,.423},{.825,.402},{.725,.519},{.433,.482},{.472,.690},{.356,.728},{.307,.736},{.245,.695},{.339,.833},{.169,.646},{.118,.579},{.155,.609},{.401,.688},{.321,.835},{.372,.585}},
 [2]={{.187,.564},{.217,.582},{.542,.582},{.372,.552},{.852,.394}}},
 u32_dreaded_refuge_ext_base={
 [1]={{.485,.169}}},
@@ -5438,7 +3494,7 @@ u41_bv_sc2_map={
 u41_bv_sc3_map={
 [1]={{.153,.441},{.129,.439},{.869,.521},{.457,.783},{.202,.400},{.422,.749},{.897,.495},{.526,.129}}},
 u41_osp_map_section2={
-[1]={{.827,.417},{.459,.569}}},
+[1]={{.275,.589},{.827,.417},{.459,.569}}},
 u41_osp_map_section3={
 [1]={{.746,.884},{.686,.252},{.721,.801},{.695,.568},{.632,.491},{.760,.868},{.744,.811},{.695,.699},{.706,.863}}},
 u41_osp_map_starterarea={
@@ -5465,13 +3521,6 @@ u45_lepseclusa_map02={
 [1]={{.381,.568},{.583,.595},{.296,.453},{.577,.496},{.355,.517}}},
 u46_carapacecaverns_base={
 [1]={{.829,.838},{.657,.789},{.538,.751},{.130,.277},{.535,.993}}},
-u48_overland_base={
-[1]={{.377,.566},{.753,.309},{.801,.322},{.392,.583},{.409,.573},{.46,.737},{.57,.746},{.526,.758},{.473,.77},{.479,.596},{.345,.588},{.379,.538},{.821,.298},{.642,.562},{.661,.365},{.82,.528},{.774,.548},{.657,.709},{.633,.429},{.654,.65},{.806,.533},{.801,.637},{.752,.672},{.728,.666},{.704,.643},{.701,.613},{.493,.455},{.569,.352},{.788,.401},{.802,.286},{.789,.529},{.762,.500},{.733,.406},{.798,.405},{.833,.384},{.851,.365},{.867,.34},{.255,.453},{.259,.457},{.270,.472},{.271,.652},{.275,.651},{.284,.448},{.289,.566},{.296,.466},{.298,.437},{.301,.441},{.317,.457},{.321,.726},{.323,.723},{.325,.443},{.328,.646},{.330,.572},{.349,.626},{.352,.453},{.362,.399},{.370,.418},{.376,.704},{.378,.497},{.380,.525},{.386,.721},{.392,.456},{.394,.749},{.399,.763},{.407,.664},{.411,.437},{.420,.504},{.427,.366},{.428,.371},{.430,.424},{.443,.572},{.447,.692},{.450,.520},{.458,.663},{.462,.625},{.472,.766},{.475,.711},{.478,.558},{.492,.417},{.499,.627},{.504,.596},{.506,.661},{.516,.685},{.519,.718},{.524,.754},{.527,.554},{.534,.560},{.539,.399},{.542,.712},{.552,.562},{.555,.558},{.575,.624},{.581,.376},{.585,.691},{.598,.720},{.61,.433},{.611,.492},{.617,.472},{.625,.605},{.635,.451},{.641,.528},{.644,.377},{.645,.537},{.646,.663},{.654,.513},{.657,.697},{.671,.599},{.679,.631},{.682,.632},{.688,.466},{.69,.338},{.701,.631},{.704,.376},{.716,.460},{.719,.442},{.725,.689},{.727,.673},{.730,.339},{.732,.364},{.748,.502},{.752,.627},{.755,.284},{.756,.284},{.760,.651},{.763,.228},{.774,.637},{.777,.26},{.788,.316},{.794,.327},{.795,.409},{.801,.244},{.808,.257},{.810,.325},{.817,.260},{.824,.643},{.826,.624},{.831,.403},{.835,.303},{.839,.612}},
-[2]={{.71,.658},{.797,.621},{.579,.348},{.814,.541},{.634,.45},{.496,.515},{.793,.484},{.758,.323},{.309,.682},{.442,.762},{.397,.711},{.381,.576}}},
-u48_delve_sithis_crest_01={
-[1]={{.70,.107}}},
-u48_base_calindvalegardenspd={
-[1]={{.436,.806}}},
 u46_base_cotp={
 [1]={{.721,.388},{.529,.587},{.512,.733}}},
 u46_base_lotwc={
@@ -5487,15 +3536,28 @@ u47_writhingfortress_base={
 u47hajxulsection2map={
 [1]={{.622,.323}}},
 u47hajxulsection3map={
-[1]={{.234,.606},{.468,.512}}},
+[1]={{.644,.311},{.234,.606},{.468,.512}}},
+u48_overland_base={
+[1]={{.773,.448},{.377,.566},{.753,.309},{.801,.322},{.392,.583},{.409,.573},{.46,.737},{.57,.746},{.526,.758},{.473,.77},{.479,.596},{.345,.588},{.379,.538},{.821,.298},{.642,.562},{.661,.365},{.82,.528},{.774,.548},{.657,.709},{.633,.429},{.654,.65},{.806,.533},{.801,.637},{.752,.672},{.728,.666},{.704,.643},{.701,.613},{.493,.455},{.569,.352},{.788,.401},{.802,.286},{.789,.529},{.762,.500},{.733,.406},{.798,.405},{.833,.384},{.851,.365},{.867,.34},{.255,.453},{.259,.457},{.270,.472},{.271,.652},{.275,.651},{.284,.448},{.289,.566},{.296,.466},{.298,.437},{.301,.441},{.317,.457},{.321,.726},{.323,.723},{.325,.443},{.328,.646},{.330,.572},{.349,.626},{.352,.453},{.362,.399},{.370,.418},{.376,.704},{.378,.497},{.380,.525},{.386,.721},{.392,.456},{.394,.749},{.399,.763},{.407,.664},{.411,.437},{.420,.504},{.427,.366},{.428,.371},{.430,.424},{.443,.572},{.447,.692},{.450,.520},{.458,.663},{.462,.625},{.472,.766},{.475,.711},{.478,.558},{.492,.417},{.499,.627},{.504,.596},{.506,.661},{.516,.685},{.519,.718},{.524,.754},{.527,.554},{.534,.560},{.539,.399},{.542,.712},{.552,.562},{.555,.558},{.575,.624},{.581,.376},{.585,.691},{.598,.720},{.61,.433},{.611,.492},{.617,.472},{.625,.605},{.635,.451},{.641,.528},{.644,.377},{.645,.537},{.646,.663},{.654,.513},{.657,.697},{.671,.599},{.679,.631},{.682,.632},{.688,.466},{.69,.338},{.701,.631},{.704,.376},{.716,.460},{.719,.442},{.725,.689},{.727,.673},{.730,.339},{.732,.364},{.748,.502},{.752,.627},{.755,.284},{.756,.284},{.760,.651},{.763,.228},{.774,.637},{.777,.26},{.788,.316},{.794,.327},{.795,.409},{.801,.244},{.808,.257},{.810,.325},{.817,.260},{.824,.643},{.826,.624},{.831,.403},{.835,.303},{.839,.612}},
+[2]={{.71,.658},{.797,.621},{.579,.348},{.814,.541},{.634,.45},{.496,.515},{.793,.484},{.758,.323},{.309,.682},{.442,.762},{.397,.711},{.381,.576}}},
+u48_delve_sithis_crest_01={
+[1]={{.70,.107}}},
+u48_base_calindvalegardenspd={
+[1]={{.436,.806}}},
+u49_avz_parch_001={
+[1]={{.710,.491},{.283,.511},{.116,.435},{.271,.548},{.903,.357},{.555,.699},{.258,.578},{.535,.501},{.453,.405}}},
+u49_avz_skitter_001={
+[1]={{.423,.536},{.496,.282},{.694,.687},{.400,.439},{.561,.768}}},
+u49_avz_sorrow_001={
+[1]={{.466,.413},{.314,.082}}},
 ui_cradleofshadowsint={
 [1]={{.194,.491},{.347,.487},{.318,.521},{.457,.212},{.477,.475},{.417,.494},{.735,.400},{.469,.660},{.482,.477},{.555,.635},{.392,.385},{.195,.740},{.801,.819},{.622,.835},{.456,.208},{.537,.397},{.145,.191},{.321,.522},{.421,.284}}},
 ui_cradleofshadowsint_001_base={
-[1]={{.737,.403},{.171,.455},{.735,.396},{.415,.492}}},
+[1]={{.737,.403},{.171,.455},{.415,.492}}},
 ui_cradleofshadowsint_002_base={
-[1]={{.422,.283},{.801,.816},{.794,.818}}},
+[1]={{.422,.283},{.794,.818}}},
 ui_cradleofshadowsint_003_base={
-[1]={{.545,.641},{.672,.465},{.536,.398},{.466,.202},{.533,.390},{.557,.632},{.386,.387},{.452,.214},{.460,.211},{.554,.643}}},
+[1]={{.545,.641},{.672,.465},{.533,.390},{.386,.387},{.452,.214}}},
 ui_cradleofshadowsint_004_base={
 [1]={{.357,.517},{.134,.191},{.726,.445},{.452,.659},{.480,.476},{.629,.841},{.621,.843},{.460,.671},{.189,.744},{.343,.524},{.143,.191},{.732,.455},{.144,.175},{.723,.455},{.337,.518},{.618,.836},{.456,.666},{.474,.480},{.146,.183}}},
 ui_cradleofshadowsint_005_base={
@@ -5523,11 +3585,11 @@ ui_map_falkreathsdemise_i_base={
 ui_map_fanglairext_base={
 [1]={{.509,.163},{.231,.560},{.218,.492},{.210,.425},{.692,.396},{.592,.439},{.252,.255},{.416,.224},{.517,.575}}},
 ui_map_frvfrstvlt02_base={
-[1]={{.561,.385},{.411,.355},{.468,.810},{.251,.184},{.671,.458},{.780,.582}}},
+[1]={{.172,.616},{.561,.385},{.411,.355},{.468,.810},{.251,.184},{.671,.458},{.780,.582}}},
 ui_map_frvfrstvlt03_base={
 [1]={{.621,.693},{.491,.321},{.615,.270},{.398,.812}}},
 ui_map_frvfrstvlt04_base={
-[1]={{.725,.575},{.372,.603}}},
+[1]={{.314,.492},{.637,.349},{.725,.575},{.372,.603}}},
 ui_map_hofabricboss3_base={
 [1]={{.378,.279},{.501,.279},{.371,.266},{.497,.264},{.378,.272}}},
 ui_map_hofabricext1_base={
@@ -5559,7 +3621,7 @@ underpallcave_base={
 unhallowedgravemap001={
 [1]={{.806,.421},{.531,.268}}},
 unhallowedgravemap001b={
-[1]={{.544,.417},{.452,.205},{.500,.693},{.550,.792},{.499,.618},{.418,.126},{.448,.072}}},
+[1]={{.443,.337},{.544,.417},{.452,.205},{.500,.693},{.550,.792},{.499,.618},{.418,.126},{.448,.072}}},
 unhallowedgravemap001c={
 [1]={{.489,.763},{.626,.928},{.322,.214},{.446,.622},{.472,.794},{.514,.951}}},
 unexploredcrag_base={
@@ -5621,15 +3683,15 @@ wayrest_base={
 [1]={{.396,.729},{.201,.089},{.742,.360},{.258,.777},{.152,.307},{.124,.278},{.683,.829},{.513,.094},{.436,.601},{.578,.094},{.231,.472}},
 [2]={{.996,.187},{.789,.736},{.604,.685},{.587,.758}}},
 wayrestsewers_base={
-[1]={{.381,.734},{.585,.381},{.361,.721},{.406,.296},{.201,.059},{.228,.115},{.778,.420},{.781,.720},{.628,.696},{.411,.772},{.740,.550},{.528,.293},{.732,.319},{.675,.671},{.502,.625},{.288,.178},{.734,.724},{.730,.179},{.705,.483},{.832,.124},{.606,.647},{.354,.413},{.683,.586},{.359,.575},{.291,.665},{.787,.110},{.730,.367},{.394,.740}}},
+[1]={{.61,.319},{.381,.734},{.585,.381},{.361,.721},{.406,.296},{.201,.059},{.228,.115},{.778,.420},{.781,.720},{.628,.696},{.411,.772},{.740,.550},{.528,.293},{.732,.319},{.675,.671},{.502,.625},{.288,.178},{.734,.724},{.730,.179},{.705,.483},{.832,.124},{.606,.647},{.354,.413},{.683,.586},{.359,.575},{.291,.665},{.787,.110},{.730,.367},{.394,.740}}},
 weepingwindcave_base={
 [1]={{.202,.905},{.430,.929},{.377,.904},{.434,.920},{.500,.832},{.590,.684},{.499,.825},{.227,.663},{.215,.622},{.335,.378},{.369,.898},{.540,.562},{.532,.902},{.577,.675},{.197,.812},{.686,.118},{.494,.486},{.450,.678},{.393,.526},{.439,.925},{.462,.586},{.700,.197},{.418,.188},{.203,.898},{.647,.308},{.432,.249},{.368,.905},{.551,.563},{.691,.184},{.633,.304},{.341,.384},{.542,.903},{.444,.682},{.437,.931},{.691,.193},{.424,.179},{.435,.240},{.354,.380},{.201,.625},{.400,.525}}},
 westernskryim_base={
-[1]={{.482,.526},{.50,.573},{.399,.552},{.752,.563},{.643,.515},{.701,.443},{.744,.461},{.692,.32},{.441,.30},{.464,.292},{.437,.209},{.233,.359},{.244,.451},{.30,.702},{.334,.713},{.415,.707},{.558,.60},{.473,.584},{.325,.616},{.293,.623},{.54,.41},{.639,.325},{.705,.349},{.757,.641},{.674,.377},{.637,.418},{.607,.435},{.624,.459},{.67,.479},{.58,.563},{.507,.633},{.492,.615},{.434,.705},{.513,.687},{.539,.645},{.289,.287},{.353,.518},{.362,.549},{.438,.514},{.139,.593},{.190,.588},{.426,.515},{.564,.518},{.568,.541},{.290,.413},{.316,.441},{.362,.422},{.603,.619},{.448,.744},{.378,.630},{.2644,.6644},{.4641,.3239},{.2146,.4735},{.4338,.6760},{.4078,.6363},{.5820,.6717},{.1710,.4084},{.5455,.4895},{.6012,.4460},{.6045,.5280},{.5152,.2191},{.1836,.4344},{.3266,.2529},{.7636,.4919},{.4007,.4316},{.4473,.6486}},
+[1]={{.399,.592},{.482,.526},{.50,.573},{.399,.552},{.752,.563},{.643,.515},{.701,.443},{.744,.461},{.692,.32},{.441,.30},{.464,.292},{.437,.209},{.233,.359},{.244,.451},{.30,.702},{.334,.713},{.415,.707},{.558,.60},{.473,.584},{.325,.616},{.293,.623},{.54,.41},{.639,.325},{.705,.349},{.757,.641},{.674,.377},{.637,.418},{.607,.435},{.624,.459},{.67,.479},{.58,.563},{.507,.633},{.492,.615},{.434,.705},{.513,.687},{.539,.645},{.289,.287},{.353,.518},{.362,.549},{.438,.514},{.139,.593},{.190,.588},{.426,.515},{.564,.518},{.568,.541},{.290,.413},{.316,.441},{.362,.422},{.603,.619},{.448,.744},{.378,.630},{.2644,.6644},{.4641,.3239},{.2146,.4735},{.4338,.6760},{.4078,.6363},{.5820,.6717},{.1710,.4084},{.5455,.4895},{.6012,.4460},{.6045,.5280},{.5152,.2191},{.1836,.4344},{.3266,.2529},{.7636,.4919},{.4007,.4316},{.4473,.6486}},
 [2]={{.36,.712},{.266,.443}}},
 westwealdoverland_base={
-[1]={{.765,.433},{.480,.604},{.712,.448},{.415,.775},{.339,.503},{.614,.525},{.601,.505},{.627,.652},{.593,.466},{.714,.485},{.668,.509},{.691,.445},{.673,.390},{.488,.572},{.490,.444},{.317,.544},{.394,.506},{.750,.317},{.821,.694},{.137,.632},{.765,.208},{.569,.677},{.460,.557},{.404,.645},{.630,.706},{.598,.708},{.572,.715},{.538,.647},{.499,.652},{.473,.679},{.460,.757},{.516,.804},{.519,.752},{.515,.712},{.479,.707},{.819,.620},{.805,.661},{.892,.696},{.886,.656},{.902,.627},{.867,.589},{.797,.575},{.766,.632},{.837,.699},{.776,.534},{.426,.537},{.463,.544},{.504,.519},{.638,.536},{.602,.565},{.598,.594},{.220,.622},{.253,.597},{.294,.599},{.359,.562},{.375,.479},{.433,.492},{.510,.471},{.204,.566},{.181,.564},{.338,.580},{.354,.530},{.539,.492},{.718,.384},{.700,.695},{.723,.701},{.453,.516},{.816,.551},{.845,.654},{.578,.630},{.669,.296},{.702,.334},{.733,.328},{.624,.597},{.626,.633},{.638,.667},{.660,.675},{.637,.730},{.641,.183},{.625,.295},{.595,.319},{.585,.314},{.153,.657},{.108,.625},{.680,.225},{.737,.183},{.177,.633},{.173,.668},{.129,.679},{.718,.510},{.757,.430},{.566,.774},{.485,.798},{.407,.843},{.389,.738},{.374,.725},{.730,.281},{.745,.272},{.721,.231},{.754,.156},{.727,.103},{.667,.145},{.666,.188},{.688,.265},{.661,.273},{.648,.345},{.632,.382},{.623,.417},{.654,.469},{.632,.467},{.662,.588},{.240,.572},{.242,.532},{.432,.669},{.458,.620},{.461,.716},{.553,.746},{.576,.478},{.583,.359},{.609,.757},{.617,.426},{.708,.646},{.711,.719},{.749,.687},{.753,.356},{.782,.688},{.917,.667}},
-[2]={{.378,.513},{.704,.676},{.405,.768},{.544,.667},{.200,.567},{.479,.481},{.498,.499},{.653,.638},{.720,.511},{.657,.227},{.685,.360}}},
+[1]={{.564,.528},{.765,.433},{.480,.604},{.712,.448},{.415,.775},{.339,.503},{.614,.525},{.601,.505},{.627,.652},{.593,.466},{.714,.485},{.668,.509},{.691,.445},{.673,.390},{.488,.572},{.490,.444},{.317,.544},{.394,.506},{.750,.317},{.821,.694},{.137,.632},{.765,.208},{.569,.677},{.460,.557},{.404,.645},{.630,.706},{.598,.708},{.572,.715},{.538,.647},{.499,.652},{.473,.679},{.460,.757},{.516,.804},{.519,.752},{.515,.712},{.479,.707},{.819,.620},{.805,.661},{.892,.696},{.886,.656},{.902,.627},{.867,.589},{.797,.575},{.766,.632},{.837,.699},{.776,.534},{.426,.537},{.463,.544},{.504,.519},{.638,.536},{.602,.565},{.598,.594},{.220,.622},{.253,.597},{.294,.599},{.359,.562},{.375,.479},{.433,.492},{.510,.471},{.204,.566},{.181,.564},{.338,.580},{.354,.530},{.539,.492},{.718,.384},{.700,.695},{.723,.701},{.453,.516},{.816,.551},{.845,.654},{.578,.630},{.669,.296},{.702,.334},{.733,.328},{.624,.597},{.626,.633},{.638,.667},{.660,.675},{.637,.730},{.641,.183},{.625,.295},{.595,.319},{.585,.314},{.153,.657},{.108,.625},{.680,.225},{.737,.183},{.177,.633},{.173,.668},{.129,.679},{.718,.510},{.757,.430},{.566,.774},{.485,.798},{.407,.843},{.389,.738},{.374,.725},{.730,.281},{.745,.272},{.721,.231},{.754,.156},{.727,.103},{.667,.145},{.666,.188},{.688,.265},{.661,.273},{.648,.345},{.632,.382},{.623,.417},{.654,.469},{.632,.467},{.662,.588},{.240,.572},{.242,.532},{.432,.669},{.458,.620},{.461,.716},{.553,.746},{.576,.478},{.583,.359},{.609,.757},{.617,.426},{.708,.646},{.711,.719},{.749,.687},{.753,.356},{.782,.688},{.917,.667}},
+[2]={{.411,.491},{.378,.513},{.704,.676},{.405,.768},{.544,.667},{.200,.567},{.479,.481},{.498,.499},{.653,.638},{.720,.511},{.657,.227},{.685,.360}}},
 wgtbattlemage_base={
 [1]={{.638,.803},{.227,.291},{.655,.801},{.336,.291}}},
 wgtimperialguardquarters_base={
@@ -5667,32 +3729,32 @@ local CustomChestData,CustomThievesTrove={},{}
 local PoiData={}
 local Achievements={
 imperialsewers_aldmeri1_base={--Cunning Scamp Exterminator and Trove Scamp Exterminator	Provided by art1ink.
-[78]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
-[79]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}}},
+[1270]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
+[1272]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}}},
 imperialsewers_aldmeri2_base={
-[78]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
-[79]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}}},
+[1270]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
+[1272]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}}},
 imperialsewers_aldmeri3_base={
-[78]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
-[79]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}}},
+[1270]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
+[1272]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}}},
 imperialsewers_ebon1_base={
-[78]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
-[79]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}}},
+[1270]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
+[1272]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}}},
 imperialsewers_ebon2_base={
-[78]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
-[79]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}}},
+[1270]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
+[1272]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}}},
 imperialsewer_ebonheart3_base={
-[78]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
-[79]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}}},
+[1270]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
+[1272]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}}},
 imperialsewer_daggerfall1_base={
-[78]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
-[79]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}}},
+[1270]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
+[1272]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}}},
 imperialsewer_daggerfall2_base={
-[78]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
-[79]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}}},
+[1270]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
+[1272]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}}},
 imperialsewer_daggerfall3_base={
-[78]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
-[79]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}}},
+[1270]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
+[1272]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}}},
 craglorn_base={
 [26]={{.398,.516,3},{.24,.503,3},{.753,.615,3},{.727,.588,3},{.497,.487,3},{.688,.58,3},{.669,.57,3},{.74,.453,3},{.227,.59,3},{.259,.59,3},{.308,.62,3},{.906,.724,3},{.877,.699,3},{.474,.627,3},{.328,.549,3},{.76,.503,3},{.569,.444,3},{.482,.55,3},{.309,.361,3},{.38,.667,3},{.402,.442,3},{.274,.29,3},{.518,.393,3},{.556,.461,3}},--Celestial Rift
 },
@@ -5702,18 +3764,18 @@ u32deadlandszone_base={
 },
 u48_overland_base={
 [26]={{.347,.440,6},{.428,.452,6},{.3,.52,6},{.34,.621,6},{.34,.709,6},{.322,.479,6},{.33,.681,6},{.364,.67,6},{.387,.715,6},{.385,.621,6},{.409,.428,6},{.417,.626,6},{.334,.455,6},{.417,.756,6},{.458,.536,6},{.478,.548,6},{.489,.571,6},{.509,.536,6},{.557,.666,6}},
-[91]={{.293,.511,4432},{.353,.713,4432},{.361,.544,4432},{.366,.473,4432},{.367,.619,4432},{.481,.435,4432},{.484,.543,4432},{.507,.575,4432},{.510,.646,4432}},--Wanderers of Western Solstice
-[93]={--Sanguine's Delights
+[4432]={{.293,.511,4432},{.353,.713,4432},{.361,.544,4432},{.366,.473,4432},{.367,.619,4432},{.481,.435,4432},{.484,.543,4432},{.507,.575,4432},{.510,.646,4432}},--Wanderers of Western Solstice
+[4435]={--Sanguine's Delights
 {.327,.645,4435,1},--Drink at Sanguine's Shrine
 {.331,.523,4435,2},--Drink at Shor's Stand
 {.31,.684,4435,5}},--Drink at the Everlasting Fair
-[94]={{.341,.437,4434,1}},--Solstice Climbing Club
-[95]={{.815,.529,4455,1},{.723,.442,4455,2},{.551,.584,4455,3},{.634,.452,4455,4},{.673,.6,4455,5}},--Soul Shriven on Solstice
-[96]={{.651,.495,4456,1},{.756,.5,4456,2},{.759,.302,4456,3},{.71,.635,4456,4},{.737,.413,4456,5}},--We Were Undaunted
-[97]={{.791,.481,4457}},--The Legend of Atlorn the Lost
+[4434]={{.341,.437,4434,1}},--Solstice Climbing Club
+[4455]={{.815,.529,4455,1},{.723,.442,4455,2},{.551,.584,4455,3},{.634,.452,4455,4},{.673,.6,4455,5}},--Soul Shriven on Solstice
+[4456]={{.651,.495,4456,1},{.756,.5,4456,2},{.759,.302,4456,3},{.71,.635,4456,4},{.737,.413,4456,5}},--We Were Undaunted
+[4457]={{.791,.481,4457}},--The Legend of Atlorn the Lost
 },
 u46_sunport_base={
-[92]={--So Clean in Sunport
+[4433]={--So Clean in Sunport
 {.377,.511,4433,1},--Western Sunport Pond
 {.55,.647,4433,2},--Guildtrader's Pond
 {.628,.658,4433,3},--Pack Merchant Pond
@@ -5722,30 +3784,30 @@ u46_sunport_base={
 {.766,.541,4433,6}},--The Palace Fountain
 },
 u46_base_shoresstand={--Sanguine's Delights
-[93]={{.64,.655,4435,2}}},--Drink at Shor's Stand
+[4435]={{.64,.655,4435,2}}},--Drink at Shor's Stand
 u46_base_sanguinehdlv={--Sanguine's Delights
-[93]={{.617,.405,4435,3}}},--Drink within the Vale of Revelry (PTS dont work) - (Vale of Revelry Delve )
+[4435]={{.617,.405,4435,3}}},--Drink within the Vale of Revelry (PTS dont work) - (Vale of Revelry Delve )
 u46_base_corelanyacy={
-[93]={{.689,.591,4435,4}}},-- Drink within Corelanya Manor (PTS dont work) - (Inside Corelanya Manor in Wailing Garden during "Ghosthunters" Side Ques)
+[4435]={{.689,.591,4435,4}}},-- Drink within Corelanya Manor (PTS dont work) - (Inside Corelanya Manor in Wailing Garden during "Ghosthunters" Side Ques)
 westwealdoverland_base={--Gold Road
-[88]={--Gold Road Partaker
+[3968]={--Gold Road Partaker
 {.173,.662,3968,1},--Sutch Miner's Coin Toss
 {.429,.696,3968,2},--Water the Greenspeaking Sapling
 {.569,.654,3968,3},--Meridia's Shrine Ritual
 {.647,.504,3968,4}},--Sanguine's Shrine Ritual
-[89]={--Wine and Warriors
+[4040]={--Wine and Warriors
 {.212,.59,4040},{.412,.543,4040},{.692,.318,4040},{.631,.696,4040},{.453,.787,4040},{.719,.553,4040},{.423,.690,4040,5},{.553,.423,4040,3}},
-[90]={--Minotaur Tracker
+[4041]={--Minotaur Tracker
 {.489,.56,4041},
 {.611,.306,4041}}},
 u42_vashabar_base={--Gold Road Partaker
-[88]={{.856,.434,3968,2}},--Water the Greenspeaking Sapling
-[89]={{.741,.331,4040,5}},--Talk to the Reachfolk Ambassador
+[3968]={{.856,.434,3968,2}},--Water the Greenspeaking Sapling
+[4040]={{.741,.331,4040,5}},--Talk to the Reachfolk Ambassador
 },
 u42_ontus_city_base={--Wine and Warriors
-[89]={{.497,.533,4040,3}}},--Dance with a Marionette
+[4040]={{.497,.533,4040,3}}},--Dance with a Marionette
 u42_skingrad_base={--Wine and Warriors
-[89]={{.591,.244,4040}}},--Smash Grapes with a Vitner
+[4040]={{.591,.244,4040}}},--Smash Grapes with a Vitner
 u38_telvannipeninsula_base={
 [70]={--Telvanni Alchemy Station
 {.464,.677,615,1},--Volcan Sand Bath
@@ -5758,7 +3820,7 @@ u38_telvannipeninsula_base={
 {.225,.549,622,8},--Tempered Brass Report
 {.436,.501,623,9},--Malachite Burette and Stand
 {.539,.542,624,10}},--Vacuum Filtration Apparatus
-[86]={--Grave Discoveries
+[3675]={--Grave Discoveries
 {.223,.551,3675,1},--Sunvys Golsathyn Gravestone
 {.459,.692,3675,2},--Savienie Mavlyn Gravestone
 {.487,.501,3675,3},--Elovus Alarndil Gravestone
@@ -5770,20 +3832,46 @@ u38_telvannipeninsula_base={
 tlv_aldisra_base={
 [70]={{.72,.24,617,3}}},--Reagent Drying Rack (Telvanni Alchemy Station)
 u38_apocrypha_base={--Necrom
-[84]={--Syzygy
+[3678]={--Syzygy
 {.888,.596,3678,1},--Aberrant Hushed 1
 {.737,.637,3678,2},--Aberrant Hushed 2
 {.764,.766,3678,3},--Aberrant Hushed 3
 {.49,.699,3678,4},--Aberrant Hushed 4
 {.588,.662,3678,5}},--Final Rite (Carry out a ritual Syzygial Rostrum)
-[85]={--Tomes of Uknown Color
+[3677]={--Tomes of Uknown Color
 {.417,.385,3677,1},--Find Spectral Book 1
 {.276,.405,3677,2},--Find Spectral Book 2
 {.264,.468,3677,3},--Find Spectral Book 3
 {.158,.228,3677,4},--Find Spectral Book 4
 {.372,.246,3677,5}},--Find Spectral Book 5
-[87]={{.479,.301,3749}},--Slaughtered by Tentacles
+[3749]={{.479,.301,3749}},--Slaughtered by Tentacles
 },
+u36_galenisland_base={
+[3502]={--The Best of Friends
+{.183,.666,3502,1},--Dog Fighter
+{.591,.198,3502,2},--Cat Pirate
+{.175,.663,3502,3},--Cow City
+{.231,.644,3502,4},-- Horse 
+{.247,.215,3502,5},--Dog Under
+{.418,.359,3502,6},--Cat Forge
+},
+[3503]={--Ferret the Hunters
+{.307,.181,3503,1},--Urredhel
+{.526,.472,3503,2},--Elissa Marcellinus
+{.449,.68,3503,3},--Sabashur
+},
+[3504]={--Firestarter
+{.499,.417,3504},--Urredhel
+}},
+u36_lkh_base={
+[3505]={--A Joyous Dance
+{.255,.303,3505}}},
+u36_vastyrcity_base={
+[3502]={--The Best of Friends
+{.401,.396,3502,1},--Dog Fighter
+{.373,.385,3502,3},--Cow City
+{.582,.315,3502,4},-- Horse 
+}},
 u34_systreszone_base={--High Isle & Amenos
 [26]={{.129,.629,5},{.233,.759,5},{.249,.596,5},{.256,.485,5},{.269,.865,5},{.308,.439,5},{.424,.788,5},{.426,.437,5},{.434,.851,5},{.452,.657,5},{.493,.517,5},{.560,.629,5},{.580,.739,5},{.619,.339,5},{.745,.422,5},{.746,.336,5},{.789,.265,5},{.835,.304,5},{.835,.385,5},},--Lava Lasher
 [70]={--Antiquity leads provided by Kelinmiriel for remosito
@@ -5798,22 +3886,22 @@ u34_systreszone_base={--High Isle & Amenos
 {.288,.887,508},--Stained Water Jug (Clay Cooling Pitcher)
 {.678,.390,500},--Textured Bowl (Druidic Pestle)
 {.356,.628,502}},--Time-Worn Stone (Smoothed Stone Grinder)
-[80]={--Seeker of the Green
+[3298]={--Seeker of the Green
 {.18,.529,3298,1},--Druid Shrine near Jheury's Cove
 {.409,.56,3298,2},--Druid Shrine near Albatross Leap
 {.422,.764,3298,3},--Druid Shrine near Y'ffre's Cauldron
 {.539,.588,3298,4},--Druid Shrine near Duford Shipyards
 {.704,.368,3298,5}},--Druid Shrine near Banished Refuge
-[81]={{.448,.593,3424}},--No Regrets
-[82]={--Inventor of Adventur
+[3424]={{.448,.593,3424}},--No Regrets
+[3299]={--Inventor of Adventur
 {.566,.653,3299},
 {.211,.734,3299},
 {.433,.606,3299},
 {.846,.247,3299}},
-[83]={{.504,.838,3295}},--Gonfalon Bay's Master Burglar
+[3295]={{.504,.838,3295}},--Gonfalon Bay's Master Burglar
 },
 u34_gonfalonbaycity_base={
-[83]={{.233,.42,3295}},--Gonfalon Bay's Master Burglar
+[3295]={{.233,.42,3295}},--Gonfalon Bay's Master Burglar
 },
 blackwood_base={
 [26]={{.373,.179,1},{.418,.317,1},{.144,.592,1},{.267,.314,1},{.385,.507,1},{.448,.617,1},{.184,.428,1},{.737,.369,1},{.644,.36,1},{.313,.616,1},{.252,.355,1},{.654,.54,1},{.747,.83,1},{.612,.442,1},{.605,.23,1},{.636,.71,1},{.533,.79,1},{.515,.26,1},{.47,.528,1},{.26,.516,1}},--Oblivon portals. Provided by art1ink
@@ -5833,24 +3921,24 @@ blackwood_base={
 {.49,.755,	413},--Niss'wo Sacramental Wraps
 {.171,.474,	414},--Moth-Eaten Tapestry
 {.207,.457,	415}},--Ratty Tapestry
-[71]={{.378,.536,3083},--Lost in the Wilds
+[3083]={{.378,.536,3083},--Lost in the Wilds
 	{.15,.581,3083,2},{.172,.539,3083,2},{.182,.518,3083,2},--Fialdar the Vicious
 	{.526,.465,3083,3},{.569,.487,3083,3},{.598,.489,3083,3},--Vasha the Wicked
 	{.683,.832,3083,4},{.709,.818,3083,4},{.738,.808,3083,4},--Bingham the Quick
 	},
-[72]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
-[73]={{.24,.614,3082},{.21,.441,3082},{.361,.207,3082},{.362,.344,3082},{.391,.552,3082},{.532,.688,3082},{.643,.749,3082},{.603,.579,3082},{.683,.514,3082},{.638,.308,3082}},--Most Admired	Provided by art1ink
-[74]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.638,.308},{.391,.552},{.603,.579},{.614,.24}},--Random encounters. Provided by Lerozain
+[3081]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
+[3082]={{.24,.614,3082},{.21,.441,3082},{.361,.207,3082},{.362,.344,3082},{.391,.552,3082},{.532,.688,3082},{.643,.749,3082},{.603,.579,3082},{.683,.514,3082},{.638,.308,3082}},--Most Admired	Provided by art1ink
+[74]={{.442,.293},{.614,.24}},--Random encounters. Provided by Lerozain
 },
 u30_oblivion_portal_boss_base={
-[71]={{.351,.381,3083,5}}},--Precious Treasure
+[3083]={{.351,.381,3083,5}}},--Precious Treasure
 u30_xanmeeroverlook_int_base={
-[72]={{.841,.648,3081,1}}},--Delve Name: Xi-Tsei (Bane of the Sul-Xan)
+[3081]={{.841,.648,3081,1}}},--Delve Name: Xi-Tsei (Bane of the Sul-Xan)
 u30_silenthalls_int02_base={
-[72]={{.285,.48,3081,2}}},--Totem in the Silent Halls (Bane of the Sul-Xan)
+[3081]={{.285,.48,3081,2}}},--Totem in the Silent Halls (Bane of the Sul-Xan)
 bw_easterntunnel_base={
 [70]={{.305,.36,402}}},--Frayed Tapestry
-rkulftzel={
+rkulftzel_base={
 [70]={{.481,.652,60}}},--Dwarven Spine-Coupling
 theearthforgepublic_base={
 [70]={{.256,.384,72}}},--Dwarven Breastguard
@@ -5866,37 +3954,49 @@ nighthollowkeep1_base={
 u28_blackreach_base={
 [70]={{.251,.695,352}}},--Arkthzand Insight Vertex Shroud
 u30_leyawiincity_base={
-[75]={{.711,.503,3080}}},--Leyawiin's Master Burglar
+[3080]={{.711,.503,3080}}},--Leyawiin's Master Burglar
 --[[
 reach_base={--Provided by Aquifolius
-[60]={{.817,.76,2964}},	--Red Eagle's Flight	|H1:achievement:2927:1:1631279175|h|h
-[61]={	--Подношения древним духам
+[2330]={{.817,.76,2964}},	--Red Eagle's Flight	|H1:achievement:2927:1:1631279175|h|h
+[2358]={	--Подношения древним духам
 {.556,.571,2964},	--Ритуальный камень в лагере Пепельных Сердец
 {.665,.701,2964},	--Ритуальный камень в лагере Тёмных Перьев
 {.462,.432,2964},	--Ритуальный камень в лагере Дикого Копья
 {.384,.277,2964},	--Ритуальный камень в лагере Чёрной Луны
 }},
 --]]
+
+reach_base={--Provided by Aquifolius, updated by gamer_sa22
+[2927]={{.817,.76,2927}},	--Red Eagle's Flight
+[2851]={	--Offerings to the Old Spirits
+{.384,.277,2851,1},	--Black-Moon Ritual Stone
+{.462,.432,2851,2},	--Wildspear Ritual Stone
+{.556,.571,2851,3},	--Cinder-Heart Ritual Stone
+{.665,.701,2851,4}},--Shadowfeather Ritual Stone
+[2964]={ --A friend in deed -
+{.380,.690,2964},{.669,.639,2964},{.803,.657,2964},{.437,.617,2964},{.382,.522,2964},{.387,.248,2964},{.373,.439,2964},{.600,.463,2964},{.370,.648,2964},
+}},
+
 --Instrumental Triumph
 nchuthnkarst_base={
-[68]={{.859,.555,2669,2}}},--Lute 156666
+[2669]={{.859,.555,2669,2}}},--Lute 156666
 shadowgreen_upper_base={
-[68]={{.863,.495,2669,4}}},--Tenderclaw 156798
+[2669]={{.863,.495,2669,4}}},--Tenderclaw 156798
 dragonhome_base={
-[68]={{.663,.706,2669,5}}},--Shadow of Rahjin 156799
+[2669]={{.663,.706,2669,5}}},--Shadow of Rahjin 156799
 chillwinddepths_base={
-[68]={{.953,.497,2669,6}}},--Lilytongue 156800
+[2669]={{.953,.497,2669,6}}},--Lilytongue 156800
 labyrinthian_base={
-[68]={{.602,.558,2669,7}}},--Sky talker 156801
+[2669]={{.602,.558,2669,7}}},--Sky talker 156801
 thescraps_base={
-[68]={{.602,.307,2669,9}}},--Hightmourn Dizi 156803
+[2669]={{.602,.307,2669,9}}},--Hightmourn Dizi 156803
 blackreach_base={
-[68]={
+[2669]={
 {.586,.243,2669,3},	--Chime of the Endless 156797
 {.919,.455,2669,13},	--Pan Flute of Morachellis 156807
 {.502,.358,2669,14},	--Reman War Drum 156808
 {.275,.674,2669,15}},	--Ateian Fife 160510
-[69]={--Mining Sample Collector
+[2959]={--Mining Sample Collector
 {.482,.781,2759,1},--Kelbarn's Mining Samples	7373
 {.073,.413,2759,2},--Inguya's Mining Samples	7375
 {.622,.303,2759,3},--Reeh-La's Mining Samples	7377
@@ -5904,7 +4004,7 @@ blackreach_base={
 {.418,.666,2759,5}},--Ghamborz's Mining Samples	7379
 },
 westernskryim_base={
-[68]={	--Provided by Aquifolius
+[2669]={	--Provided by Aquifolius
 {.379,.505,2669,8},	--Long Fire 156802
 {.528,.225,2669,10},	--Jarlsbane 156804
 {.148,.496,2669,11},	--King Thunder 156805
@@ -5916,51 +4016,51 @@ westernskryim_base={
 [70]={{.377,.513,106}},--Ysgramor's Chosen Face Marking
 },
 senchal_base={
-[64]={{.512,.83,2534,9},{.549,.807,2534,12}},
-[65]={{.529,.187,2619,1}},
+[2534]={{.512,.83,2534,9},{.549,.807,2534,12}},
+[2619]={{.529,.187,2619,1}},
 },
 senchaloutlawrefuge_base={
-[64]={{.559,.668,2534,9}}},
+[2534]={{.559,.668,2534,9}}},
 houseofembersoutside_base={
-[64]={{.502,.16,2534,7}},
-[65]={{.783,.393,2619,8}},
+[2534]={{.502,.16,2534,7}},
+[2619]={{.783,.393,2619,8}},
 },
 moonlitcove01_base={
-[64]={{.423,.847,2534,3}},
-[65]={{.685,.613,2619,2}}},
+[2534]={{.423,.847,2534,3}},
+[2619]={{.685,.613,2619,2}}},
 moonlitcove02_base={
-[64]={{.423,.847,2534,3}},
-[65]={{.685,.613,2619,2}}},
+[2534]={{.423,.847,2534,3}},
+[2619]={{.685,.613,2619,2}}},
 moonlitcove05_base={
-[64]={{.423,.847,2534,3}},
-[65]={{.685,.613,2619,2}}},
+[2534]={{.423,.847,2534,3}},
+[2619]={{.685,.613,2619,2}}},
 southernelsweyr_base={
-[64]={{.445,.359,2534,1},{.187,.377,2534,2},{.698,.744,2534,4},{.375,.256,2534,5},{.525,.216,2534,6},{.514,.271,2534,7},{.546,.594,2534,8},{.5,.578,2534,9},{.301,.684,2534,10},{.419,.463,2534,11},{.507,.575,2534,12}},
-[65]={{.504,.452,2619,1},{.152,.609,2619,2},{.214,.482,2619,3},{.544,.189,2619,4},{.216,.302,2619,5},{.731,.733,2619,6},{.473,.727,2619,7},{.536,.285,2619,8},{.296,.691,2619,9},{.42,.225,2619,10}},
-[66]={{.342,.296,2621,1},{.183,.651,2621,2},{.573,.527,2621,3},{.544,.249,2621,4}},
-[67]={{.319,.46,2620}},
+[2534]={{.445,.359,2534,1},{.187,.377,2534,2},{.698,.744,2534,4},{.375,.256,2534,5},{.525,.216,2534,6},{.514,.271,2534,7},{.546,.594,2534,8},{.5,.578,2534,9},{.301,.684,2534,10},{.419,.463,2534,11},{.507,.575,2534,12}},
+[2619]={{.504,.452,2619,1},{.152,.609,2619,2},{.214,.482,2619,3},{.544,.189,2619,4},{.216,.302,2619,5},{.731,.733,2619,6},{.473,.727,2619,7},{.536,.285,2619,8},{.296,.691,2619,9},{.42,.225,2619,10}},
+[2621]={{.342,.296,2621,1},{.183,.651,2621,2},{.573,.527,2621,3},{.544,.249,2621,4}},
+[2620]={{.319,.46,2620}},
 },
---elsweyr={[42]={{.572,.262,0},{.28,.738,0},}},	--M'aiq
+--elsweyr={[872]={{.572,.262,0},{.28,.738,0},}},	--M'aiq
 orcrest_base={
-[63]={{.326,.408,2463,11}}},
+[2463]={{.326,.408,2463,11}}},
 orcrest2_base={
-[63]={{.323,.412,2463,11}}},
+[2463]={{.323,.412,2463,11}}},
 rimmennecropolis_base={
-[63]={{.084,.715,2463,3}}},
+[2463]={{.084,.715,2463,3}}},
 elsweyr_base={
-[63]={{.384,.216,2463,2},{.703,.378,2463,3},{.8,.343,2463,4},{.444,.252,2463,5},{.288,.4,2463,6},{.332,.344,2463,7},{.297,.72,2463,8},{.642,.375,2463,9},{.487,.395,2463,10},{.483,.484,2463,11},{.605,.486,2463,12},{.337,.567,2463,13},{.63,.592,2463,14},{.59,.692,2463,15},{.2,.6,2463,16}}},
+[2463]={{.384,.216,2463,2},{.703,.378,2463,3},{.8,.343,2463,4},{.444,.252,2463,5},{.288,.4,2463,6},{.332,.344,2463,7},{.297,.72,2463,8},{.642,.375,2463,9},{.487,.395,2463,10},{.483,.484,2463,11},{.605,.486,2463,12},{.337,.567,2463,13},{.63,.592,2463,14},{.59,.692,2463,15},{.2,.6,2463,16}}},
 abodeofignominy_base={
-[63]={{.689,.28,2463,2}}},
+[2463]={{.689,.28,2463,2}}},
 orcrest_base={
-[63]={{.327,.409,2463,11}}},
+[2463]={{.327,.409,2463,11}}},
 thetangle_base={
-[63]={{.442,.521,2463,14}}},
+[2463]={{.442,.521,2463,14}}},
 rimmennecropolis_base={
-[63]={{.085,.716,2463,3}}},
+[2463]={{.085,.716,2463,3}}},
 predatorrise_base={
-[63]={{.592,.38,2463,6}}},
+[2463]={{.592,.38,2463,6}}},
 murkmire_base={
-[57]={
+[2320]={
 {.391,.557,2320,1},--Vakka Tablet (Swallows-the-Sun)
 {.753,.347,2320,2},--Xeech Tablet
 {.544,.271,2320,3},--Sisei Tablet
@@ -5973,309 +4073,309 @@ murkmire_base={
 {.147,.303,2320,10},--Shaja-Nushmeeko Tablet
 {.461,.419,2320,11},--Saxhleel Tablet (Roots-That-Stumble)
 {.722,.279,2320,12}},--Xulomaht Tablet (Break-Like-Decat)
-[58]={{.745,.291,2341,1},{.395,.304,2341,2},{.77,.726,2341,3},{.755,.554,2341,4},{.191,.436,2341,5},},
-[59]={{.855,.605,2355},{.703,.603,2355,2},{.275,.438,2355,3}},
-[60]={{.318,.514,2330},{.426,.597,2330},{.4,.428,2330},{.518,.424,2330},{.65,.629,2330},{.631,.717,2330},{.499,.633,2330},{.352,.382,2330},{.704,.458,2330},{.418,.404,2330}},
-[61]={{.327,.373,2358},{.75,.646,2358},{.92,.802,2358},{.741,.45,2358},{.578,.598,2358},{.382,.527,2358},{.442,.464,2358}},
-[62]={{.864,.635,2357,1},{.556,.306,2357,2},{.444,.501,2357,3},{.219,.631,2357,4}},
+[2341]={{.745,.291,2341,1},{.395,.304,2341,2},{.77,.726,2341,3},{.755,.554,2341,4},{.191,.436,2341,5},},
+[2355]={{.855,.605,2355},{.703,.603,2355,2},{.275,.438,2355,3}},
+[2330]={{.318,.514,2330},{.426,.597,2330},{.4,.428,2330},{.518,.424,2330},{.65,.629,2330},{.631,.717,2330},{.499,.633,2330},{.352,.382,2330},{.704,.458,2330},{.418,.404,2330}},
+[2358]={{.327,.373,2358},{.75,.646,2358},{.92,.802,2358},{.741,.45,2358},{.578,.598,2358},{.382,.527,2358},{.442,.464,2358}},
+[2357]={{.864,.635,2357,1},{.556,.306,2357,2},{.444,.501,2357,3},{.219,.631,2357,4}},
 },
 deadwatervillage_base={
-[58]={{.289,.811,2341,5}}},
+[2341]={{.289,.811,2341,5}}},
 echoinghollow_base={
-[57]={{.772,.742,2320,5}}},--Hist-Dooka Tablet
+[2320]={{.772,.742,2320,5}}},--Hist-Dooka Tablet
 withervault_base={
-[57]={{.291,.299,2320,9}}},--Nushmeeko Tablet
+[2320]={{.291,.299,2320,9}}},--Nushmeeko Tablet
 lilmothcity_base={
-[57]={{.793,.556,2320,7}},--Thtithil-Gah Tablet
-[58]={{.39,.272,2341,3}},
-[61]={{.951,.558,2358,3}}},
+[2320]={{.793,.556,2320,7}},--Thtithil-Gah Tablet
+[2341]={{.39,.272,2341,3}},
+[2358]={{.951,.558,2358,3}}},
 brightthroatvillage_base={
-[58]={{.749,.497,2341,4}}},
+[2341]={{.749,.497,2341,4}}},
 teethofsithis02b_base={
-[62]={{.603,.327,2357,6}}},
+[2357]={{.603,.327,2357,6}}},
 ui_map_tsofeercavern01={
-[62]={{.624,.394,2357,5}}},
+[2357]={{.624,.394,2357,5}}},
 vivecstolms03_base={
-[50]={{.748,.351,1824,35}}},
+[1824]={{.748,.351,1824,35}}},
 viviccity_base={
-[50]={{.215,.447,1824,10},{.570,.444,1824,35}},
-[52]={{.481,.579,1827,2},{.522,.538,1827,3},{.501,.679,1827,4}},
+[1824]={{.215,.447,1824,10},{.570,.444,1824,35}},
+[1827]={{.481,.579,1827,2},{.522,.538,1827,3},{.501,.679,1827,4}},
 },
 balmora_base={
-[50]={{.613,.510,1824,36},{.232,.190,1824,25}},
+[1824]={{.613,.510,1824,36},{.232,.190,1824,25}},
 },
 sadrithmora_base={
-[50]={{.696,.477,1824,7}}},
+[1824]={{.696,.477,1824,7}}},
 vvardenfell_base={
-[50]={{.303,.360,1824,31},{.254,.506,1824,13},{.556,.754,1824,22},{.484,.735,1824,32},{.562,.772,1824,6},{.376,.716,1824,33},{.516,.785,1824,11},{.600,.773,1824,4},{.777,.908,1824,5},{.766,.764,1824,28},{.641,.468,1824,14},{.436,.724,1824,21},{.321,.712,1824,12},{.792,.760,1824,18},{.832,.712,1824,20},{.863,.699,1824,29},{.890,.578,1824,27},{.768,.475,1824,19},{.686,.417,1824,34},{.405,.828,1824,1},{.689,.293,1824,8},{.727,.278,1824,17},{.361,.237,1824,15},{.232,.293,1824,3},{.197,.361,1824,2},{.267,.545,1824,30},{.409,.536,1824,16},{.472,.879,1824,10},{.737,.378,1824,9},{.565,.816,1824,24},{.511,.652,1824,23},{.657,.617,1824,26},{.871,.507,1824,7},{.364,.621,1824,25},{.534,.878,1824,35},{.400,.652,1824,36}},
-[51]={{.245,.251,1712,1},{.163,.313,1712,2},{.246,.322,1712,3},{.291,.441,1712,4},{.292,.501,1712,5},{.363,.593,1712,6},{.328,.612,1712,7},{.362,.665,1712,8},{.297,.739,1712,9},{.387,.753,1712,10},{.363,.808,1712,11},{.478,.687,1712,12},{.483,.805,1712,13},{.605,.638,1712,14},{.634,.773,1712,15},{.650,.809,1712,16},{.697,.773,1712,17},{.737,.806,1712,18},{.773,.925,1712,19},{.863,.742,1712,20},{.709,.628,1712,21},{.842,.652,1712,22},{.617,.576,1712,23},{.726,.581,1712,24},{.858,.610,1712,25},{.674,.453,1712,26},{.826,.478,1712,27},{.647,.354,1712,28},{.630,.295,1712,29},{.611,.259,1712,30}},
-[52]={{.473,.704,1827,1},{.198,.363,1827,5},{.198,.398,1827,6},{.686,.713,1827,7}},
+[1824]={{.303,.360,1824,31},{.254,.506,1824,13},{.556,.754,1824,22},{.484,.735,1824,32},{.562,.772,1824,6},{.376,.716,1824,33},{.516,.785,1824,11},{.600,.773,1824,4},{.777,.908,1824,5},{.766,.764,1824,28},{.641,.468,1824,14},{.436,.724,1824,21},{.321,.712,1824,12},{.792,.760,1824,18},{.832,.712,1824,20},{.863,.699,1824,29},{.890,.578,1824,27},{.768,.475,1824,19},{.686,.417,1824,34},{.405,.828,1824,1},{.689,.293,1824,8},{.727,.278,1824,17},{.361,.237,1824,15},{.232,.293,1824,3},{.197,.361,1824,2},{.267,.545,1824,30},{.409,.536,1824,16},{.472,.879,1824,10},{.737,.378,1824,9},{.565,.816,1824,24},{.511,.652,1824,23},{.657,.617,1824,26},{.871,.507,1824,7},{.364,.621,1824,25},{.534,.878,1824,35},{.400,.652,1824,36}},
+[1712]={{.245,.251,1712,1},{.163,.313,1712,2},{.246,.322,1712,3},{.291,.441,1712,4},{.292,.501,1712,5},{.363,.593,1712,6},{.328,.612,1712,7},{.362,.665,1712,8},{.297,.739,1712,9},{.387,.753,1712,10},{.363,.808,1712,11},{.478,.687,1712,12},{.483,.805,1712,13},{.605,.638,1712,14},{.634,.773,1712,15},{.650,.809,1712,16},{.697,.773,1712,17},{.737,.806,1712,18},{.773,.925,1712,19},{.863,.742,1712,20},{.709,.628,1712,21},{.842,.652,1712,22},{.617,.576,1712,23},{.726,.581,1712,24},{.858,.610,1712,25},{.674,.453,1712,26},{.826,.478,1712,27},{.647,.354,1712,28},{.630,.295,1712,29},{.611,.259,1712,30}},
+[1827]={{.473,.704,1827,1},{.198,.363,1827,5},{.198,.398,1827,6},{.686,.713,1827,7}},
 },
 abahslanding_base={
-[49]={{.338,.884,1349,5},{.338,.549,1349,2},{.369,.369,1349,3},{.463,.742,1349,7},{.518,.288,1349,6},{.531,.582,1349,1},{.570,.312,1349,4}},
-[48]={{.538,.410,1382,1}}
+[1349]={{.338,.884,1349,5},{.338,.549,1349,2},{.369,.369,1349,3},{.463,.742,1349,7},{.518,.288,1349,6},{.531,.582,1349,1},{.570,.312,1349,4}},
+[1383]={{.538,.410,1382,1}}
 },
 alikr_base={
 [26]={{.513,.394,2},{.105,.517,2},{.323,.557,2},{.377,.627,2},{.391,.693,2},{.433,.692,2},{.475,.594,2},{.514,.419,2},{.528,.470,2},{.533,.529,2},{.569,.613,2},{.59,.343,2},{.701,.398,2},{.709,.515,2},{.757,.486,2},{.426,.631,2}},
-[43]={{.148,.482},{.289,.546},{.660,.520},{.783,.428},{.550,.580}},
-[40]={{.246,.460,704,10}},
-[48]={{.251,.458,1380,4}},
-[42]={{.442,.473,872,17},{.478,.381,872,17},{.833,.581,872,17}},
+[873]={{.148,.482},{.289,.546},{.660,.520},{.783,.428},{.550,.580}},
+[704]={{.246,.460,704,10}},
+[1383]={{.251,.458,1380,4}},
+[872]={{.442,.473,872,17},{.478,.381,872,17},{.833,.581,872,17}},
 },
 arenthia_base={
-[43]={{.152,.535}}},
+[873]={{.152,.535}}},
 argentmine2_base={
-[47]={{.802,.604,1250,14}}},
+[1250]={{.802,.604,1250,14}}},
 auridon_base={
 [26]={{.538,.598,2},{.318,.398,2},{.566,.84,2},{.212,.260,2},{.358,.271,2},{.410,.681,2},{.417,.184,2},{.522,.418,2},{.525,.801,2},{.575,.333,2},{.583,.433,2},{.615,.843,2},{.559,.464,2}},
-[43]={{.330,.392},{.363,.228},{.412,.213},{.522,.674},{.565,.447},{.569,.764},{.585,.538}},
-[42]={{.421,.333,872,2},{.434,.510,872,2},{.550,.790,872,2},{.706,.767,872,2}},
-[40]={{.601,.944,704,3}},
-[48]={{.707,.509,1383,1}},
+[873]={{.330,.392},{.363,.228},{.412,.213},{.522,.674},{.565,.447},{.569,.764},{.585,.538}},
+[872]={{.421,.333,872,2},{.434,.510,872,2},{.550,.790,872,2},{.706,.767,872,2}},
+[704]={{.601,.944,704,3}},
+[1383]={{.707,.509,1379,1}},
 },
 balfoyen_base={
-[42]={{.242,.673,872,7},{.382,.641,872,7}}},
+[872]={{.242,.673,872,7},{.382,.641,872,7}}},
 bangkorai_base={
 [26]={{.203,.348,2},{.279,.874,2},{.292,.712,2},{.328,.552,2},{.329,.650,2},{.345,.759,2},{.353,.85,2},{.364,.404,2},{.375,.255,2},{.450,.211,2},{.461,.828,2},{.488,.154,2},{.490,.498,2},{.494,.4,2},{.518,.526,2},{.588,.118,2},{.667,.202,2}},
-[48]={{.391,.347,1380,5}},
-[42]={{.310,.712,872,18},{.573,.218,872,18},{.604,.531,872,18},{.671,.680,872,18}},
-[43]={{.343,.747},{.672,.220},{.478,.517},{.656,.685}},
-[40]={{.399,.340,704,13}},
+[1383]={{.391,.347,1380,5}},
+[872]={{.310,.712,872,18},{.573,.218,872,18},{.604,.531,872,18},{.671,.680,872,18}},
+[873]={{.343,.747},{.672,.220},{.478,.517},{.656,.685}},
+[704]={{.399,.340,704,13}},
 },
 betnihk_base={
-[42]={{.286,.277,872,13},{.537,.647,872,13}}},
+[872]={{.286,.277,872,13},{.537,.647,872,13}}},
 coldharbour_base={
-[42]={{.439,.751,872,19},{.468,.407,872,19},{.554,.408,872,19},{.682,.644,872,19}},
-[40]={{.507,.700,704,16}}
+[872]={{.439,.751,872,19},{.468,.407,872,19},{.554,.408,872,19},{.682,.644,872,19}},
+[704]={{.507,.700,704,16}}
 },
 coldperchcavern_base={
-[47]={{.159,.701,1250,15}}},
+[1250]={{.159,.701,1250,15}}},
 daggerfall_base={
-[48]={{.302,.514,1380,1}},
-[40]={{.508,.293,704,1}},
+[1383]={{.302,.514,1380,1}},
+[704]={{.508,.293,704,1}},
 },
 davonswatch_base={
-[43]={{.655,.782}},
-[40]={{.798,.480,704,2}},
+[873]={{.655,.782}},
+[704]={{.798,.480,704,2}},
 },
 deshaan_base={
 [26]={{.227,.609,2},{.131,.466,2},{.626,.547,2},{.233,.499,2},{.228,.609,2},{.551,.463,2},{.449,.405,2},{.823,.391,2},{.118,.517,2},{.259,.544,2},{.132,.504,2},{.79,.545,2},{.634,.532,2},{.602,.49,2},{.164,.381,2},{.517,.464,2},{.674,.635,2},{.829,.447,2},{.776,.582,2},{.749,.612,2}},--Dark Fissures	Provided by art1ink
-[48]={{.454,.524,1381,2}},
-[42]={{.570,.502,872,9},{.679,.544,872,9},{.908,.547,872,9},{.413,.398,872,9}},
-[43]={{.158,.391},{.227,.511},{.384,.604},{.720,.406},{.803,.530}},
-[40]={{.404,.549,704,5}},
+[1383]={{.454,.524,1381,2}},
+[872]={{.570,.502,872,9},{.679,.544,872,9},{.908,.547,872,9},{.413,.398,872,9}},
+[873]={{.158,.391},{.227,.511},{.384,.604},{.720,.406},{.803,.530}},
+[704]={{.404,.549,704,5}},
 },
 eastmarch_base={
 [26]={{.625,.596,2},{.358,.3136,2},{.309,.573,2},{.524,.316,2},{.52,.364,2},{.555,.24,2},{.387,.38,2},{.358,.313,2},{.424,.316,2},{.725,.649,2},{.644,.643,2},{.21,.599,2},{.228,.633,2},{.536,.616,2},{.588,.579,2}},
-[42]={{.417,.655,872,11},{.553,.229,872,11},{.575,.513,872,11}},
-[43]={{.492,.348},{.512,.496},{.613,.618},{.333,.570},{.416,.331}},
-[48]={{.497,.285,1381,4}},
-[40]={{.508,.293,704,11}},
+[872]={{.417,.655,872,11},{.553,.229,872,11},{.575,.513,872,11}},
+[873]={{.492,.348},{.512,.496},{.613,.618},{.333,.570},{.416,.331}},
+[1383]={{.497,.285,1381,4}},
+[704]={{.508,.293,704,11}},
 },
 eldenrootgroundfloor_base={
-[43]={{.222,.870}},
-[48]={{.374,.809,1383,2}},
-[40]={{.558,.681,704,6}},
-[44]={{.725,.772,716,1}},
+[873]={{.222,.870}},
+[1383]={{.374,.809,1379,2}},
+[704]={{.558,.681,704,6}},
+[716]={{.725,.772,716,1}},
 },
 evermore_base={
-[48]={{.383,.434,1380,5}},
-[40]={{.428,.393,704,13}},
+[1383]={{.383,.434,1380,5}},
+[704]={{.428,.393,704,13}},
 },
 fortamol_base={
 [26]={{.748,.039,2},{.088,.528,2}},
-[43]={{.947,-.004}},
+[873]={{.947,-.004}},
 },
 glenumbra_base={
 [26]={{.738,.293,2},{.717,.145,2},{.404,.558,2},{.224,.522,2},{.310,.653,2},{.327,.335,2},{.358,.708,2},{.376,.793,2},{.406,.521,2},{.421,.370,2},{.506,.727,2},{.539,.646,2},{.550,.216,2},{.619,.222,2},{.782,.334,2}},
-[48]={{.238,.769,1380,1}},
-[42]={{.256,.466,872,14},{.780,.394,872,14},{.364,.847,872,14},{.573,.322,872,14}},
-[40]={{.280,.723,704,1}},
-[43]={{.361,.368},{.362,.744},{.460,.618},{.576,.374},{.635,.487},{.761,.245}},
+[1383]={{.238,.769,1380,1}},
+[872]={{.256,.466,872,14},{.780,.394,872,14},{.364,.847,872,14},{.573,.322,872,14}},
+[704]={{.280,.723,704,1}},
+[873]={{.361,.368},{.362,.744},{.460,.618},{.576,.374},{.635,.487},{.761,.245}},
 },
 grahtwood_base={
 [26]={{.242,.183,2},{.331,.533,2},{.367,.256,2},{.403,.685,2},{.352,.523,2},{.425,.255,2},{.454,.792,2},{.501,.361,2},{.576,.748,2},{.591,.334,2},{.595,.284,2},{.661,.682,2},{.711,.543,2},{.466,.399,2}},--Dark Fissures
-[48]={{.537,.566,1383,2}},
-[43]={{.253,.167},{.329,.392},{.504,.580},{.597,.261},{.653,.619}},
-[42]={{.278,.334,872,3},{.411,.252,872,3},{.451,.251,872,3},{.657,.696,872,3}},
-[44]={{.316,.229,716,1},{.686,.644,716,1},{.531,.718,716,1},{.614,.558,716,1},{.650,.723,716,1},{.581,.325,716,1},{.589,.402,716,1}},
-[40]={{.577,.538,704,6}},
+[1383]={{.537,.566,1379,2}},
+[873]={{.253,.167},{.329,.392},{.504,.580},{.597,.261},{.653,.619}},
+[872]={{.278,.334,872,3},{.411,.252,872,3},{.451,.251,872,3},{.657,.696,872,3}},
+[716]={{.316,.229,716,1},{.686,.644,716,1},{.531,.718,716,1},{.614,.558,716,1},{.650,.723,716,1},{.581,.325,716,1},{.589,.402,716,1}},
+[704]={{.577,.538,704,6}},
 },
 greenshade_base={
 [26]={{.267,.165,2},{.355,.671,2},{.358,.178,2},{.435,.275,2},{.444,.71,2},{.451,.419,2},{.472,.295,2},{.584,.653,2},{.621,.901,2},{.633,.658,2},{.665,.750,2}},
-[42]={{.124,.527,872,4},{.628,.885,872,4},{.632,.344,872,4}},
-[43]={{.203,.645},{.289,.671},{.382,.496},{.412,.248},{.625,.346},{.652,.810}},
-[48]={{.669,.503,1383,3}},
-[40]={{.704,.508,704,9}},
+[872]={{.124,.527,872,4},{.628,.885,872,4},{.632,.344,872,4}},
+[873]={{.203,.645},{.289,.671},{.382,.496},{.412,.248},{.625,.346},{.652,.810}},
+[1383]={{.669,.503,1379,3}},
+[704]={{.704,.508,704,9}},
 },
 hallinsstand_base={
-[42]={{.715,.317,872,1}},[43]={{.869,.475}}},
+[872]={{.715,.317,872,1}},[873]={{.869,.475}}},
 hewsbane_base={
-[49]={{.598,.572,1349,5},{.599,.453,1349,2},{.610,.389,1349,3},{.643,.522,1349,7},{.663,.361,1349,6},{.667,.465,1349,1},{.681,.369,1349,4}},
-[48]={{.669,.404,1382,1}},
+[1349]={{.598,.572,1349,5},{.599,.453,1349,2},{.610,.389,1349,3},{.643,.522,1349,7},{.663,.361,1349,6},{.667,.465,1349,1},{.681,.369,1349,4}},
+[1383]={{.669,.404,1382,1}},
 },
 hollowcity_base={
-[40]={{.612,.673,704,16}}},
+[704]={{.612,.673,704,16}}},
 honorsrestleft_base={
-[47]={{.100,.475,1250,9}}},
+[1250]={{.100,.475,1250,9}}},
 khenarthisroost_base={
-[42]={{.332,.306,872,1},{.814,.483,872,1}}},
+[872]={{.332,.306,872,1},{.814,.483,872,1}}},
 kozanset_base={
-[43]={{.726,.268}}},
+[873]={{.726,.268}}},
 kragenmoor_base={
-[48]={{.688,.465,1381,1}}},
+[1383]={{.688,.465,1381,1}}},
 malabaltor_base={
 [26]={{.385,.616,2},{.277,.610,2},{.278,.476,2},{.351,.574,2},{.358,.389,2},{.519,.671,2},{.587,.710,2},{.623,.864,2},{.637,.684,2},{.727,.357,2},{.792,.235,2},{.804,.282,2},{.811,.253,2}},
-[40]={{.083,.582,704,12}},
-[48]={{.094,.486,1383,4}},
-[42]={{.192,.587,872,5},{.436,.586,872,5},{.617,.242,872,5},{.802,.506,872,5}},
-[43]={{.568,.660},{.582,.407},{.845,.260},{.657,.805},{.306,.569}},
+[704]={{.083,.582,704,12}},
+[1383]={{.094,.486,1379,4}},
+[872]={{.192,.587,872,5},{.436,.586,872,5},{.617,.242,872,5},{.802,.506,872,5}},
+[873]={{.568,.660},{.582,.407},{.845,.260},{.657,.805},{.306,.569}},
 },
 marbruk_base={
-[48]={{.273,.324,1383,3}},
-[40]={{.505,.356,704,9}}},
+[1383]={{.273,.324,1379,3}},
+[704]={{.505,.356,704,9}}},
 mournhold_base={
-[40]={{.312,.673,704,5}},
-[48]={{.550,.549,1381,2}}},
+[704]={{.312,.673,704,5}},
+[1383]={{.550,.549,1381,2}}},
 nimalten_base={
-[43]={{.304,.702}}},
+[873]={{.304,.702}}},
 northpoint_base={
-[42]={{.856,.877,872,1}}},
+[872]={{.856,.877,872,1}}},
 orsinium_base={
-[46]={{.015,.398,1316,1}},
-[47]={{.369,.626,1250,11},{.369,.626,1250,12},{.825,.345,1250,19}}
+[1316]={{.015,.398,1316,1}},
+[1250]={{.369,.626,1250,11},{.369,.626,1250,12},{.825,.345,1250,19}}
 },
 rawlkha_base={
-[40]={{.620,.289,704,15}},
-[48]={{.698,.364,1383,5}}},
+[704]={{.620,.289,704,15}},
+[1383]={{.698,.364,1379,5}}},
 reapersmarch_base={
 [26]={{.259,.326,2},{.774,.299,2},{.727,.149,2},{.419,.64,2},{.461,.793,2},{.320,.756,2},{.377,.634,2},{.411,.573,2},{.39,.491,2},{.317,.343,2},{.474,.279,2},{.374,.230,2},{.652,.433,2},{.718,.286,2},{.729,.234,2}},--Dark Fissures
-[43]={{.333,.748},{.507,.157},{.518,.601},{.741,.291},{.770,.216}},
-[42]={{.369,.731,872,6},{.372,.244,872,6},{.509,.341,872,6},{.484,.467,872,6}},
-[40]={{.477,.523,704,7}},
-[48]={{.487,.532,1383,5}},
+[873]={{.333,.748},{.507,.157},{.518,.601},{.741,.291},{.770,.216}},
+[872]={{.369,.731,872,6},{.372,.244,872,6},{.509,.341,872,6},{.484,.467,872,6}},
+[704]={{.477,.523,704,7}},
+[1383]={{.487,.532,1379,5}},
 },
 riften_base={
-[40]={{.541,.477,704,14}},
-[48]={{.548,.853,1381,5}}},
+[704]={{.541,.477,704,14}},
+[1383]={{.548,.853,1381,5}}},
 rivenspire_base={
 [26]={{.496,.621,2},{.196,.634,2},{.331,.634,2},{.348,.533,2},{.423,.628,2},{.439,.697,2},{.527,.246,2},{.577,.502,2},{.609,.2,2},{.615,.591,2},{.625,.491,2},{.645,.471,2},{.647,.660,2},{.670,.672,2},{.718,.198,2},{.718,.331,2},{.750,.298,2},{.832,.32,2}},
-[40]={{.421,.578,704,15}},
-[48]={{.467,.589,1380,3}},
-[42]={{.480,.709,872,16},{.503,.242,872,16},{.601,.631,872,16},{.850,.272,872,16}},
-[43]={{.616,.620},{.617,.187},{.714,.181},{.427,.600},{.502,.680}},
+[704]={{.421,.578,704,15}},
+[1383]={{.467,.589,1380,3}},
+[872]={{.480,.709,872,16},{.503,.242,872,16},{.601,.631,872,16},{.850,.272,872,16}},
+[873]={{.616,.620},{.617,.187},{.714,.181},{.427,.600},{.502,.680}},
 },
 sentinel_base={
-[40]={{.383,.499,704,10}},
-[48]={{.405,.492,1380,4}},
-[43]={{.589,.919}}},
+[704]={{.383,.499,704,10}},
+[1383]={{.405,.492,1380,4}},
+[873]={{.589,.919}}},
 shadowfen_base={
 [26]={{.196,.623,2},{.129,.699,2},{.58,.304,2},{.261,.810,2},{.382,.226,2},{.395,.827,2},{.602,.256,2},{.607,.485,2},{.700,.811,2}},
-[42]={{.127,.722,872,10},{.333,.166,872,10},{.618,.703,872,10},{.803,.640,872,10}},
-[43]={{.346,.594},{.382,.363},{.626,.461},{.683,.724},{.570,.634}},
-[40]={{.428,.239,704,8}},
-[48]={{.459,.266,1381,3}},
+[872]={{.127,.722,872,10},{.333,.166,872,10},{.618,.703,872,10},{.803,.640,872,10}},
+[873]={{.346,.594},{.382,.363},{.626,.461},{.683,.724},{.570,.634}},
+[704]={{.428,.239,704,8}},
+[1383]={{.459,.266,1381,3}},
 },
 shornhelm_base={
-[40]={{.454,.648,704,7}},
-[48]={{.750,.717,1380,3}}},
+[704]={{.454,.648,704,7}},
+[1383]={{.750,.717,1380,3}}},
 skywatch_base={
-[48]={{.639,.495,1383,1}}},
+[1383]={{.639,.495,1379,1}}},
 stonefalls_base={
 [26]={{.121,.442,2},{.163,.560,2},{.211,.190,2},{.301,.651,2},{.341,.682,2},{.352,.548,2},{.377,.729,2},{.428,.561,2},{.439,.746,2},{.475,.605,2},{.482,.712,2},{.719,.613,2},{.761,.369,2},{.795,.427,2},{.812,.380,2}},
-[43]={{.119,.452},{.325,.639},{.447,.559},{.581,.576},{.661,.613},{.891,.400}},
-[48]={{.254,.626,1381,1}},
-[42]={{.394,.462,872,8},{.484,.723,872,8},{.491,.620,872,8},{.946,.432,872,8}},
-[40]={{.918,.339,704,2}},
+[873]={{.119,.452},{.325,.639},{.447,.559},{.581,.576},{.661,.613},{.891,.400}},
+[1383]={{.254,.626,1381,1}},
+[872]={{.394,.462,872,8},{.484,.723,872,8},{.491,.620,872,8},{.946,.432,872,8}},
+[704]={{.918,.339,704,2}},
 },
 stormhaven_base={
 [26]={{.803,.496,2},{.719,.53,2},{.408,.499,2},{.252,.283,2},{.475,.594,2},{.722,.426,2},{.579,.45,2},{.481,.397,2},{.705,.477,2},{.856,.486,2},{.353,.575,2},{.364,.384,2},{.376,.562,2},{.220,.522,2},{.272,.441,2},{.226,.283,2}},
-[43]={{.221,.252},{.718,.470},{.851,.495},{.372,.573},{.422,.427}},
-[42]={{.327,.674,872,15},{.412,.378,872,15},{.636,.606,872,15},{.880,.469,872,15}},
-[40]={{.486,.600,704,4}},
-[48]={{.577,.598,1380,2}},
+[873]={{.221,.252},{.718,.470},{.851,.495},{.372,.573},{.422,.427}},
+[872]={{.327,.674,872,15},{.412,.378,872,15},{.636,.606,872,15},{.880,.469,872,15}},
+[704]={{.486,.600,704,4}},
+[1383]={{.577,.598,1380,2}},
 },
 stormhold_base={
-[40]={{.340,.284,704,8}},
-[48]={{.539,.455,1381,3}}},
+[704]={{.340,.284,704,8}},
+[1383]={{.539,.455,1381,3}}},
 therift_base={
 [26]={{.49,.583,2},{.698,.601,2},{.36,.436,2},{.617,.59,2},{.571,.292,2},{.085,.309,2},{.161,.272,2},{.345,.357,2},{.542,.307,2},{.657,.369,2},{.532,.613,2},{.740,.630,2},{.768,.686,2},{.158,.401,2},{.138,.469,2},{.502,.538,2}},
-[43]={{.145,.366},{.207,.429},{.350,.474},{.508,.566},{.595,.332}},
-[42]={{.478,.465,872,12},{.493,.360,872,12},{.712,.671,872,12},{.740,.632,872,12}},
-[40]={{.682,.486,704,14}},
-[48]={{.683,.539,1381,5}},
+[873]={{.145,.366},{.207,.429},{.350,.474},{.508,.566},{.595,.332}},
+[872]={{.478,.465,872,12},{.493,.360,872,12},{.712,.671,872,12},{.740,.632,872,12}},
+[704]={{.682,.486,704,14}},
+[1383]={{.683,.539,1381,5}},
 },
 thukozods_base={
-[47]={{.262,.511,1250,13}},
+[1250]={{.262,.511,1250,13}},
 },
 velynharbor_base={
-[40]={{.336,.813,704,12}},
-[48]={{.383,.395,1383,4}}},
+[704]={{.336,.813,704,12}},
+[1383]={{.383,.395,1379,4}}},
 vulkhelguard_base={
-[40]={{.390,.651,704,3}}},
+[704]={{.390,.651,704,3}}},
 wayrest_base={
-[40]={{.128,.496,704,4}},
-[48]={{.586,.489,1380,2}}},
+[704]={{.128,.496,704,4}},
+[1383]={{.586,.489,1380,2}}},
 windhelm_base={
 [26]={{.709,.702,2},{.829,.096,2}},
-[48]={{.515,.476,1381,4}},
-[40]={{.595,.538,704,11}},
+[1383]={{.515,.476,1381,4}},
+[704]={{.595,.538,704,11}},
 },
 woodhearth_base={
-[43]={{.648,.534}}},
+[873]={{.648,.534}}},
 oldorsiniummap07_base={
-[47]={{.718,.585,1250,17}},
+[1250]={{.718,.585,1250,17}},
 },
 wrothgar_base={
-[45]={{.713,.307,1247,1},{.722,.325,1247,1},{.161,.748,1247,1},{.207,.694,1247,1},{.250,.833,1247,1},{.305,.821,1247,1},{.326,.674,1247,1},{.381,.574,1247,1},{.401,.531,1247,1},{.451,.646,1247,1},{.487,.738,1247,1},{.521,.531,1247,1},{.523,.409,1247,1},{.638,.319,1247,1}},
-[46]={{.543,.663,1316,1},{.611,.605,1316,1},{.476,.660,1316,1},{.351,.787,1316,1},{.378,.653,1316,1},{.245,.783,1316,1},{.142,.775,1316,1},{.701,.532,1316,1},{.704,.361,1316,1}},
-[47]={{.605,.646,1250,10},{.424,.630,1250,1},{.436,.838,1250,5},{.168,.659,1250,17},{.193,.682,1250,2},{.633,.430,1250,7},{.541,.585,1250,14},{.337,.839,1250,18},{.282,.840,1250,9},{.295,.739,1250,13},{.083,.775,1250,6},{.105,.779,1250,4},{.724,.241,1250,3},{.733,.281,1250,20},{.766,.594,1250,19},{.804,.603,1250,15},{.849,.427,1250,8},{.883,.479,1250,16}},
+[1247]={{.713,.307,1247,1},{.722,.325,1247,1},{.161,.748,1247,1},{.207,.694,1247,1},{.250,.833,1247,1},{.305,.821,1247,1},{.326,.674,1247,1},{.381,.574,1247,1},{.401,.531,1247,1},{.451,.646,1247,1},{.487,.738,1247,1},{.521,.531,1247,1},{.523,.409,1247,1},{.638,.319,1247,1}},
+[1316]={{.543,.663,1316,1},{.611,.605,1316,1},{.476,.660,1316,1},{.351,.787,1316,1},{.378,.653,1316,1},{.245,.783,1316,1},{.142,.775,1316,1},{.701,.532,1316,1},{.704,.361,1316,1}},
+[1250]={{.605,.646,1250,10},{.424,.630,1250,1},{.436,.838,1250,5},{.168,.659,1250,17},{.193,.682,1250,2},{.633,.430,1250,7},{.541,.585,1250,14},{.337,.839,1250,18},{.282,.840,1250,9},{.295,.739,1250,13},{.083,.775,1250,6},{.105,.779,1250,4},{.724,.241,1250,3},{.733,.281,1250,20},{.766,.594,1250,19},{.804,.603,1250,15},{.849,.427,1250,8},{.883,.479,1250,16}},
 },
 summerset_base={
-[53]={{.204,.626,2099,1},{.357,.567,2099,2},{.344,.463,2099,3},{.397,.476,2099,4},{.425,.452,2099,5},{.441,.427,2099,6},{.472,.401,2099,7},{.394,.359,2099,8},{.301,.358,2099,9},{.254,.283,2099,10},{.186,.334,2099,11},{.497,.216,2099,12},{.567,.259,2099,13},{.649,.395,2099,14},{.617,.468,2099,15},{.656,.559,2099,16},{.738,.678,2099,17},{.565,.648,2099,18},{.44,.731,2099,19},{.555,.556,2099,20}},
+[2099]={{.204,.626,2099,1},{.357,.567,2099,2},{.344,.463,2099,3},{.397,.476,2099,4},{.425,.452,2099,5},{.441,.427,2099,6},{.472,.401,2099,7},{.394,.359,2099,8},{.301,.358,2099,9},{.254,.283,2099,10},{.186,.334,2099,11},{.497,.216,2099,12},{.567,.259,2099,13},{.649,.395,2099,14},{.617,.468,2099,15},{.656,.559,2099,16},{.738,.678,2099,17},{.565,.648,2099,18},{.44,.731,2099,19},{.555,.556,2099,20}},
 --Message in Bottle
-[54]={{.366,.4,2211,1},{.689,.539,2211,1},{.247,.547,2211,1},{.346,.445,2211,1},{.273,.427,2211,1},{.272,.508,2211,1},{.732,.74,2211,1},{.454,.73,2211,1}},
+[2211]={{.366,.4,2211,1},{.689,.539,2211,1},{.247,.547,2211,1},{.346,.445,2211,1},{.273,.427,2211,1},{.272,.508,2211,1},{.732,.74,2211,1},{.454,.73,2211,1}},
 --A Book and its Cover
-[55]={{.328,.487,2171,5},{.513,.217,2171,5},{.561,.288,2171,5},{.22,.389,2171,5},{.544,.235,2171,5},{.652,.604,2171,5},{.446,.468,2171,5},{.549,.364,2171,5},{0.297,0.3,2171,5},{.626,.532,2171,5}},
+[2271]={{.328,.487,2171,5},{.513,.217,2171,5},{.561,.288,2171,5},{.22,.389,2171,5},{.544,.235,2171,5},{.652,.604,2171,5},{.446,.468,2171,5},{.549,.364,2171,5},{0.297,0.3,2171,5},{.626,.532,2171,5}},
 [70]={{.397,.504,102,3}},--Alinor Allemande--Provided by remosito
 },
 shimmerene_base={
-[53]={{.578,.676,2099,15}}},
+[2099]={{.578,.676,2099,15}}},
 --Undaunted Rescuer
-vetcirtyash02_base={[41]={{.455,.456,1082,9},{.289,.805,1082,11}}},
-vetcirtyash03_base={[41]={{.369,.47,1082,2},{.741,.814,1082,4},{.08,.5,1082,7},{.08,.5,1082,8},{.392,.344,1082,10},{.506,.316,1082,12}}},
-vetcirtyash04_base={[41]={{.576,.402,1082,3},{.427,.321,1082,5},{.427,.321,1082,6}}},
+vetcirtyash02_base={[1082]={{.455,.456,1082,9},{.289,.805,1082,11}}},
+vetcirtyash03_base={[1082]={{.369,.47,1082,2},{.741,.814,1082,4},{.08,.5,1082,7},{.08,.5,1082,8},{.392,.344,1082,10},{.506,.316,1082,12}}},
+vetcirtyash04_base={[1082]={{.576,.402,1082,3},{.427,.321,1082,5},{.427,.321,1082,6}}},
 --Precursor
 yldzuun_base={
-[56]={{.806,.815,1958,1}}},	--Left arm
+[1958]={{.806,.815,1958,1}}},	--Left arm
 jaggerjaw_base={
-[56]={{.393,.173,1958,2}}},	--Right arm
+[1958]={{.393,.173,1958,2}}},	--Right arm
 avancheznel_base={
-[56]={{.55,.77,1958,3}}},	--Left leg
+[1958]={{.55,.77,1958,3}}},	--Left leg
 santaki_base={
-[56]={{.724,.689,1958,4}}},	--Right leg
+[1958]={{.724,.689,1958,4}}},	--Right leg
 lowerbthanuel_base={
-[56]={{.416,.444,1958,5}}},	--Pelvis
+[1958]={{.416,.444,1958,5}}},	--Pelvis
 aldunz_base={
-[56]={{.748,.779,1958,6}}},	--Chestpiece
+[1958]={{.748,.779,1958,6}}},	--Chestpiece
 mzulft_base={
-[56]={{.124,.49,1958,7}}},	--Spine
+[1958]={{.124,.49,1958,7}}},	--Spine
 innerseaarmature_base={
-[56]={{.242,.626,1958,8}}},	--Left hand
+[1958]={{.242,.626,1958,8}}},	--Left hand
 mzithumz_base={
-[56]={{.575,.48,1958,9}}},	--Right hand
-bthzark={
-[56]={{.204,.328,1958,10}}},	--Dynamo
+[1958]={{.575,.48,1958,9}}},	--Right hand
+bthzark_base={
+[1958]={{.204,.328,1958,10}}},	--Dynamo
 ccunderground_base={
-[56]={{.496,.191,1958,11}}},	--Calculus
+[1958]={{.496,.191,1958,11}}},	--Calculus
 clockwork_base={
 [26]={{.201,.534,4},{.366,.695,4},{.843,.682,4},{.536,.694,4},{.739,.557,4},{.731,.506,4},{.725,.464,4},{.746,.49,4},{.766,.501,4},{.78,.48,4},{.749,.678,4},{.156,.547,4}},--Shadow Fissures
-[56]={{0.177,0.596,1958,12}},--Introspection
+[1958]={{0.177,0.596,1958,12}},--Introspection
 },	
 brassfortress_base={
-[56]={{.646,.649,1958,13}}},	--Reason
+[1958]={{.646,.649,1958,13}}},	--Reason
 bthanual_base={
-[56]={{.518,.464,1958,14}}},	--Staff
+[1958]={{.518,.464,1958,14}}},	--Staff
 }
 --[[	Unwanted achievements
 marchodsacrifices_base={{.76,.554},{.737,.5},{.759,.554}},	--Behemoth Sigil
@@ -6401,7 +4501,7 @@ craglorn_base={{.177,.222,9},{.394,.383,9},{.242,.579,9},{.77,.687,9},{.654,.604
 }
 local PinManager,CompassPinManager
 local UpdatingMapPin,UpdatingCompassPin,PinId={},{},{}
-local SavedVars,DefaultVars={},{[1]=true,[2]=true,[3]=true,[4]=false,[5]=true,[6]=false,[7]=true,[8]=true,[9]=false,[10]=false,[11]=false,[12]=false,[13]=false,[14]=false,[15]=false,[16]=false,[17]=false,[18]=false,[19]=false,[21]=true,TimeBreachClosed={}}
+local SavedVars,DefaultVars={},{[1]=true,[2]=true,[3]=true,[4]=false,[5]=true,[6]=false,[7]=true,[8]=true,[9]=false,[10]=false,[11]=false,[12]=false,[13]=false,[14]=false,[15]=false,[16]=false,[17]=false,[18]=false,[19]=false,[21]=true,TimeBreachClosed={},Show={}}
 local SavedGlobal,DefaultGlobal={},{pinsize=20}
 local ChestsRange,ChestsLooted,LastZone,LastAchivement,PsijicSkillLine=.08,0,0,0,4
 local ChronoglerTablet={[6771]=1,[141719]=2,[141720]=3,[141721]=4,[141722]=5,[141723]=6,[141724]=7,[141725]=8,[141726]=9,[141728]=11,[141727]=10,[141729]=12}
@@ -6624,22 +4724,26 @@ local FishingZones={
 	[443]=1351,--Hew's Bane
 	[449]=1431,--Gold Coast
 	[468]=1882,--Vvardenfell
-	[589]=2027,--Clockwork City
-	[590]=2027,--Clockwork City Brass Fortress
+	[590]=2027,--Clockwork City
+	[591]=2027,--Clockwork City Brass Fortress
 	[617]=2191,--Summerset
 	[633]=2240,--Arteum
 	[408]=2295,--Murkmire
 	[682]=2412,--Northern Elsweyr
 	[721]=2566,--Southern Elsweyr
-	[744]=2655,--Greymoor
-	[784]=2861,--Markarth
+	[744]=2655,--Greymoor: Western Skyrim
+	[745]=2655,--Greymoor: Blackreach: Greymoor Caverns
+	[784]=2861,--Markarth: The Reach
+	[785]=2861,--Markarth: Blackreach: Arkthzand Cavern
 	[835]=2981,--Blackwood
 	[858]=3144,--Deadlands
 	[884]=3269,--High Isle
-	[930]=3500,--Firesong
-	[959]=3636,--Necrom
-	[982]=3948,--Gold Road
-	[1034]=4404,--Solstice
+	[931]=3500,--Firesong
+	[960]=3636,--Necrom
+	[959]=3636,--Apocrypha
+	[982]=3948,--Gold Road U49 
+	[983]=3948,--Gold Road U50
+	[1034]=4404,--West/East Solstice
 	bleakrockvillage_base=493,
 	murkmire_base=2295,rootwhisper_base=2295,brightthroatvillage_base=2295,lilmothcity_base=2295,
 	imperialcity_base=1186,
@@ -6666,6 +4770,7 @@ local Volendrung={ava_whole={
 {.34,.709,1},
 {.531,.876,1},
 {.525,.619,1},
+{.304,.536,1},
 --ALLIANCE_EBONHEART_PACT
 {.752,.486,2},	--Pact is nearest
 {.685,.532,2},
@@ -6677,6 +4782,7 @@ local Volendrung={ava_whole={
 {.595,.382,2},
 {.844,.166,2},
 --ALLIANCE_DAGGERFALL_COVENANT
+{.347,.24,3},
 {.199,.372,3},
 {.349,.164,3},
 {.209,.224,3},
@@ -6803,6 +4909,26 @@ local MiningSampleTooltip={
 	{v=4,desc="Adanzda's Mining Samples"},
 	{v=5,desc="Ghamborz's Mining Samples"},
 }
+local TrophyTable={--AcheventID = Trophy Table
+[1712]=AncestralTombRubbing,
+[1250]=WrothgarRelics,
+[2099]=RelicsOfSummerset,
+[1958]=PrecursorItems,
+[2320]=ChronoglerTablet,
+[2463]=MuralMenderFragments,
+[2534]=PiecesOfHistory,
+[2669]=Instruments,
+[2759]=MiningSampleCollector,
+}
+local PortalsNames={
+[1]=Loc("Oblivion_Portals"),
+[2]=Loc("Dark_Fissures"),
+[3]=Loc("Celestial_Rifts"),
+[4]=Loc("Shadow_Fissures"),
+[5]=Loc("Lava_Lashers"),
+[6]=Loc("Soul_Reaper"),
+}
+local FILTER_COUNT=32 --Amount of filters
 local CustomPins={	--Types
 	[1]={name="pinType_Delve_bosses",done=false,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},--tint=ZO_ColorDef:New(1,1,1,1),
 	[2]={name="pinType_Delve_bosses_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_complete.dds",k=1.25},
@@ -6814,109 +4940,118 @@ local CustomPins={	--Types
 	[7]={name="pinType_Treasure_Chests",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/Chest_1.dds",k=1.1,tint=ZO_ColorDef:New(1,1,1,.8)},	--,tint=ZO_ColorDef:New(.8,.8,.5,.9)
 	[8]={name="pinType_Unknown_POI",done=false,id={},pin={},maxDistance=0.05,level=10,texture=function(self) return self.m_PinTag.texture end,def_texture="/esoui/art/icons/poi/poi_areaofinterest_incomplete.dds",size=40,tint=ZO_ColorDef:New(.7,.7,.7,.6)},
 	[9]={section=true,name="Undaunted",id={},pin={},texture="/esoui/art/icons/crafting_beer_003.dds",
-		[40]={name="pinType_This_One's_On_Me",done=false,ach=704,maxDistance=0.05,level=101,texture="/esoui/art/icons/crafting_beer_003.dds",k=1},
-		[41]={name="pinType_Undaunted_Rescuer",done=false,ach=1082,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/ability_warrior_007.dds"}
+		[704]={name="pinType_This_One's_On_Me",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/crafting_beer_003.dds",k=1},
+		[1082]={name="pinType_Undaunted_Rescuer",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/ability_warrior_007.dds",k=1}
 		},
 	[10]={section=true,name="World_achievements",id={},pin={},texture="/esoui/art/progression/progression_indexicon_world_up.dds",
-		[42]={name="pinType_I_like_M'aiq",done=false,ach=872,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_066.dds",k=1},
-		[43]={name="pinType_Lightbringer",done=false,ach=873,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25},
-		[44]={name="pinType_Peacemaker",done=false,ach=716,maxDistance=0.05,level=101,texture="/esoui/art/icons/ability_healer_017.dds",k=1},
+		[872]={name="pinType_I_like_M'aiq",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_066.dds",k=1},
+		[873]={name="pinType_Lightbringer",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25},
+		[716]={name="pinType_Peacemaker",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/ability_healer_017.dds",k=1},
 		},
 	[11]={section=true,name="Orsinium",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_wrothgar_up.dds",	--"/esoui/art/icons/store_orsiniumdlc_collectable.dds",
-		[45]={name="pinType_One_Last_Brawl",done=false,ach=1247,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_010.dds",k=1},
-		[46]={name="pinType_Orsinium_world_event",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_wrothgar_024.dds"},
-		[47]={name="pinType_Wrothgar_Relic_Hunter",done=false,ach=1250,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_008.dds",k=1},
+		[1247]={name="pinType_One_Last_Brawl",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_010.dds",k=1},
+		[1316]={name="pinType_Orsinium_Patron",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_024.dds",k=1,},
+		[1250]={name="pinType_Wrothgar_Relic_Hunter",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_008.dds",k=1},
 		},
 	[12]={section=true,name="Thieves_guild",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_thievesguild_up.dds",	--"/esoui/art/icons/store_thievesguilddlc_collectable.dds",
-		[48]={name="pinType_A_Cutpurse_Above",done=false,ach=1383,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_thievesguild_044.dds",k=1},
-		[49]={name="pinType_Breaking_And_Entering",done=false,ach=1349,maxDistance=0.05,level=101,texture="/esoui/art/icons/perks_theives_guild_004.dds",k=1},
+		[1383]={name="pinType_A_Cutpurse_Above",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_thievesguild_044.dds",k=1},
+		[1349]={name="pinType_Breaking_And_Entering",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/perks_theives_guild_004.dds",k=1},
 		},
 	[13]={section=true,name="Morrowind",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_morrowind_up.dds",	--"/esoui/art/icons/store_morrowind_collectable.dds",
-		[50]={name="pinType_Vivec_Lessons",done=false,ach=1824,maxDistance=0.05,level=100,texture="/"..AddonName.."/Scroll_1.dds",k=1,tint=ZO_ColorDef:New(.8,.8,.8,.8)},
-		[51]={name="pinType_Ancestral_Tombs",done=false,ach=1712,maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_crypt_incomplete.dds",k=1},
-		[52]={name="pinType_Pilgrim's_Path",done=false,ach=1827,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_vvardenfel_032.dds"},
+		[1824]={name="pinType_Vivec_Lessons",done=false,ach=true,maxDistance=0.05,level=100,texture="/"..AddonName.."/Scroll_1.dds",k=1,tint=ZO_ColorDef:New(.8,.8,.8,.8)},
+		[1712]={name="pinType_Ancestral_Tombs",done=false,ach=true,maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_crypt_incomplete.dds",k=1},
+		[1827]={name="pinType_Pilgrim's_Path",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_vvardenfel_032.dds",k=1},
 		},
 	[14]={section=true,name="Summerset",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_summerset_up.dds",	--"/esoui/art/icons/store_summerset_collectable.dds",
-		[53]={name="pinType_Summerset_Relics",done=false,ach=2099,maxDistance=0.05,level=101,texture="/esoui/art/icons/quest_strosmkai_open_treasure_chest.dds",k=1},
-		[54]={name="pinType_Message_in_Bottle",done=false,ach=2211,maxDistance=0.05,level=100,texture="/esoui/art/icons/crafting_stoneware_bottle_003.dds",k=1},
-		[55]={name="pinType_Summerset_world_event",done=false,ach=2171,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_su_rds_01.dds"},
+		[2099]={name="pinType_Summerset_Relics",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/quest_strosmkai_open_treasure_chest.dds",k=1},
+		[2211]={name="pinType_Message_in_Bottle",done=false,ach=true,maxDistance=0.05,level=100,texture="/esoui/art/icons/crafting_stoneware_bottle_003.dds",k=1},
+		[2171]={name="pinType_Summerset_world_event",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_su_rds_01.dds"},
 		},
 	[15]={name="pinType_Time_Rifts",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/"..AddonName.."/Treasure_1-2.dds",k=1.8},
 	[16]={name="pinType_Shrines",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_daedricruin_incomplete.dds",k=1.25},
 	[17]={name="pinType_Fishing_Nodes",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/achievements_indexicon_fishing_up.dds",k=1.25},
 -- 	[17]={name="pinType_Fishing_Nodes_done",done=true,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/achievements_indexicon_fishing_up.dds",k=1.25},	
 	[18]={section=true,name="pinType_Clockwork_City",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_cwc_up.dds",	--"/art/fx/texture/clockworksigil.dds",
-		[56]={name="pinType_Precursor_Maker",done=false,ach=1958,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
+		[1958]={name="pinType_Precursor_Maker",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
 		},
 	[19]={section=true,name="pinType_Murkmire",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_murkmire_up.dds",	--"/esoui/art/icons/store_murkmiredlc_collectable.dds",
-		[57]={name="pinType_Chronic_Chronogler",done=false,ach=2320,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_museum.dds"},
-		[58]={name="pinType_Poems_of_Nothing",done=false,ach=2341,maxDistance=0.05,level=101,texture="/"..AddonName.."/Scroll_1.dds",k=1},
-		[59]={name="pinType_Achievement_quests",done=false,ach=2355,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1},	--esoui/art/floatingmarkers/quest_icon.dds
-		[60]={name="pinType_Surreptitiously_Shadowed",done=false,ach=2330,maxDistance=0.05,level=111,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_shadowscale_wisdom.dds"},
-		[61]={name="pinType_Swamp_Rescuer",done=false,ach=2358,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_rescue_villagers.dds"},
-		[62]={name="pinType_Vine-Tongue_Traveler",done=false,ach=2357,maxDistance=0.05,level=101,texture="/"..AddonName.."/Lorebook_1-2.dds",k=1,def_texture="/esoui/art/icons/mh_hedgeguardian_strang.dds"},
+		[2320]={name="pinType_Chronic_Chronogler",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_museum.dds"},
+		[2341]={name="pinType_Poems_of_Nothing",done=false,ach=true,maxDistance=0.05,level=101,texture="/"..AddonName.."/Scroll_1.dds",k=1},
+		[2355]={name="pinType_Achievement_quests",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1},	--esoui/art/floatingmarkers/quest_icon.dds
+		[2330]={name="pinType_Surreptitiously_Shadowed",done=false,ach=true,maxDistance=0.05,level=111,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_shadowscale_wisdom.dds"},
+		[2358]={name="pinType_Swamp_Rescuer",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_rescue_villagers.dds"},
+		[2357]={name="pinType_Vine-Tongue_Traveler",done=false,ach=true,maxDistance=0.05,level=101,texture="/"..AddonName.."/Lorebook_1-2.dds",k=1,def_texture="/esoui/art/icons/mh_hedgeguardian_strang.dds"},
 		},
 	[20]={section=true,name="pinType_Elsweyr",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_elsweyr_up.dds",
-		[63]={name="pinType_Mural_Mender",done=false,ach=2463,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_els_museum_mural.dds"},
-		[64]={name="pinType_Pieces_of_History",done=false,ach=2534,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_museum_tapestry.dds"},
-		[65]={name="pinType_Theater_Critic",done=false,ach=2619,maxDistance=0.05,level=101,texture="/"..AddonName.."/Scroll_1.dds",k=1,def_texture="/esoui/art/icons/quest_book_003.dds"},
-		[66]={name="pinType_Legacy_Slayer",done=false,ach=2621,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25,def_texture="/esoui/art/icons/achievement_u24_familyofpirates.dds"},
-		[67]={name="pinType_Grappling_Bow_Pathfinder",done=false,ach=2620,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
+		[2463]={name="pinType_Mural_Mender",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_els_museum_mural.dds",k=1},
+		[2534]={name="pinType_Pieces_of_History",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u24_museum_tapestry.dds",k=1},
+		[2619]={name="pinType_Theater_Critic",done=false,ach=true,maxDistance=0.05,level=101,texture="/"..AddonName.."/Scroll_1.dds",k=1,def_texture="/esoui/art/icons/quest_book_003.dds"},
+		[2621]={name="pinType_Legacy_Slayer",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u24_familyofpirates.dds",k=1},
+		[2620]={name="pinType_Grappling_Bow_Pathfinder",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u24_grappletreasures.dds",k=1},
 		},
 	[21]={name="pinType_Volendrung",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25},
-	[22]={section=true,name="pinType_Greymoor",id={},pin={},texture="/esoui/art/treeicons/tutorial_indexicon_greymoor_up.dds",
-		[68]={name="pinType_Instrumental_Triumph",done=false,ach=2669,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
-		[69]={name="Mining_Sample_Collector",done=false,ach=2759,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_mine_compete.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_minerquest.dds"},
+	[22]={section=true,name="pinType_Markarth",id={},pin={},texture="/esoui/art/treeicons/tutorial_indexicon_markarth_up.dds",
+		[2927]={name="pinType_Red_Eagle's_Flight",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u28_jump_flavor.dds",k=1},
+		[2851]={name="pinType_Offerings_to_the_Old_Spirits",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u28_reach_flavor.dds",k=1},
+		[2964]={name="pinType_A_friend_in_deed",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/ability_u26_vampire_infection_stage4.dds",k=1},
 		},
-	[23]={section=true,name="pinType_Antiquities",id={},pin={},texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_antiquities.dds", k=1.40,
+	[23]={section=true,name="pinType_Greymoor",id={},pin={},texture="/esoui/art/treeicons/tutorial_indexicon_greymoor_up.dds",
+		[2669]={name="pinType_Instrumental_Triumph",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
+		[2759]={name="Mining_Sample_Collector",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_mine_compete.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_minerquest.dds"},
+		},
+	[24]={section=true,name="pinType_Antiquities",id={},pin={},texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_antiquities.dds", k=1.40,
 		[70]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_antiquities.dds", k=1.40},
-		},
-	[24]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
-		[71]={name="pinType_Lost_in_Wilds",done=false,ach=3083,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor4.dds"},
-		[72]={name="pinType_Bane_of_Sul-Xan",done=false,ach=3081,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
-		[73]={name="pinType_Most_Admired",done=false,ach=3082,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_rds.dds"},
+		},-- this doesn't need to be 70 but it's used to dispolay hidden Leads
+	[25]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
+		[3083]={name="pinType_Lost_in_Wilds",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u30_flavor4.dds",k=1},
+		[3081]={name="pinType_Bane_of_Sul-Xan",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u30_flavor2.dds",k=1},
+		[3082]={name="pinType_Most_Admired",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u30_rds.dds",k=1},
 		[74]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
-		[75]={name="pinType_Leyawiin_Master_Burglar",done=false,ach=3080,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor1.dds"},
+		[3080]={name="pinType_Leyawiin_Master_Burglar",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u30_flavor1.dds",k=1},
 		},
-	[25]={section=true,name="pinType_Imperial_City",id={},pin={},texture="/esoui/art/compass/ava_imperialcity_neutral.dds",
+	[26]={section=true,name="pinType_Imperial_City",id={},pin={},texture="/esoui/art/compass/ava_imperialcity_neutral.dds",
 		[76]={name="pinType_IC_Bosses",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},
 		[77]={name="pinType_IC_Respawns",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1},
-		[78]={name="pinType_Cunning_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_telvarscamp.dds"},
-		[79]={name="pinType_Trove_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_treasurescamp.dds"},
+		[1270]={name="pinType_Cunning_Scamp",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_ic_telvarscamp.dds",k=1},
+		[1272]={name="pinType_Trove_Scamp",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_ic_treasurescamp.dds",k=1},
 		},
-	[26]={name="pinType_Portals",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.26},
-	[27]={section=true,name="pinType_High_Isle",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_highisle_up.dds",
-		[80]={name="pinType_Seeker_of_the_Green",done=false,ach=3298,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds"},
-		[81]={name="pinType_No_Regrets",done=false,ach=3424,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/u34_flavor5_drunkedleap.dds"},
-		[82]={name="pinType_Inventor_of_Adventure",done=false,ach=3299,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_rds.dds"},
-		[83]={name="pinType_Gonfalon_Bays_Master_Burglar",done=false,ach=3295,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor1_lockbox.dds"},
+	[27]={name="pinType_Portals",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.26},
+	[28]={section=true,name="pinType_High_Isle",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_highisle_up.dds",
+		[3298]={name="pinType_Seeker_of_the_Green",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds",k=1},
+		[3424]={name="pinType_No_Regrets",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/u34_flavor5_drunkedleap.dds"},
+		[3299]={name="pinType_Inventor_of_Adventure",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_rds.dds"},
+		[3295]={name="pinType_Gonfalon_Bays_Master_Burglar",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor1_lockbox.dds"},
 		},
-	[28]={section=true,name="pinType_Necrom",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_necrom_up.dds",
-		[84]={name="pinType_Syzygy",done=false,ach=3678,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor4.dds",k=1,def_texture="/esoui/art/icons/achievement_u38_flavor4.dds"},
-		[85]={name="pinType_Tomes_of_Uknown_Color",done=false,ach=3677,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor3.dds",k=1,def_texture="/esoui/art/icons/achievement_u38_flavor3.dds"},
-		[86]={name="pinType_Grave_Discoveries",done=false,ach=3675,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor1.dds",k=1,def_texture="/esoui/art/icons/achievement_u38_flavor1.dds"},
-		[87]={name="pinType_Slaughtered_by_Tentacles",done=false,ach=3749,maxDistance=0.05,level=101,texture="/esoui/art/icons/u38_slaughtered_apocrypha.dds",k=1,def_texture="/esoui/art/icons/u38_slaughtered_apocrypha.dds"},
+	[29]={section=true,name="pinType_Firesong",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_firesong_up.dds",
+		[3502]={name="pinType_The_Best_of_Friends",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u36_zone_flavor1.dds",k=1},
+		[3503]={name="pinType_Ferret_the_Hunters",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u36_zone_flavor2.dds",k=1},
+		[3504]={name="pinType_Firestarter",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u36_zone_flavor3.dds",k=1},
+		[3505]={name="pinType_A_Joyous_Dance",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u36_zone_flavor4.dds",k=1},
 		},
-	[29]={section=true,name="pinType_Gold_Road",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_goldroad_up.dds",
-		[88]={name="pinType_Gold_Road_Partaker",done=false,ach=3968,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u42_zone_flavor1.dds",k=1,def_texture="/esoui/art/icons/achievement_u42_zone_flavor1.dds"},
-		[89]={name="pinType_Wine_and_Warriors",done=false,ach=4040,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u42_rds.dds"},
-		[90]={name="pinType_Minotaur_Tracker",done=false,ach=4041,maxDistance=0.05,level=101,texture="/esoui/art/icons/u42_wandering_world_boss.dds",k=1,def_texture="/esoui/art/icons/u42_wandering_world_boss.dds"},
+	[30]={section=true,name="pinType_Necrom",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_necrom_up.dds",
+		[3678]={name="pinType_Syzygy",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor4.dds",k=1},
+		[3677]={name="pinType_Tomes_of_Uknown_Color",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor3.dds",k=1},
+		[3675]={name="pinType_Grave_Discoveries",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor1.dds",k=1},
+		[3749]={name="pinType_Slaughtered_by_Tentacles",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/u38_slaughtered_apocrypha.dds",k=1},
 		},
-	[30]={section=true,name="pinType_Seasons_of_the_Worm_Cult",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_goldroad_up.dds",
---		[91]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
-		[91]={name="pinType_Wanderers_of_Western_Solstice",done=false,ach=4432,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u46_zone_flavor1.dds"},
-		[92]={name="pinType_So_Clean_in_Sunport",done=false,ach=4433,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u46_zone_flavor2.dds",k=1,def_texture="/esoui/art/icons/achievement_u46_zone_flavor2.dds"},
-		[93]={name="pinType_Sanguine_s_Delights",done=false,ach=4435,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u46_zone_flavor4.dds",k=1,def_texture="/esoui/art/icons/achievement_u46_zone_flavor4.dds"},
-		[94]={name="pinType_Solstice_Climbing_Club",done=false,ach=4434,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u46_zone_flavor3.dds"},
-		[95]={name="pinType_Soul Shriven_on_Solstice",done=false,ach=4455,maxDistance=0.05,level=101,texture="/esoui/art/icons/u48_zone_flavor1.dds",k=1,def_texture="/esoui/art/icons/u48_zone_flavor1.dds"},
-		[96]={name="pinType_We_Were_Undaunted",done=false,ach=4456,maxDistance=0.05,level=101,texture="/esoui/art/icons/u48_zone_flavor2.dds",k=1,def_texture="/esoui/art/icons/u48_zone_flavor2.dds"},
-		[97]={name="pinType_The_Legend_of_Atlorn_the_Lost",done=false,ach=4457,maxDistance=0.05,level=101,texture="/esoui/art/icons/u48_zone_flavor3.dds",k=1,def_texture="/esoui/art/icons/u48_zone_flavor3.dds"},
-		[98]={name="pinType_Wanderers_of_Western_Solstice",done=false,ach=4432,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u46_zone_flavor1.dds"},
+	[31]={section=true,name="pinType_Gold_Road",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_goldroad_up.dds",
+		[3968]={name="pinType_Gold_Road_Partaker",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u42_zone_flavor1.dds",k=1},
+		[4040]={name="pinType_Wine_and_Warriors",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u42_rds.dds",k=1},
+		[4041]={name="pinType_Minotaur_Tracker",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/u42_wandering_world_boss.dds",k=1},
+		},
+	[32]={section=true,name="pinType_Seasons_of_the_Worm_Cult",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_goldroad_up.dds",
+		[4432]={name="pinType_Wanderers_of_Western_Solstice",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u46_zone_flavor1.dds",k=1},
+		[4433]={name="pinType_So_Clean_in_Sunport",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u46_zone_flavor2.dds",k=1},	
+		[4434]={name="pinType_Solstice_Climbing_Club",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u46_zone_flavor3.dds",k=1},
+		[4435]={name="pinType_Sanguine_s_Delights",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u46_zone_flavor4.dds",k=1},
+		[4455]={name="pinType_Soul Shriven_on_Solstice",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/u48_zone_flavor1.dds",k=1},
+		[4456]={name="pinType_We_Were_Undaunted",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/u48_zone_flavor2.dds",k=1},
+		[4457]={name="pinType_The_Legend_of_Atlorn_the_Lost",done=false,ach=true,maxDistance=0.05,level=101,texture="/esoui/art/icons/u48_zone_flavor3.dds",k=1},
 		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
-local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true,[27]=true,[28]=true,[29]=true,[30]=true}
-local PinsImperial={[3]=true,[5]=true,[7]=true,[8]=true,[17]=true,[25]=true}
+local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true,[27]=true,[28]=true,[29]=true,[30]=true,[31]=true,[32]=true}
+local PinsImperial={[3]=true,[5]=true,[7]=true,[8]=true,[17]=true,[26]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(3295) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(912))
@@ -7046,33 +5181,35 @@ local MapPinCallback={
 	[8]=function(i,subzone)
 		local zoneIndex=GetCurrentMapZoneIndex()
 		local mapData=UnknownPOI[GetZoneId(zoneIndex)]
-		if mapData then
-			for poiIndex, data in pairs(mapData) do
-				local normalizedX,normalizedY,poiType,_,_,_,known=GetPOIMapInfo(zoneIndex, poiIndex)
-				if not known and (normalizedX>0 or normalizedY>0) then	--poiType==MAP_PIN_TYPE_INVALID then
-					local pinTag={[1]=i,name=data[1],texture=UnknownPOItexture[ data[2] ]}
-					if data[2]==25 then	--Mundus
-						pinTag.desc=MundusDescription[ data[3] ]
-					elseif data[2]==8 then	--Crafting station unknown
-						if data[3] then
-							pinTag.name,pinTag.desc=GetSetDescription(data[3])
-						else
-							pinTag.name=data[1]
+		for poiIndex=1,GetNumPOIs(zoneIndex) do
+			local poiType=GetPOIType(zoneIndex, poiIndex)
+			if poiType~=7 then -- no Houses			
+				local poiName = GetPOIInfo(zoneIndex, poiIndex)
+				if poiName~="" then
+						local normalizedX, normalizedY, _, icon, _, _, isDiscovered= GetPOIMapInfo(zoneIndex, poiIndex)
+						local extras=0 -- 1= mundus, 2= SetCrafting
+						if icon:find("mundus") then extras = 1 end
+						if icon:find("crafting") then extras = 2 end
+						-- alert if data is missing
+						if extras==1 or extras==2 then if not mapData[poiIndex] then d("MapPins: Set Data Missing poiIndex:"..poiIndex.." name: "..poiName.." zoneIndex: "..zoneIndex) extras=0 end end				
+						local pinTag={[1]=i,name=poiName,texture=icon}
+						if extras==1 then	--Mundus
+							pinTag.desc=MundusDescription[ mapData[poiIndex] ]
+						elseif extras==2 then--Crafting station						
+							pinTag.name,pinTag.desc=GetSetDescription(mapData[poiIndex])	
+						end
+						--Unknown POI
+						if not isDiscovered and (normalizedX>0 or normalizedY>0) then	
+							local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
+							local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
+						elseif extras==1 or extras==2 then	--Mundus, Crafting station known
+							local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
+							local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
 						end
 					end
-					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
-					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
-				elseif data[2]==25 then	--Mundus
-					local pinTag={[1]=i,name=GetAbilityName(data[3]),texture="/esoui/art/icons/poi/poi_mundus_complete.dds"} pinTag.desc=MundusDescription[ data[3] ]
-					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
-					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
-				elseif data[2]==8 and data[3] then	--Crafting station known
-					local pinTag={[1]=i,texture="/esoui/art/icons/mapkey/mapkey_crafting.dds"} pinTag.name,pinTag.desc=GetSetDescription(data[3])
-					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
-					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
 				end
 			end
-		end
+
 	end,
 	[15]=function(i,subzone)--Psijic portals
 		local mapData=TimeBreach[subzone]
@@ -7149,7 +5286,7 @@ local MapPinCallback={
 			end
 		end
 	end,
-	[43]=function(i,subzone)--Lightbringer
+	[873]=function(i,subzone)--Lightbringer
 		local mapData=Achievements[subzone]
 		if mapData then
 			mapData=mapData[i]
@@ -7200,19 +5337,7 @@ local MapPinCallback={
 			mapData=mapData[i]
 			if mapData then
 				for i1,pinData in pairs(mapData) do
-					if pinData[3]==1 then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Oblivion portal"},pinData[1],pinData[2])
-					elseif pinData[3]==2 then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Dark Fissures"},pinData[1],pinData[2])
-					elseif pinData[3]==3 then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Celestial Rift"},pinData[1],pinData[2])
-					elseif pinData[3]==4 then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Shadow Fissures"},pinData[1],pinData[2])
-					elseif pinData[3]==5 then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Lava Lasher"},pinData[1],pinData[2])
-					elseif pinData[3]==6 then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Soul Reaper"},pinData[1],pinData[2])
-					end
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name=PortalsNames[pinData[3] ]},pinData[1],pinData[2])					
 				end
 			end
 		end
@@ -7253,7 +5378,7 @@ local function MapPinAddCallback(i)
 			for _,pinData in pairs(mapData) do
 				local AchName,Completed,Required
 				if i==3 or i==4 then
-					Completed=GetSkyshardDiscoveryStatus(GetZoneSkyshardId(GetSkyshardAchievementZoneId(pinData[3]),pinData[4]))
+					Completed=GetSkyshardDiscoveryStatus(pinData[5] or GetZoneSkyshardId(GetSkyshardAchievementZoneId(pinData[3]),pinData[4]))
 					Required=2
 				else
 					AchName,Completed,Required=GetAchievementCriterion(pinData[3],pinData[4])
@@ -7263,7 +5388,7 @@ local function MapPinAddCallback(i)
 				end
 			end
 		end
-	elseif i>=30 then
+	elseif i>=FILTER_COUNT then
 		local mapData=Achievements[subzone]
 		if mapData then
 			mapData=mapData[i]
@@ -7276,6 +5401,7 @@ local function MapPinAddCallback(i)
 					else
 						Completed=IsAchievementComplete(pinData[3])
 					end
+					if SavedVars.Show[i] then Completed=false end
 					local HaveItem=AchievementItems[ pinData[3] ] and AchievementItems[ pinData[3] ][ pinData[4] ] and true or false
 					if Completed==CustomPins[i].done and HaveItem==CustomPins[i].done then
 --						if HaveItem~=CustomPins[i].done then CustomPins[11].tint=ZO_ColorDef:New(1,.1,.4,.8) else CustomPins[11].tint=ZO_ColorDef:New(1,1,1,1) end
@@ -7335,7 +5461,7 @@ local function CompassPinAddCallback(i)
 			if mapData then
 				for _,pinData in pairs(mapData) do
 					local AchName,Completed=pinData[3] or "",nil
-					if i==43 then --Lightbringer
+					if i==873 then --Lightbringer
 						local zone=ZoneAchievement[subzone]
 						if zone then
 							AchName="Lightbringer"
@@ -7351,6 +5477,7 @@ local function CompassPinAddCallback(i)
 					else
 						Completed=IsAchievementComplete(pinData[3])
 					end
+					if SavedVars.Show[i] then Completed=false end
 					local HaveItem=(AchievementItems[ pinData[3] ] and AchievementItems[ pinData[3] ][ pinData[4] ]) and true or false
 					if Completed==CustomPins[i].done and HaveItem==CustomPins[i].done then
 						COMPASS_PINS.pinManager:CreatePin(CustomPins[i].name,AchName..num,pinData[1],pinData[2])
@@ -7422,16 +5549,11 @@ end
 local function ScanInventory()
 	for _, itemData in pairs(SHARED_INVENTORY:GenerateFullSlotData(nil, BAG_BACKPACK)) do
 		if itemData and itemData.itemType==ITEMTYPE_TROPHY then
-			local itemId=GetItemId(BAG_BACKPACK,itemData.slotIndex)
-			if AncestralTombRubbing[itemId] then AchievementItems[1712][ AncestralTombRubbing[itemId] ]=true
-			elseif WrothgarRelics[itemId] then AchievementItems[1250][ WrothgarRelics[itemId] ]=true
-			elseif RelicsOfSummerset[itemId] then AchievementItems[2099][ RelicsOfSummerset[itemId] ]=true
-			elseif PrecursorItems[itemId] then AchievementItems[1958][ PrecursorItems[itemId] ]=true
-			elseif ChronoglerTablet[itemId] then AchievementItems[2320][ ChronoglerTablet[itemId] ]=true
-			elseif MuralMenderFragments[itemId] then AchievementItems[2463][ MuralMenderFragments[itemId] ]=true
-			elseif PiecesOfHistory[itemId] then AchievementItems[2534][ PiecesOfHistory[itemId] ]=true
-			elseif Instruments[itemId] then AchievementItems[2669][ Instruments[itemId] ]=true
-			elseif MiningSampleCollector[itemId] then AchievementItems[2759][ MiningSampleCollector[itemId] ]=true
+			for achId,achTable in ipairs(TrophyTable) do
+				if achTable[itemId] then 
+					AchievementItems[achId][achTable[itemId] ]=true
+					break
+				end
 			end
 		end
 	end
@@ -7445,7 +5567,7 @@ local function OnBackpackChanged(bagId,_,slotData)
 	UpdatingMapPin[6]=true
 	zo_callLater(function()
 		UpdatingMapPin[6]=false
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[6].name])
+		PinManager:RefreshCustomPins(_G[CustomPins[6].name])
 		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[6].name) end
 	end,1000)
 end
@@ -7463,43 +5585,13 @@ end
 
 local function OnLootReceived(_, receivedBy, itemName, quantity, itemSound, lootType, self, _, questItemIcon, itemId)
 	if lootType~=LOOT_TYPE_ITEM and lootType~=LOOT_TYPE_QUEST_ITEM then return end
-	--Ancestral Tombs
-	if AncestralTombRubbing[itemId] then
-		AchievementItems[1712][ AncestralTombRubbing[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[51].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[51].name) end
-	elseif WrothgarRelics[itemId] then
-		AchievementItems[1250][ WrothgarRelics[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[47].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[47].name) end
-	elseif RelicsOfSummerset[itemId] then
-		AchievementItems[2099][ RelicsOfSummerset[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[53].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[53].name) end
-	elseif PrecursorItems[itemId] then
-		AchievementItems[1958][ PrecursorItems[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[56].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[56].name) end
-	elseif ChronoglerTablet[itemId] then
-		AchievementItems[2320][ ChronoglerTablet[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[57].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[57].name) end
-	elseif MuralMenderFragments[itemId] then
-		AchievementItems[2463][ MuralMenderFragments[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[63].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[63].name) end
-	elseif PiecesOfHistory[itemId] then
-		AchievementItems[2534][ PiecesOfHistory[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[64].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[64].name) end
-	elseif Instruments[itemId] then
-		AchievementItems[2669][ Instruments[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[68].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[68].name) end
-	elseif MiningSampleCollector[itemId] then
-		AchievementItems[2759][ MiningSampleCollector[itemId] ]=true
-		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[69].name])
-		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[69].name) end
+	for achId,achTable in ipairs(TrophyTable) do
+		if achTable[itemId] then 
+			AchievementItems[achId][achTable[itemId] ]=true
+			PinManager:RefreshCustomPins(_G[CustomPins[achId].name])
+			if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[achId].name) end
+			break
+		end
 	end
 end
 
@@ -7529,7 +5621,7 @@ local function OnAchievementUpdate(achievementId,link)
 		EVENT_MANAGER:RegisterForUpdate("CallLater_"..name, 1000,
 		function()
 			EVENT_MANAGER:UnregisterForUpdate("CallLater_"..name)
-			ZO_WorldMap_RefreshCustomPinsOfType(name)
+			PinManager:RefreshCustomPins(name)
 			if COMPASS_PINS then COMPASS_PINS:RefreshPins(name) end
 		end)
 	end
@@ -7537,8 +5629,8 @@ local function OnAchievementUpdate(achievementId,link)
 		RefreshPins(_G[CustomPins[3].name])
 	elseif FishingAchievements[achievementId] and SavedVars[17] then
 		RefreshPins(_G[CustomPins[17].name])
-	elseif AchievementsId[achievementId] then
-		RefreshPins(_G[CustomPins[AchievementsId[achievementId] ].name])
+	elseif CustomPins[achievementId] then
+		RefreshPins(_G[CustomPins[achievementId].name])
 	elseif BossesAchievements[achievementId] then
 		local AchName=GetAchievementCriterion(achievementId,1)
 		if string.match(AchName,"Explorer") or string.match(AchName,"Group Challenge") then
@@ -7547,12 +5639,12 @@ local function OnAchievementUpdate(achievementId,link)
 	end
 end
 local function OnSkyshardsUpdated()
-    ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[3].name])
+    PinManager:RefreshCustomPins(_G[CustomPins[3].name])
     if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[3].name) end
 end
 local function OnBookLearned(_,categoryIndex)
 	if categoryIndex==1 then
-	ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[5].name])
+	PinManager:RefreshCustomPins(_G[CustomPins[5].name])
 	if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[5].name) end
 	end
 end
@@ -7676,7 +5768,7 @@ local function OnInteract(_,result,TargetName)
 					if math.abs(data[1]-x)<delta and math.abs(data[2]-y)<delta then
 						if not SavedVars.TimeBreachClosed[zone] then SavedVars.TimeBreachClosed[zone]={} end
 						SavedVars.TimeBreachClosed[zone][i]=true
-						ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[15].name])
+						PinManager:RefreshCustomPins(_G[CustomPins[15].name])
 						if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[15].name) end
 					end
 				end
@@ -7688,7 +5780,7 @@ end
 
 local function TrackChestsRange()
 --	if IsUnitInCombat('player') then return end
-	ZO_WorldMap_RefreshCustomPinsOfType(PinId[7])
+	PinManager:RefreshCustomPins(PinId[7])
 end
 
 local function ResizePins(minimap)
@@ -7768,7 +5860,7 @@ local function AddPinFilter(i)
 --				pl("["..id.."] "..CustomPins[pin].name..": Refresh")
 				AddCompassCustomPin(id,pin)
 				if not init then
-					ZO_WorldMap_RefreshCustomPinsOfType(id)
+					PinManager:RefreshCustomPins(id)
 					RegisterEvents()
 				end
 			end
@@ -7783,8 +5875,8 @@ local function AddPinFilter(i)
 
 	local function AddCheckbox(panel)
 		local checkbox=panel.checkBoxPool:AcquireObject()
-		local icon=zo_iconFormat((CustomPins[i].def_texture and CustomPins[i].def_texture or CustomPins[i].texture),24,24)
-		local name=CustomPins[i].ach and GetCroppedAchievementInfo(CustomPins[i].ach) or Loc(string.gsub(CustomPins[i].name,"pinType_",""))
+		local icon=zo_iconFormat((CustomPins[i].def_texture or CustomPins[i].texture),24,24)
+		local name=CustomPins[i].ach and GetCroppedAchievementInfo(i) or Loc(string.gsub(CustomPins[i].name,"pinType_",""))
 		ZO_CheckButton_SetLabelText(checkbox,icon.." "..name)
 		panel:AnchorControl(checkbox)
 		local tooltipText=""
@@ -7800,12 +5892,13 @@ local function AddPinFilter(i)
 			..zo_iconFormat(FishIcon[3],24,24).." "..Loc("Salt").."\n"
 			..zo_iconFormat(FishIcon[4],24,24).." "..Loc("Lake")
 		elseif CustomPins[i].name=="pinType_Portals" then
-			tooltipText=zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Celestial_Rifts").."\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Dark_Fissures").."\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Oblivion_Portals").."\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Shadow_Fissures").."\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Lava_Lashers").."\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Soul_Reaper")
+			tooltipText=function()
+				local text=""
+				for i,data in ipairs(PortalsNames) do
+					text=text..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..data.."\n"
+				end
+				return text
+			end
 		elseif CustomPins[i].name=="pinType_Clockwork_City" then
 			tooltipText=function()
 				local text=""
@@ -7835,10 +5928,10 @@ local function AddPinFilter(i)
 					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
 					text2=text2..info..data.desc
 				end
-				return zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(CustomPins[69].ach))
+				return zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(2759))
 					..text1
 					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t\n"
-					..zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(CustomPins[68].ach))
+					..zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(2669))
 					..text2
 			end
 		else
@@ -7850,8 +5943,8 @@ local function AddPinFilter(i)
 					..zo_strformat("|t24:24:<<2>>|t <<1>>\n", GetCroppedAchievementInfo(871))--Give to Poor
 					..zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(869))--Crime Pays
 				else
-					local name=CustomPins[pin].ach and GetCroppedAchievementInfo(CustomPins[pin].ach) or Loc(string.gsub(CustomPins[pin].name,"pinType_",""))
-					tooltipText=tooltipText..zo_iconFormat((CustomPins[pin].def_texture and CustomPins[pin].def_texture or CustomPins[pin].texture),24,24).." "
+					local name=CustomPins[pin].ach and GetCroppedAchievementInfo(pin) or Loc(string.gsub(CustomPins[pin].name,"pinType_",""))
+					tooltipText=tooltipText..zo_iconFormat((CustomPins[pin].def_texture or CustomPins[pin].texture),24,24).." "
 					..name	--string.gsub(name,"_"," ")
 				end
 			end
@@ -7910,8 +6003,8 @@ local PinTooltipCreator={
 			for _,id in pairs(pinTag[4]) do
 				desc1=desc1..("\n|H1:item:%d:359:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(id)
 			end
-		elseif pinTag[1]==43 then	--Lightbringer
-			icon=CustomPins[43].texture
+		elseif pinTag[1]==873 then	--Lightbringer
+			icon=CustomPins[873].texture
 			name=GetString(SI_JOURNAL_MENU_ACHIEVEMENTS) or "Achievements"
 			desc=zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(873))--Lightbringer
 			..zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(871))--Give to Poor
@@ -7928,14 +6021,15 @@ local PinTooltipCreator={
 		elseif pinTag[1]==76 then
 			icon=CustomPins[76].texture
 			name=pinTag.name
-		elseif pinTag[1]<=4 or pinTag[1]>=30 then	--Main tooltip for achievements
+		elseif pinTag[1]<=4 or pinTag[1]>=FILTER_COUNT then	--Main tooltip for achievements
 			name,desc,_,icon=GetAchievementInfo(pinTag[2])
 			if pinTag[3] then desc=GetAchievementCriterion(pinTag[2], pinTag[3]) end
 		elseif pinTag[1]==5 then
 			name, icon, _=GetLoreBookInfo(1, pinTag[2], pinTag[3])
 		elseif pinTag[1]==6 then
 			icon=pinTag.icon
-			name=GetItemName(BAG_BACKPACK,pinTag[2])
+			local _, iStack, _, _, _, _, _, _, _ = GetItemInfo(BAG_BACKPACK, pinTag[2])
+			name=GetItemName(BAG_BACKPACK,pinTag[2]) .. " (" .. tostring(iStack) .. ")"
 		elseif pinTag[1]==8 then
 			icon=pinTag.texture
 			name=pinTag.name
@@ -8069,19 +6163,19 @@ local function OnLoad(eventCode,addonName)
 
 	--APIVersion: 101032
 	SavedVars[4]=false
-
+	if not SavedVars.Show then SavedVars.Show={} end
 	local function AddPin(pin,pinLayout)
 		local TooltipCreator=(not PinTooltipSupres[pin] and PinTooltipCreator or nil)
 		local name=pinLayout.name
 		pinLayout.size=pinLayout.size or SavedGlobal.pinsize*pinLayout.k
-		ZO_WorldMap_AddCustomPin(name,function() MapPinAddCallback(pin) end,nil,pinLayout,TooltipCreator)
+		PinManager:AddCustomPin(name,function() MapPinAddCallback(pin) end,nil,pinLayout,TooltipCreator)
 		local id=_G[name]
---		ZO_WorldMap_SetCustomPinEnabled(id,true) ZO_WorldMap_RefreshCustomPinsOfType(id)
+--		ZO_WorldMap_SetCustomPinEnabled(id,true) PinManager:RefreshCustomPins(id)
 --		AddCompassCustomPin(id,pin)
 		return id
 	end
 
-	for i=1,30 do
+	for i=1,FILTER_COUNT do
 		local filter=CustomPins[i]
 		if filter then
 			if filter.section then
@@ -8102,29 +6196,20 @@ local function OnLoad(eventCode,addonName)
 	end
 	SLASH_COMMANDS["/loc"]=function()
 		local x,y=GetMapPlayerPosition("player")
-		local texture = GetMapTileTexture()
-	    local fileName = texture:match("[^\\/]+$"):lower()
-			fileName = fileName:gsub("%.dds$", "")
-			fileName = fileName:gsub("_[0-9]+$", "")
-			--fileName = fileName:gsub("_base$", "")
-		local xStr = string.gsub(math.floor(x*1000)/1000, "^0%.", ".")
-		local yStr = string.gsub(math.floor(y*1000)/1000, "^0%.", ".")
-		StartChatInput(fileName .. '={{'..xStr..','..yStr..','..LastAchivement..'}},')
+	    local fileName=GetMapTileTexture():match("[^\\/]+$"):lower():gsub("%.dds$",""):gsub("_[0-9]+$","")
+		local formattedCoords=string.format("%.3f,%.3f", x, y):gsub("0%.", ".")
+		StartChatInput(fileName..'={{'..formattedCoords..','..LastAchivement..'}},')
 	end
 	SLASH_COMMANDS["/loc1"]=function()
 		local x,y=GetMapPlayerPosition("player")
-		StartChatInput('{'..string.gsub(math.floor(x*1000)/1000,"[0][.]",".")..","..string.gsub(math.floor(y*1000)/1000,"[0][.]",".")..","..LastAchivement..'},')
+		local formattedCoords=string.format("%.3f,%.3f",x,y):gsub("0%.",".")
+		StartChatInput('{'..formattedCoords..","..LastAchivement..'},')
 	end
 	SLASH_COMMANDS["/loc2"]=function()
-		local texturePath = GetMapTileTexture()
-		local fileName = texturePath:match("[^\\/]+$"):lower()
-			fileName = fileName:gsub("%.dds$", "")
-			fileName = fileName:gsub("_[0-9]+$", "")
-		--fileName = fileName:gsub("_base$", "")
-		local x, y = GetMapPlayerWaypoint()
-		local formattedCoords = string.format("%.3f,%.3f", x, y)
-			formattedCoords = formattedCoords:gsub("0%.", ".")
-		StartChatInput(fileName .. '={' .. formattedCoords .. '},')
+		local x,y=GetMapPlayerWaypoint()
+		local fileName=GetMapTileTexture():match("[^\\/]+$"):lower():gsub("%.dds$",""):gsub("_[0-9]+$","")	
+		local formattedCoords=string.format("%.3f,%.3f",x,y):gsub("0%.",".")
+		StartChatInput(fileName..'={'..formattedCoords..'},')
 end
 --	SLASH_COMMANDS["/mpdm"]=function() SavedGlobal.dm=not SavedGlobal.dm d("Map Pins developer mode is now "..(SavedGlobal.dm and "Enabled" or "Disabled")) end
 	SLASH_COMMANDS["/pinsize"]=function(n)
@@ -8134,26 +6219,58 @@ end
 			for i,id in pairs(PinId) do
 				if ZO_MapPin.PIN_DATA[id] and CustomPins[i].k then ZO_MapPin.PIN_DATA[id].size=n*CustomPins[i].k end
 			end
-			ZO_WorldMap_RefreshCustomPinsOfType()
+			PinManager:RefreshCustomPins()
+		end
+	end
+	SLASH_COMMANDS["/mpshow"]=function(n)
+		n=tonumber(n)
+		if n then	
+			if SavedVars.Show[n] then 
+				SavedVars.Show[n]=nil
+			else
+				SavedVars.Show[n]=true
+			end
 		end
 	end
 --[[	Helper scripts POI
 	SLASH_COMMANDS["/makebase"]=function()
-		PoiData=ZO_SavedVars:NewAccountWide("MP_PoiData",1,nil,{})
-		local zone=GetCurrentMapZoneIndex()
-		local zoneId=GetZoneId(zone)
-		PoiData[zoneId]={}
-		for i=1,GetNumPOIs(zone) do
-			local id=GetPOIType(zone, i)
-			local Name=GetPOIInfo(zone, i)
-			local _,_,poiType,_,_,_,known=GetPOIMapInfo(zone, i)
+		--PoiData=ZO_SavedVars:NewAccountWide("MP_PoiData",1,nil,{})
+		local zoneIndex=GetCurrentMapZoneIndex()
+		local zoneId=GetZoneId(zoneIndex)
+		--PoiData[zoneId]={}
+		for poiIndex=1,GetNumPOIs(zoneIndex) do
+			local poiType=GetPOIType(zoneIndex, poiIndex)
+			local Name=GetPOIInfo(zoneIndex, poiIndex)
+			local _,_,poiType,_,_,_,known=GetPOIMapInfo(zoneIndex, poiIndex)
 			if id~=7 and Name~="" then
-				d('['..i..']={"'..Name..'",'..id..','..poiType..' Known:'..tostring(known)..'},')
-				PoiData[zoneId][i]=Name
+				d('['..poiIndex..']={"'..Name..'",'..id..','..poiType..' Known:'..tostring(known)..'},')
+				--PoiData[zoneId][poiIndex]=Name
 			end
 		end
 	end
 --]]
+--[[	Gets Maps Mundas and Crafting set	
+	SLASH_COMMANDS["/makebase"]=function()
+		--PoiData=ZO_SavedVars:NewAccountWide("MP_PoiData",1,nil,{})
+		local zoneIndex=GetCurrentMapZoneIndex()
+		local zoneId=GetZoneId(zoneIndex)
+		--PoiData[zoneId]={}
+		local ttt =""
+		for poiIndex=1,GetNumPOIs(zoneIndex) do
+			local poiType=GetPOIType(zoneIndex, poiIndex)
+			local normalizedX, normalizedY, poiPinType, icon, isShownInCurrentMap, linkedCollectibleIsLocked, isDiscovered, isNearby = GetPOIMapInfo(zoneIndex, poiIndex)
+			local poiName, objLevel, poiStartDesc, poiFinishedDesc = GetPOIInfo(zoneIndex, poiIndex)
+			if poiType==2 and poiName~="" then
+			if  icon:find("mundus") or icon:find("crafting") then 
+				ttt=ttt..'['..poiIndex.."] = "..poiName..","
+			--d('['..poiIndex..']={ "'..poiName..'" , '..poiType..' , '..objLevel..' , '..poiPinType..' Known: '..tostring(isDiscovered)..' },')
+				--PoiData[zoneId][poiIndex]=poiName
+				end
+			end
+		end
+		StartChatInput(ttt)
+	end
+	--]]
 end
 
 EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_ADD_ON_LOADED,OnLoad)
@@ -8290,7 +6407,7 @@ end
 /script MP_MakeBase()
 /script Link=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(130803) local _,name=GetItemLinkSetInfo(Link) StartChatInput(name)
 /script d(ZO_WorldMap_GetPinManager():IsCustomPinEnabled(201))
-/script ZO_WorldMap_RefreshCustomPinsOfType()
+/script PinManager:RefreshCustomPins()
 /script for pin,data in pairs(ZO_MapPin.PIN_DATA) do local texture=data.texture d(pin.." ("..tostring(data.size)..") |t18:18:"..tostring(texture).."|t"..tostring(texture)) end
 /script ZO_MapPin.PIN_DATA[170].size=16
 /script for id=1350,1400 do local AchName=GetAchievementCriterion(id,1) if string.match(AchName,"Explorer")~=nil then d("["..id.."] "..AchName) end end
